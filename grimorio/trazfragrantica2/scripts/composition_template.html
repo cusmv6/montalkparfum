@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ nome }} - Composição Olfativa</title>
+    <link rel="stylesheet" href="composition_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="composition-card">
+        <!-- Cabeçalho -->
+        <div class="brand-header">
+            <h1 class="perfume-name">{{ nome }}</h1>
+            <h2 class="brand-name">{{ marca }}</h2>
+            <p class="concentration">{{ concentracao }}</p>
+        </div>
+
+        <!-- Área Central da Composição fotorrealista -->
+        <div class="composition-showcase">
+            <img src="{{ frasco_imagem }}" alt="Composição de {{ nome }}" class="composition-img" style="{{ bottle_img_style }}">
+        </div>
+
+        <!-- Rodapé -->
+        <div class="profile-footer">
+            <span class="footer-logo">MONTALK</span>
+            <span class="footer-sub">PARFUM D'ARTISTE</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# System Files
+desktop.ini
+thumbs.db
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python Cache & Environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+env/
+venv/
+ENV/
+
+# Local temporary or log files
+*.log

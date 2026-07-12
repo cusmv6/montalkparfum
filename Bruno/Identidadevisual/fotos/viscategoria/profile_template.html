@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ nome }} - Perfil Olfativo</title>
+    <link rel="stylesheet" href="profile_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="profile-card">
+        <!-- Lado Esquerdo -->
+        <div class="left-panel">
+            <div class="brand-header">
+                <h1 class="perfume-name">{{ nome }}</h1>
+                <h2 class="brand-name">{{ marca }}</h2>
+                <p class="concentration">{{ concentracao }}</p>
+            </div>
+
+            <!-- Seção do Frasco e Avaliação -->
+            <div class="bottle-section-wrapper" style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <!-- Imagem do Frasco Real de Divulgação -->
+                <div class="bottle-showcase">
+                    <img src="{{ frasco_imagem }}" alt="Frasco de {{ nome }}" class="bottle-img" style="{{ bottle_img_style }}">
+                </div>
+
+                <!-- Avaliação Estrelas -->
+                <div class="rating-box">
+                    <div class="rating-container">
+                        <span class="rating-value">{{ nota_avaliacao }}</span>
+                        <div class="stars">
+                            <!-- Gerado dinamicamente ou fixado conforme nota -->
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
+                        <span class="rating-votes">({{ votos_avaliacao }})</span>
+                    </div>
+                    <p class="source-credit">Referências via Fragrantica</p>
+                </div>
+            </div>
+
+            <!-- Pirâmide Olfativa -->
+            <div class="notes-pyramid">
+                <div class="note-section">
+                    <h3 class="note-title">NOTAS DE TOPO</h3>
+                    <div class="note-items">
+                        {{ notas_topo }}
+                    </div>
+                </div>
+                <div class="note-section">
+                    <h3 class="note-title">NOTAS DE CORAÇÃO</h3>
+                    <div class="note-items">
+                        {{ notas_coracao }}
+                    </div>
+                </div>
+                <div class="note-section">
+                    <h3 class="note-title">NOTAS DE BASE</h3>
+                    <div class="note-items">
+                        {{ notas_base }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Perfumista (Substituiu os adjetivos genéricos) -->
+            <div class="perfumista-card">
+                <h3 class="perfumista-title">Perfumista</h3>
+                <div class="perfumista-list">
+                    {{ perfumistas_detalhes }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Lado Direito -->
+        <div class="right-panel">
+
+
+            <!-- Principais Acordes -->
+            <div class="card-section accords-card">
+                <h3 class="section-title">PRINCIPAIS ACORDES</h3>
+                <div class="accords-list">
+                    {{ principais_acordes }}
+                </div>
+            </div>
+
+            <!-- Perfil Olfativo (Longevidade e Rastro) -->
+            <div class="card-section performance-card">
+                <h3 class="section-title">PERFIL OLFATIVO</h3>
+                <div class="performance-grid">
+                    <div class="perf-item">
+                        <div class="perf-icon">⏳</div>
+                        <div class="perf-info">
+                            <span class="perf-val">{{ longevidade_horas }}</span>
+                            <span class="perf-lbl">{{ longevidade_texto }}</span>
+                        </div>
+                    </div>
+                    <div class="perf-item">
+                        <div class="perf-icon">💨</div>
+                        <div class="perf-info">
+                            <span class="perf-val">{{ rastro_texto }}</span>
+                            <span class="perf-lbl">Rastro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Turno (Diurno / Noturno) -->
+            <div class="card-section time-card">
+                <h3 class="section-title">DIURNO</h3>
+                <div class="time-toggle">
+                    {{ turnos }}
+                </div>
+            </div>
+
+            <!-- Gênero -->
+            <div class="card-section gender-card">
+                <h3 class="section-title">PERCEPÇÃO DE GÊNERO</h3>
+                {{ percepcao_genero }}
+            </div>
+
+            <!-- Estações (Movido para a direita) -->
+            <div class="card-section seasons-card">
+                <h3 class="section-title">ESTAÇÕES</h3>
+                <div class="seasons-grid">
+                    {{ estacoes }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé da Marca -->
+        <div class="profile-footer">
+            <span class="footer-logo">MONTALK</span>
+            <span class="footer-sub">PARFUM D'ARTISTE</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7785 @@
+[
+  {
+    "id": "amouage_cristal_gold_man",
+    "nome": "CRISTAL & GOLD MAN",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Chipre Amadeirado",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Perfumista"
+    ],
+    "perfumistas_detalhes": [
+      {
+        "nome": "Alexandra Carlin",
+        "foto": "fotos/perfumistas/alexandra_carlin.jpg"
+      }
+    ],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.21,
+    "votos_avaliacao": 42,
+    "frasco_imagem": "amouage_cristal_gold_man_composicao.png",
+    "principais_acordes": [
+      {
+        "nome": "Animálico",
+        "intensidade": 100.0,
+        "cor": "#8e4b13",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Almíscarado",
+        "intensidade": 97.7417,
+        "cor": "#e7d8ea",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 88.7098,
+        "cor": "#bc4d10",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 74.3144,
+        "cor": "#eeddcc",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Aldeídico",
+        "intensidade": 58.2257,
+        "cor": "#d8e9f6",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Fresco",
+        "intensidade": 49.758,
+        "cor": "#9be5ed",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 47.895,
+        "cor": "#774414",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Mel",
+        "intensidade": 46.9355,
+        "cor": "#faa907",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 45.2418,
+        "cor": "#ff5f8d",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Balsâmico",
+        "intensidade": 45.0725,
+        "cor": "#ad8359",
+        "texto_cor": "#000000"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 15,
+      "noite": 14
+    },
+    "percepcao_genero": {
+      "feminino": 4,
+      "mais_feminino": 2,
+      "unissex": 11,
+      "mais_masculino": 3,
+      "masculino": 9,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 15,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 13,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 13,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 16,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Aldeídos",
+        "Mel",
+        "Olíbano",
+        "Néroli",
+        "Petitgrain",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Heliotrópio",
+        "Jasmim",
+        "Rosa Damascena",
+        "Ylang Ylang",
+        "Raíz de Orris"
+      ],
+      "base": [
+        "Civeta",
+        "Âmbar Cinzento",
+        "Ládano",
+        "Sândalo",
+        "Patchouli",
+        "Vetiver",
+        "Madeira Guaiac"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_cristal_gold_woman",
+    "nome": "CRISTAL & GOLD WOMAN",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Floral Aldeídico",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Alexandra Carlin"
+    ],
+    "perfumistas_detalhes": [
+      {
+        "nome": "Alexandra Carlin",
+        "foto": "fotos/perfumistas/alexandra_carlin.jpg"
+      }
+    ],
+    "slogan": "Uma assinatura olfativa única de luxo.",
+    "nota_avaliacao": 4.61,
+    "votos_avaliacao": 36,
+    "frasco_imagem": "amouage_cristal_gold_woman_composicao.png",
+    "principais_acordes": [
+      {
+        "nome": "Aldeídico",
+        "intensidade": 100.0,
+        "cor": "#d8e9f6",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 82.5,
+        "cor": "#eeddcc",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Rosa",
+        "intensidade": 80.0,
+        "cor": "#fe016b",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Fresco",
+        "intensidade": 79.0,
+        "cor": "#9be5ed",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 78.0,
+        "cor": "#bc4d10",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Floral Branco",
+        "intensidade": 75.0,
+        "cor": "#edf2fb",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Animálico",
+        "intensidade": 74.0,
+        "cor": "#8e4b13",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 71.0,
+        "cor": "#fffec0",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Almíscarado",
+        "intensidade": 66.0,
+        "cor": "#e7d8ea",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 63.0,
+        "cor": "#ff5f8d",
+        "texto_cor": "#000000"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 6,
+      "noite": 14
+    },
+    "percepcao_genero": {
+      "feminino": 8,
+      "mais_feminino": 6,
+      "unissex": 4,
+      "mais_masculino": 0,
+      "masculino": 0,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 15,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 8,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 11,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 11,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Aldeídos",
+        "Néroli",
+        "Petitgrain",
+        "Olíbano",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Rosa",
+        "Jasmim",
+        "Heliotrópio",
+        "Ylang Ylang",
+        "Raíz de Orris"
+      ],
+      "base": [
+        "Âmbar",
+        "Civeta",
+        "Baunilha de Bourbon",
+        "Vetiver",
+        "Ládano",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_guidance",
+    "nome": "GUIDANCE",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Floral Frutado",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Perfumista"
+    ],
+    "perfumistas_detalhes": [
+      {
+        "nome": "Quentin Bisch",
+        "foto": "fotos/perfumistas/quentin_bisch.jpg"
+      }
+    ],
+    "slogan": "Elegância engarrafada para momentos especiais.",
+    "nota_avaliacao": 3.81,
+    "votos_avaliacao": 7780,
+    "frasco_imagem": "amouage_guidance_composicao.png",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100.0,
+        "cor": "#774414",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 69.0667,
+        "cor": "#bc4d10",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 66.2159,
+        "cor": "#cc3300",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 63.2881,
+        "cor": "#fc4b29",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Amendoado",
+        "intensidade": 57.3702,
+        "cor": "#b4955f",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 54.6807,
+        "cor": "#ee363b",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 52.8668,
+        "cor": "#eeddcc",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 52.2798,
+        "cor": "#fffec0",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 49.6706,
+        "cor": "#ff5f8d",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Balsâmico",
+        "intensidade": 48.3362,
+        "cor": "#ad8359",
+        "texto_cor": "#000000"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 2200,
+      "noite": 2200
+    },
+    "percepcao_genero": {
+      "feminino": 2400,
+      "mais_feminino": 1100,
+      "unissex": 656,
+      "mais_masculino": 26,
+      "masculino": 27,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 2600,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 2100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 1200,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 2700,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Pera",
+        "Avelã",
+        "Olíbano"
+      ],
+      "coracao": [
+        "Osmanthus",
+        "Rosa",
+        "Açafrão",
+        "Jasmim Sambac"
+      ],
+      "base": [
+        "Sândalo",
+        "Baunilha",
+        "Akigalawood",
+        "Âmbar Cinzento",
+        "Ládano"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_guidance_46",
+    "nome": "GUIDANCE 46",
+    "marca": "AMOUAGE",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Floral",
+    "ano_lancamento": 2024,
+    "perfumistas": [
+      "Perfumista"
+    ],
+    "perfumistas_detalhes": [
+      {
+        "nome": "Quentin Bisch",
+        "foto": "fotos/perfumistas/quentin_bisch.jpg"
+      }
+    ],
+    "slogan": "A expressão máxima da perfumaria artística.",
+    "nota_avaliacao": 4.17,
+    "votos_avaliacao": 2676,
+    "frasco_imagem": "amouage_guidance_46_composicao.png",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100.0,
+        "cor": "#774414",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 69.041,
+        "cor": "#fc4b29",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Amendoado",
+        "intensidade": 64.5946,
+        "cor": "#b4955f",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 62.9973,
+        "cor": "#ff5f8d",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 62.7137,
+        "cor": "#cc3300",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 62.659,
+        "cor": "#bc4d10",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 61.4663,
+        "cor": "#ee363b",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Rosa",
+        "intensidade": 61.3994,
+        "cor": "#fe016b",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 50.0359,
+        "cor": "#eeddcc",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Amêndoa",
+        "intensidade": 49.8079,
+        "cor": "#f1e3c5",
+        "texto_cor": "#000000"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 779,
+      "noite": 952
+    },
+    "percepcao_genero": {
+      "feminino": 636,
+      "mais_feminino": 385,
+      "unissex": 451,
+      "mais_masculino": 17,
+      "masculino": 23,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 1000,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 821,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 537,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 1000,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Água de Rosas",
+        "Pera",
+        "Avelã",
+        "Amêndoa Amarga",
+        "Olíbano",
+        "Pimenta Rosa"
+      ],
+      "coracao": [
+        "Rosa",
+        "Osmanthus",
+        "Açafrão",
+        "Jasmim Sambac"
+      ],
+      "base": [
+        "Sândalo",
+        "Akigalawood",
+        "Baunilha",
+        "Ambreta",
+        "Ládano",
+        "Âmbar Cinzento",
+        "Georgywood",
+        "Nagarmota ou Óleo de Cipriol"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_jubilation_25",
+    "nome": "JUBILATION 25",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Chipre Floral",
+    "ano_lancamento": 2007,
+    "perfumistas": [
+      "Lucas Sieuzac"
+    ],
+    "slogan": "Uma homenagem à elegância festiva oriental.",
+    "nota_avaliacao": 4.18,
+    "votos_avaliacao": 920,
+    "frasco_imagem": "amouage_jubilation_25_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Âmbar",
+        "intensidade": 100,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 90,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Balsâmico",
+        "intensidade": 80,
+        "cor": "#FAF0E6",
+        "texto_cor": "#4B443A"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Ylang-Ylang",
+        "Rosa",
+        "Limão"
+      ],
+      "coracao": [
+        "Incenso",
+        "Labdanum",
+        "Patchouli"
+      ],
+      "base": [
+        "Mirra",
+        "Almíscar",
+        "Vetiver"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_jubilation_40",
+    "nome": "JUBILATION 40",
+    "marca": "AMOUAGE",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Bertrand Duchaufour"
+    ],
+    "slogan": "40% de concentração de pura sofisticação real.",
+    "nota_avaliacao": 4.52,
+    "votos_avaliacao": 310,
+    "frasco_imagem": "amouage_jubilation_40_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Frutado",
+        "intensidade": 100,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 95,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 90,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Cereja Preta",
+        "Groselha",
+        "Coentro"
+      ],
+      "coracao": [
+        "Mel",
+        "Canela",
+        "Louro"
+      ],
+      "base": [
+        "Oud",
+        "Patchouli",
+        "Mirra",
+        "Musgo de Carvalho"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_interlude_man",
+    "nome": "INTERLUDE MAN",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2012,
+    "perfumistas": [
+      "Pierre Negrin"
+    ],
+    "slogan": "O caos controlado em uma fragrância opulenta.",
+    "nota_avaliacao": 4.12,
+    "votos_avaliacao": 4820,
+    "frasco_imagem": "amouage_interlude_man_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Âmbar",
+        "intensidade": 100,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      },
+      {
+        "nome": "Incensado",
+        "intensidade": 95,
+        "cor": "#E4E3DE",
+        "texto_cor": "#3D3D39"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 90,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Orégano",
+        "Pimenta",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Incenso",
+        "Opoponax",
+        "Âmbar"
+      ],
+      "base": [
+        "Couro",
+        "Oud",
+        "Sândalo",
+        "Patchouli"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_interlude_black_iris",
+    "nome": "INTERLUDE BLACK IRIS",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Pierre Negrin"
+    ],
+    "slogan": "Uma releitura sofisticada com a elegância da íris preta.",
+    "nota_avaliacao": 4.31,
+    "votos_avaliacao": 1540,
+    "frasco_imagem": "amouage_interlude_black_iris_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Incensado",
+        "intensidade": 95,
+        "cor": "#E4E3DE",
+        "texto_cor": "#3D3D39"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 90,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Folha de Violeta",
+        "Alecrim",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Íris",
+        "Incenso",
+        "Mirra"
+      ],
+      "base": [
+        "Couro",
+        "Oud",
+        "Sândalo",
+        "Patchouli"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_meander",
+    "nome": "MEANDER",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Mackenzie Reilly"
+    ],
+    "slogan": "O frescor cremoso e reconfortante do sândalo.",
+    "nota_avaliacao": 4.22,
+    "votos_avaliacao": 890,
+    "frasco_imagem": "amouage_meander_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 85,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      },
+      {
+        "nome": "Especiado Fresco",
+        "intensidade": 75,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Olíbano",
+        "Pimenta Rosa",
+        "Cenoura"
+      ],
+      "coracao": [
+        "Íris",
+        "Rosa",
+        "Jasmin"
+      ],
+      "base": [
+        "Sândalo",
+        "Vetiver",
+        "Vetiver de Madagascar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_reflection_man",
+    "nome": "REFLECTION MAN",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Amadeirado Floral",
+    "ano_lancamento": 2007,
+    "perfumistas": [
+      "Lucas Sieuzac"
+    ],
+    "slogan": "A elegância e o brilho da masculinidade moderna.",
+    "nota_avaliacao": 4.38,
+    "votos_avaliacao": 6480,
+    "frasco_imagem": "amouage_reflection_man_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Floral Branco",
+        "intensidade": 100,
+        "cor": "#EADBF0",
+        "texto_cor": "#2D2630"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 85,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 75,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Alecrim",
+        "Pimenta Rosa",
+        "Petitgrain"
+      ],
+      "coracao": [
+        "Jasmim",
+        "Néroli",
+        "Raiz de Íris"
+      ],
+      "base": [
+        "Sândalo",
+        "Cedro",
+        "Vetiver",
+        "Patchouli"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_reflection_45",
+    "nome": "REFLECTION 45",
+    "marca": "AMOUAGE",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Amadeirado Floral",
+    "ano_lancamento": 2021,
+    "perfumistas": [
+      "Lucas Sieuzac"
+    ],
+    "slogan": "A icônica fragrância masculina em concentração de 45%.",
+    "nota_avaliacao": 4.58,
+    "votos_avaliacao": 780,
+    "frasco_imagem": "amouage_reflection_45_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Floral Branco",
+        "intensidade": 100,
+        "cor": "#EADBF0",
+        "texto_cor": "#2D2630"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 90,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 85,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Alecrim",
+        "Lavanda",
+        "Cardamomo"
+      ],
+      "coracao": [
+        "Jasmim",
+        "Néroli",
+        "Íris"
+      ],
+      "base": [
+        "Sândalo",
+        "Patchouli",
+        "Cedro",
+        "Fava Tonka"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_outlands",
+    "nome": "OUTLANDS",
+    "marca": "AMOUAGE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2024,
+    "perfumistas": [
+      "Cecile Zarokian"
+    ],
+    "slogan": "A exploração dos limites olfativos do oriente.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 98,
+    "frasco_imagem": "amouage_outlands_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 90,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Resinoso",
+        "intensidade": 80,
+        "cor": "#EAE6DB",
+        "texto_cor": "#4E4B3E"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Pimenta",
+        "Limão",
+        "Especiarias"
+      ],
+      "coracao": [
+        "Incenso",
+        "Rosa",
+        "Cedro"
+      ],
+      "base": [
+        "Oud",
+        "Sândalo",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "byredo_bal_dafrique_absolu",
+    "nome": "BAL D'AFRIQUE ABSOLU",
+    "marca": "BYREDO",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Amadeirado Cítrico",
+    "ano_lancamento": 2024,
+    "perfumistas": [
+      "Jerome Epinette"
+    ],
+    "slogan": "Uma celebração concentrada da cultura africana.",
+    "nota_avaliacao": 4.48,
+    "votos_avaliacao": 120,
+    "frasco_imagem": "byredo_bal_dafrique_absolu_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 85,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 75,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Limão de Amalfi",
+        "Calêndula",
+        "Groselha Preta"
+      ],
+      "coracao": [
+        "Violeta",
+        "Ciclame",
+        "Jasmim"
+      ],
+      "base": [
+        "Vetiver",
+        "Âmbar",
+        "Almíscar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "byredo_gypsy_water",
+    "nome": "GYPSY WATER",
+    "marca": "BYREDO",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Amadeirado Aromático",
+    "ano_lancamento": 2008,
+    "perfumistas": [
+      "Jerome Epinette"
+    ],
+    "slogan": "O estilo de vida nômade e místico.",
+    "nota_avaliacao": 4.15,
+    "votos_avaliacao": 4200,
+    "frasco_imagem": "byredo_gypsy_water_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Cítrico",
+        "intensidade": 90,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 80,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Zimbro",
+        "Limão",
+        "Pimenta"
+      ],
+      "coracao": [
+        "Agulhas de Pinho",
+        "Incenso",
+        "Raiz de Íris"
+      ],
+      "base": [
+        "Sândalo",
+        "Baunilha",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "byredo_mojave_ghost",
+    "nome": "MOJAVE GHOST",
+    "marca": "BYREDO",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Floral Amadeirado",
+    "ano_lancamento": 2014,
+    "perfumistas": [
+      "Jerome Epinette"
+    ],
+    "slogan": "A beleza resiliente e etérea do deserto de Mojave.",
+    "nota_avaliacao": 4.21,
+    "votos_avaliacao": 3100,
+    "frasco_imagem": "byredo_mojave_ghost_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Atalcado",
+        "intensidade": 100,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 85,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 75,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Sapodilla",
+        "Ambreta"
+      ],
+      "coracao": [
+        "Violeta",
+        "Sândalo",
+        "Magnólia"
+      ],
+      "base": [
+        "Almíscar",
+        "Âmbar Cinzento",
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "byredo_vanille_antique",
+    "nome": "VANILLE ANTIQUE",
+    "marca": "BYREDO",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2022,
+    "perfumistas": [
+      "Jérôme Epinette"
+    ],
+    "perfumistas_detalhes": [
+      {
+        "nome": "Jérôme Epinette",
+        "foto": "fotos/perfumistas/jerome_epinette.jpg"
+      }
+    ],
+    "slogan": "A baunilha em sua forma mais esfumaçada e madura.",
+    "nota_avaliacao": 4.04,
+    "votos_avaliacao": 1600,
+    "frasco_imagem": "byredo_vanille_antique_composicao.png",
+    "principais_acordes": [
+      {
+        "nome": "Âmbar",
+        "intensidade": 100.0,
+        "cor": "#bc4d10",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 81.6491,
+        "cor": "#fffec0",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 72.6365,
+        "cor": "#774414",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Almíscarado",
+        "intensidade": 66.6725,
+        "cor": "#e7d8ea",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 65.1629,
+        "cor": "#eeddcc",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 56.8162,
+        "cor": "#ee363b",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 52.4948,
+        "cor": "#fc4b29",
+        "texto_cor": "#000000"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 290,
+      "noite": 558
+    },
+    "percepcao_genero": {
+      "feminino": 66,
+      "mais_feminino": 146,
+      "unissex": 447,
+      "mais_masculino": 79,
+      "masculino": 26,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 645,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 155,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 70,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 615,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Almíscar",
+        "Ameixa"
+      ],
+      "coracao": [
+        "Madeira Branca",
+        "Ládano"
+      ],
+      "base": [
+        "Baunilha",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "bvlgari_le_gemme_tygar",
+    "nome": "TYGAR",
+    "marca": "BVLGARI LE GEMME",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Cítrico Aromático",
+    "ano_lancamento": 2016,
+    "perfumistas": [
+      "Jacques Cavallier"
+    ],
+    "slogan": "A energia magnética da toranja com ambroxan.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 1820,
+    "frasco_imagem": "bvlgari_le_gemme_tygar_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 90,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 80,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Toranja"
+      ],
+      "coracao": [
+        "Gengibre",
+        "Ambreta"
+      ],
+      "base": [
+        "Ambroxan",
+        "Notas Amadeiradas"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "casamorati_mefisto",
+    "nome": "MEFISTO",
+    "marca": "XERJOFF",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Cítrico Aromático",
+    "ano_lancamento": 2009,
+    "perfumistas": [
+      "Jacques Cavallier"
+    ],
+    "slogan": "O frescor clássico italiano com a nobreza da íris.",
+    "nota_avaliacao": 4.42,
+    "votos_avaliacao": 2340,
+    "frasco_imagem": "casamorati_mefisto_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 85,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 75,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 520,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 490,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 640,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Toranja",
+        "Limão de Amalfi",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Lavanda",
+        "Íris",
+        "Rosa"
+      ],
+      "base": [
+        "Almíscar",
+        "Sândalo",
+        "Cedro",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "casamorati_lira",
+    "nome": "LIRA",
+    "marca": "XERJOFF",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Oriental Baunilha",
+    "ano_lancamento": 2010,
+    "perfumistas": [
+      "Chris Maurice"
+    ],
+    "slogan": "O aroma irresistível de um bolo de limão caramelizado.",
+    "nota_avaliacao": 4.38,
+    "votos_avaliacao": 5100,
+    "frasco_imagem": "casamorati_lira_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 95,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 90,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Laranja Sanguínea",
+        "Bergamota",
+        "Lavanda"
+      ],
+      "coracao": [
+        "Canela",
+        "Alcaçuz",
+        "Jasmim"
+      ],
+      "base": [
+        "Caramelo",
+        "Baunilha",
+        "Almíscar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "chanel_les_exclusifs_1957",
+    "nome": "1957",
+    "marca": "CHANEL",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Floral Almiscarado",
+    "ano_lancamento": 2019,
+    "perfumistas": [
+      "Olivier Polge"
+    ],
+    "slogan": "Uma fusão de almíscares brancos e pureza cristalina.",
+    "nota_avaliacao": 4.29,
+    "votos_avaliacao": 1250,
+    "frasco_imagem": "chanel_les_exclusifs_1957_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Almiscarado",
+        "intensidade": 100,
+        "cor": "#F2EFF4",
+        "texto_cor": "#4D4653"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 85,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      },
+      {
+        "nome": "Citrico",
+        "intensidade": 75,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Aldeídos",
+        "Almíscar Branco",
+        "Pimenta Rosa"
+      ],
+      "coracao": [
+        "Néroli",
+        "Flor de Laranjeira",
+        "Jasmim"
+      ],
+      "base": [
+        "Almíscar",
+        "Mel",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "christian_louboutin_loubidoo",
+    "nome": "LOUBIDOO",
+    "marca": "CHRISTIAN LOUBOUTIN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Floral Frutado",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Daphne Bugey"
+    ],
+    "slogan": "Uma fragrância travessa e fascinante de morango e rosa.",
+    "nota_avaliacao": 4.08,
+    "votos_avaliacao": 310,
+    "frasco_imagem": "christian_louboutin_loubidoo_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Floral",
+        "intensidade": 100,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 90,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 80,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Morango Silvestre"
+      ],
+      "coracao": [
+        "Rosa de Maio"
+      ],
+      "base": [
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "christian_louboutin_loubirouge",
+    "nome": "LOUBIROUGE",
+    "marca": "CHRISTIAN LOUBOUTIN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Oriental Especiado",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Marie Salamagne"
+    ],
+    "slogan": "A elegância sensual da camurça vermelha em notas de íris.",
+    "nota_avaliacao": 4.31,
+    "votos_avaliacao": 490,
+    "frasco_imagem": "christian_louboutin_loubirouge_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Atalcado",
+        "intensidade": 100,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 90,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 80,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Cardamomo"
+      ],
+      "coracao": [
+        "Íris"
+      ],
+      "base": [
+        "Baunilha"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_1872_feminino",
+    "nome": "1872 FEMININO",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Floral Frutado",
+    "ano_lancamento": 2001,
+    "perfumistas": [
+      "Geza Schoen"
+    ],
+    "slogan": "A elegância botânica e majestosa de flores raras.",
+    "nota_avaliacao": 4.25,
+    "votos_avaliacao": 580,
+    "frasco_imagem": "clive_christian_1872_feminino_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Citrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 85,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      },
+      {
+        "nome": "Verde",
+        "intensidade": 75,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 520,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 490,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 640,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Bergamota",
+        "Limão",
+        "Tangerina"
+      ],
+      "coracao": [
+        "Rosa de Maio",
+        "Jasmim",
+        "Orquídea"
+      ],
+      "base": [
+        "Sândalo",
+        "Musgo de Carvalho",
+        "Almíscar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_1872_masculino",
+    "nome": "1872 MASCULINO",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Cítrico Aromático",
+    "ano_lancamento": 2001,
+    "perfumistas": [
+      "Geza Schoen"
+    ],
+    "slogan": "O frescor aristocrático de petitgrain e sálvia.",
+    "nota_avaliacao": 4.35,
+    "votos_avaliacao": 980,
+    "frasco_imagem": "clive_christian_1872_masculino_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Citrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 90,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 80,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Lima",
+        "Toranja",
+        "Petitgrain"
+      ],
+      "coracao": [
+        "Sálvia",
+        "Cilantro",
+        "Lavanda"
+      ],
+      "base": [
+        "Cedro",
+        "Sândalo",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_amberwood",
+    "nome": "AMBERWOOD",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2022,
+    "perfumistas": [
+      "Membro da Clive"
+    ],
+    "slogan": "A riqueza âmbar amadeirada com toque de sálvia.",
+    "nota_avaliacao": 4.39,
+    "votos_avaliacao": 290,
+    "frasco_imagem": "clive_christian_amberwood_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 90,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 80,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Sálvia",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Madeira de Âmbar",
+        "Madeira Branca"
+      ],
+      "base": [
+        "Vetiver",
+        "Patchouli"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_blonde_amber",
+    "nome": "BLONDE AMBER",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Ambarado",
+    "ano_lancamento": 2022,
+    "perfumistas": [
+      "Membro da Clive"
+    ],
+    "slogan": "O tabaco loiro com a sedução profunda do âmbar quente.",
+    "nota_avaliacao": 4.54,
+    "votos_avaliacao": 850,
+    "frasco_imagem": "clive_christian_blonde_amber_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Doce",
+        "intensidade": 100,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Tabaco",
+        "intensidade": 95,
+        "cor": "#8B5A2B",
+        "texto_cor": "#F7EBE8"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 90,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Rum",
+        "Gengibre",
+        "Cardamomo"
+      ],
+      "coracao": [
+        "Tabaco Loiro",
+        "Jasmim Sambac"
+      ],
+      "base": [
+        "Âmbar",
+        "Mirra",
+        "Baunilha"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_hedonist",
+    "nome": "HEDONIST",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Membro da Clive"
+    ],
+    "slogan": "A exaltação do prazer olfativo em notas ricas.",
+    "nota_avaliacao": 4.21,
+    "votos_avaliacao": 110,
+    "frasco_imagem": "clive_christian_hedonist_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Resinoso",
+        "intensidade": 90,
+        "cor": "#EAE6DB",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 80,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Gengibre",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Incenso",
+        "Jasmim"
+      ],
+      "base": [
+        "Vetiver",
+        "Patchouli",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_no_1_masculino",
+    "nome": "NO. 1 MASCULINO",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2001,
+    "perfumistas": [
+      "Geza Schoen"
+    ],
+    "slogan": "A obra-prima absoluta da perfumaria de luxo.",
+    "nota_avaliacao": 4.28,
+    "votos_avaliacao": 490,
+    "frasco_imagem": "clive_christian_no_1_masculino_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 85,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 75,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Cardamomo",
+        "Damasco",
+        "Lima"
+      ],
+      "coracao": [
+        "Lírio-do-Vale",
+        "Íris",
+        "Rosa de Maio"
+      ],
+      "base": [
+        "Sândalo Indiano",
+        "Vetiver",
+        "Baunilha"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_town_country",
+    "nome": "TOWN & COUNTRY",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Aromático Especiado",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Membro da Clive"
+    ],
+    "slogan": "A herança clássica com frescor herbáceo único.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 310,
+    "frasco_imagem": "clive_christian_town_country_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Aromático",
+        "intensidade": 100,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      },
+      {
+        "nome": "Verde",
+        "intensidade": 90,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Fresco Especiado",
+        "intensidade": 80,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 520,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 490,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 640,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Limão Sanguíneo",
+        "Sálvia Clary"
+      ],
+      "coracao": [
+        "Manjericão",
+        "Alecrim"
+      ],
+      "base": [
+        "Sândalo",
+        "Âmbar Branco"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_cashmere_musk",
+    "nome": "CASHMERE MUSK",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Floral Almiscarado",
+    "ano_lancamento": 2019,
+    "perfumistas": [
+      "Membro da Clive"
+    ],
+    "slogan": "O toque reconfortante e macio de cashmere.",
+    "nota_avaliacao": 4.22,
+    "votos_avaliacao": 95,
+    "frasco_imagem": "clive_christian_cashmere_musk_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Almiscarado",
+        "intensidade": 100,
+        "cor": "#F2EFF4",
+        "texto_cor": "#4D4653"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 85,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 75,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Almíscar Branco",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Raiz de Íris",
+        "Jasmim"
+      ],
+      "base": [
+        "Sândalo",
+        "Madeira de Cashmere"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "clive_christian_x_masculino",
+    "nome": "X MASCULINO",
+    "marca": "CLIVE CHRISTIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Amadeirado Chipre",
+    "ano_lancamento": 2001,
+    "perfumistas": [
+      "Geza Schoen"
+    ],
+    "slogan": "A sedução misteriosa de cardamomo e notas amadeiradas.",
+    "nota_avaliacao": 4.39,
+    "votos_avaliacao": 1100,
+    "frasco_imagem": "clive_christian_x_masculino_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 90,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Fresco Especiado",
+        "intensidade": 80,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Abacaxi",
+        "Ruibarbo",
+        "Cardamomo"
+      ],
+      "coracao": [
+        "Íris",
+        "Jasmim",
+        "Páprica"
+      ],
+      "base": [
+        "Cedro",
+        "Vetiver",
+        "Musgo de Carvalho",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_aventus_absolu",
+    "nome": "AVENTUS ABSOLU",
+    "marca": "CREED",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Chipre Frutado",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Erwin Creed"
+    ],
+    "slogan": "A versão mais opulenta, rica e limitada do ícone Aventus.",
+    "nota_avaliacao": 4.51,
+    "votos_avaliacao": 1250,
+    "frasco_imagem": "creed_aventus_absolu_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 90,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Fresco Especiado",
+        "intensidade": 80,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Toranja",
+        "Bergamota",
+        "Groselha Preta"
+      ],
+      "coracao": [
+        "Gengibre",
+        "Canela",
+        "Cardamomo"
+      ],
+      "base": [
+        "Vetiver",
+        "Patchouli",
+        "Pau-Rosa"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_aventus_cologne",
+    "nome": "AVENTUS COLOGNE",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Cítrico Aromático",
+    "ano_lancamento": 2018,
+    "perfumistas": [
+      "Olivier Creed"
+    ],
+    "slogan": "Uma alternativa refrescante, urbana e moderna ao clássico.",
+    "nota_avaliacao": 4.29,
+    "votos_avaliacao": 2840,
+    "frasco_imagem": "creed_aventus_cologne_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Fresco Especiado",
+        "intensidade": 85,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 75,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 520,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 490,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 640,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Tangerina",
+        "Pimenta Rosa",
+        "Gengibre"
+      ],
+      "coracao": [
+        "Vetiver",
+        "Patchouli",
+        "Sândalo"
+      ],
+      "base": [
+        "Almíscar",
+        "Bétula",
+        "Fava Tonka"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_aventus_10th_anniversary",
+    "nome": "AVENTUS 10TH ANNIVERSARY",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Chipre Frutado",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Olivier Creed"
+    ],
+    "slogan": "Edição comemorativa de 10 anos da fragrância mais famosa.",
+    "nota_avaliacao": 4.39,
+    "votos_avaliacao": 410,
+    "frasco_imagem": "creed_aventus_10th_anniversary_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Frutado",
+        "intensidade": 100,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 90,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Citrico",
+        "intensidade": 80,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Abacaxi",
+        "Bergamota",
+        "Maçã Verde"
+      ],
+      "coracao": [
+        "Bétula",
+        "Jasmin",
+        "Rosa de Damasco"
+      ],
+      "base": [
+        "Musgo de Carvalho",
+        "Almíscar",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_aventus_for_her",
+    "nome": "AVENTUS FOR HER",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Chipre Frutado",
+    "ano_lancamento": 2016,
+    "perfumistas": [
+      "Olivier Creed"
+    ],
+    "slogan": "A versão feminina empoderada, fresca e sedutora do ícone.",
+    "nota_avaliacao": 4.09,
+    "votos_avaliacao": 1620,
+    "frasco_imagem": "creed_aventus_for_her_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Frutado",
+        "intensidade": 100,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      },
+      {
+        "nome": "Citrico",
+        "intensidade": 90,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Floral",
+        "intensidade": 80,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Maçã Verde",
+        "Bergamota",
+        "Limão",
+        "Violeta"
+      ],
+      "coracao": [
+        "Rosa",
+        "Sândalo",
+        "Almíscar"
+      ],
+      "base": [
+        "Pêssego",
+        "Groselha Preta",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_himalaya",
+    "nome": "HIMALAYA",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2002,
+    "perfumistas": [
+      "Erwin Creed"
+    ],
+    "slogan": "O frescor glacial e o ar puro das montanhas do Himalaia.",
+    "nota_avaliacao": 4.19,
+    "votos_avaliacao": 2100,
+    "frasco_imagem": "creed_himalaya_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 85,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Almiscarado",
+        "intensidade": 75,
+        "cor": "#F2EFF4",
+        "texto_cor": "#4D4653"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Calábria",
+        "Toranja",
+        "Limão Siciliano"
+      ],
+      "coracao": [
+        "Sândalo"
+      ],
+      "base": [
+        "Almíscar Branco",
+        "Âmbargris",
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_green_irish_tweed",
+    "nome": "GREEN IRISH TWEED",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Amadeirado Floral Almiscarado",
+    "ano_lancamento": 1985,
+    "perfumistas": [
+      "Olivier Creed",
+      "Pierre Bourdon"
+    ],
+    "perfumistas_detalhes": [
+      {
+        "nome": "Olivier Creed",
+        "foto": "fotos/perfumistas/olivier_creed.jpg"
+      },
+      {
+        "nome": "Pierre Bourdon",
+        "foto": "fotos/perfumistas/pierre_bourdon.jpg"
+      }
+    ],
+    "slogan": "Uma caminhada clássica pela verdejante e fresca Irlanda.",
+    "nota_avaliacao": 4.29,
+    "votos_avaliacao": 12023,
+    "frasco_imagem": "creed_green_irish_tweed_composicao.png",
+    "principais_acordes": [
+      {
+        "nome": "Ozônico",
+        "intensidade": 100.0,
+        "cor": "#c9fdfb",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Aquático",
+        "intensidade": 81.5786,
+        "cor": "#63cce2",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Íris",
+        "intensidade": 79.3784,
+        "cor": "#b7a7d7",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 79.3784,
+        "cor": "#eeddcc",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 79.3784,
+        "cor": "#774414",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 77.8923,
+        "cor": "#bc4d10",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Animálico",
+        "intensidade": 58.7353,
+        "cor": "#8e4b13",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Violeta",
+        "intensidade": 54.689,
+        "cor": "#9c1dff",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Balsâmico",
+        "intensidade": 52.2684,
+        "cor": "#ad8359",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Verde",
+        "intensidade": 52.1054,
+        "cor": "#0e8c1d",
+        "texto_cor": "#000000"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 5600,
+      "noite": 2500
+    },
+    "percepcao_genero": {
+      "feminino": 53,
+      "mais_feminino": 15,
+      "unissex": 261,
+      "mais_masculino": 1100,
+      "masculino": 3200,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 1400,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 6000,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 5000,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 3600,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Íris",
+        "Verbena"
+      ],
+      "coracao": [
+        "Folha de Violeta"
+      ],
+      "base": [
+        "Âmbar Cinzento",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_millesime_imperial",
+    "nome": "MILLÉSIME IMPÉRIAL",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Amadeirado Floral",
+    "ano_lancamento": 1995,
+    "perfumistas": [
+      "Olivier Creed"
+    ],
+    "slogan": "O brilho dourado do sol mediterrâneo com notas marinhas.",
+    "nota_avaliacao": 4.29,
+    "votos_avaliacao": 4120,
+    "frasco_imagem": "creed_millesime_imperial_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Marinho",
+        "intensidade": 100,
+        "cor": "#D4F0FC",
+        "texto_cor": "#2A4E5E"
+      },
+      {
+        "nome": "Cítrico",
+        "intensidade": 90,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Salgado",
+        "intensidade": 80,
+        "cor": "#F5EFE6",
+        "texto_cor": "#504E4A"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Sal Marinho",
+        "Frutas Cítricas"
+      ],
+      "coracao": [
+        "Limão Siciliano",
+        "Tangerina",
+        "Íris"
+      ],
+      "base": [
+        "Almíscar",
+        "Notas Amadeiradas"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_silver_mountain_water",
+    "nome": "SILVER MOUNTAIN WATER",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Aromático Verde",
+    "ano_lancamento": 1995,
+    "perfumistas": [
+      "Olivier Creed"
+    ],
+    "slogan": "O frescor cristalino das correntes de água dos alpes suíços.",
+    "nota_avaliacao": 4.22,
+    "votos_avaliacao": 6120,
+    "frasco_imagem": "creed_silver_mountain_water_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Verde",
+        "intensidade": 100,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Cítrico",
+        "intensidade": 90,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Almiscarado",
+        "intensidade": 80,
+        "cor": "#F2EFF4",
+        "texto_cor": "#4D4653"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Bergamota",
+        "Tangerina"
+      ],
+      "coracao": [
+        "Chá Verde",
+        "Groselha Preta"
+      ],
+      "base": [
+        "Almíscar",
+        "Petitgrain",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_sublime_vanille",
+    "nome": "SUBLIME VANILLE",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Baunilha",
+    "ano_lancamento": 2009,
+    "perfumistas": [
+      "Olivier Creed"
+    ],
+    "slogan": "A baunilha mais delicada, pura e luxuosa da perfumaria.",
+    "nota_avaliacao": 4.24,
+    "votos_avaliacao": 1280,
+    "frasco_imagem": "creed_sublime_vanille_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Baunilha",
+        "intensidade": 100,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Citrico",
+        "intensidade": 90,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 80,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Baunilha de Bourbon",
+        "Orquídea de Baunilha"
+      ],
+      "coracao": [
+        "Fava Tonka"
+      ],
+      "base": [
+        "Limão",
+        "Bergamota",
+        "Almíscar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "creed_virgin_island_water",
+    "nome": "VIRGIN ISLAND WATER",
+    "marca": "CREED",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Cítrico Aromático",
+    "ano_lancamento": 2007,
+    "perfumistas": [
+      "Olivier Creed"
+    ],
+    "slogan": "O aroma paradisíaco de coco e limão do Caribe.",
+    "nota_avaliacao": 4.38,
+    "votos_avaliacao": 5890,
+    "frasco_imagem": "creed_virgin_island_water_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Coco",
+        "intensidade": 100,
+        "cor": "#F5EFE6",
+        "texto_cor": "#504E4A"
+      },
+      {
+        "nome": "Citrico",
+        "intensidade": 95,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 85,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Coco",
+        "Limão Tahiti",
+        "Laranja Sanguínea"
+      ],
+      "coracao": [
+        "Incenso",
+        "Gengibre",
+        "Jasmim"
+      ],
+      "base": [
+        "Rum Branco",
+        "Açúcar de Cana",
+        "Almíscar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "diptyque_fleur_de_peau",
+    "nome": "FLEUR DE PEAU",
+    "marca": "DIPTYQUE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Floral Almiscarado",
+    "ano_lancamento": 2018,
+    "perfumistas": [
+      "Olivier Pescheux"
+    ],
+    "slogan": "A pele limpa, macia e atalcada pela presença da íris.",
+    "nota_avaliacao": 4.31,
+    "votos_avaliacao": 2840,
+    "frasco_imagem": "diptyque_fleur_de_peau_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Almiscarado",
+        "intensidade": 100,
+        "cor": "#F2EFF4",
+        "texto_cor": "#4D4653"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 90,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      },
+      {
+        "nome": "Íris",
+        "intensidade": 85,
+        "cor": "#EADBF0",
+        "texto_cor": "#2D2630"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Aldeídos",
+        "Pimenta Rosa",
+        "Angélica"
+      ],
+      "coracao": [
+        "Íris",
+        "Rosa de Maio"
+      ],
+      "base": [
+        "Almíscar",
+        "Ambreta",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "diptyque_philosykos",
+    "nome": "PHILOSYKOS",
+    "marca": "DIPTYQUE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Aromático Verde",
+    "ano_lancamento": 1996,
+    "perfumistas": [
+      "Olivia Giacobetti"
+    ],
+    "slogan": "O aroma verde, leitoso e natural de uma figueira grega inteira.",
+    "nota_avaliacao": 4.29,
+    "votos_avaliacao": 5100,
+    "frasco_imagem": "diptyque_philosykos_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Verde",
+        "intensidade": 100,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Figo",
+        "intensidade": 90,
+        "cor": "#D2B48C",
+        "texto_cor": "#4E3629"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 80,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Folha de Figo",
+        "Figo"
+      ],
+      "coracao": [
+        "Coco",
+        "Notas Verdes"
+      ],
+      "base": [
+        "Figueira",
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "frederic_malle_portrait_of_a_lady",
+    "nome": "PORTRAIT OF A LADY",
+    "marca": "FREDERIC MALLE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Oriental Floral",
+    "ano_lancamento": 2010,
+    "perfumistas": [
+      "Dominique Ropion"
+    ],
+    "slogan": "A obra-prima mais enigmática, escura e sensual de rosas.",
+    "nota_avaliacao": 4.38,
+    "votos_avaliacao": 6120,
+    "frasco_imagem": "frederic_malle_portrait_of_a_lady_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Rosa",
+        "intensidade": 100,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 90,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Patchouli",
+        "intensidade": 85,
+        "cor": "#EAE6DB",
+        "texto_cor": "#4E4B3E"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Rosa Turca",
+        "Cravo-da-Índia",
+        "Framboesa"
+      ],
+      "coracao": [
+        "Patchouli",
+        "Incenso",
+        "Groselha Preta"
+      ],
+      "base": [
+        "Sândalo",
+        "Almíscar",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "guerlain_iris_pallida",
+    "nome": "IRIS PALLIDA",
+    "marca": "GUERLAIN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Floral Atalcado",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Delphine Jelk"
+    ],
+    "slogan": "A elegância intemporal e atalcada da preciosa íris pallida.",
+    "nota_avaliacao": 4.45,
+    "votos_avaliacao": 190,
+    "frasco_imagem": "guerlain_iris_pallida_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Atalcado",
+        "intensidade": 100,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      },
+      {
+        "nome": "Íris",
+        "intensidade": 95,
+        "cor": "#EADBF0",
+        "texto_cor": "#2D2630"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 80,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Calábria",
+        "Ambreta"
+      ],
+      "coracao": [
+        "Íris Pallida",
+        "Violeta"
+      ],
+      "base": [
+        "Sândalo",
+        "Almíscar Branco"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "guerlain_tobacco_honey",
+    "nome": "TOBACCO HONEY",
+    "marca": "GUERLAIN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Delphine Jelk"
+    ],
+    "slogan": "A fusão pecaminosa de folhas de tabaco melosas e amadeiradas.",
+    "nota_avaliacao": 4.48,
+    "votos_avaliacao": 1280,
+    "frasco_imagem": "guerlain_tobacco_honey_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Doce",
+        "intensidade": 100,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Mel",
+        "intensidade": 95,
+        "cor": "#FFDF00",
+        "texto_cor": "#4E3E00"
+      },
+      {
+        "nome": "Tabaco",
+        "intensidade": 90,
+        "cor": "#8B5A2B",
+        "texto_cor": "#F7EBE8"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Mel de Flor de Laranjeira",
+        "Cravo-da-Índia"
+      ],
+      "coracao": [
+        "Folha de Tabaco",
+        "Canela",
+        "Baunilha"
+      ],
+      "base": [
+        "Oud",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "guerlain_vanilla_planifolia",
+    "nome": "VANILLA PLANIFOLIA",
+    "marca": "GUERLAIN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Baunilha",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Delphine Jelk"
+    ],
+    "slogan": "A mais autêntica e preciosa tintura de baunilha planifolia.",
+    "nota_avaliacao": 4.52,
+    "votos_avaliacao": 210,
+    "frasco_imagem": "guerlain_vanilla_planifolia_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Baunilha",
+        "intensidade": 100,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 90,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 80,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Tintura de Baunilha"
+      ],
+      "coracao": [
+        "Absoluto de Baunilha",
+        "Especiarias"
+      ],
+      "base": [
+        "Sândalo",
+        "Almíscar Branco"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "kilian_angels_share",
+    "nome": "ANGELS' SHARE",
+    "marca": "KILIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Baunilha",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Benoist Lapouza"
+    ],
+    "slogan": "O aroma de conhaque envelhecido em barris de carvalho.",
+    "nota_avaliacao": 4.53,
+    "votos_avaliacao": 9100,
+    "frasco_imagem": "kilian_angels_share_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Doce",
+        "intensidade": 100,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 90,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Canela",
+        "intensidade": 85,
+        "cor": "#D2B48C",
+        "texto_cor": "#4E3629"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Conhaque"
+      ],
+      "coracao": [
+        "Canela",
+        "Fava Tonka",
+        "Carvalho"
+      ],
+      "base": [
+        "Baunilha",
+        "Pralinê",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "kilian_love_dont_be_shy",
+    "nome": "LOVE, DON'T BE SHY",
+    "marca": "KILIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Oriental Floral",
+    "ano_lancamento": 2007,
+    "perfumistas": [
+      "Calice Becker"
+    ],
+    "slogan": "A doçura irresistível e chiclete de marshmallow e néroli.",
+    "nota_avaliacao": 4.19,
+    "votos_avaliacao": 5890,
+    "frasco_imagem": "kilian_love_dont_be_shy_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Doce",
+        "intensidade": 100,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Floral Branco",
+        "intensidade": 90,
+        "cor": "#EADBF0",
+        "texto_cor": "#2D2630"
+      },
+      {
+        "nome": "Cítrico",
+        "intensidade": 80,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Flor de Laranjeira",
+        "Néroli",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Marshmallow",
+        "Rosa Turca",
+        "Jasmim"
+      ],
+      "base": [
+        "Caramelo",
+        "Baunilha",
+        "Almíscar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "maison_crivelli_hibiscus_mahajad",
+    "nome": "HIBISCUS MAHAJAD",
+    "marca": "MAISON CRIVELLI",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Floral",
+    "ano_lancamento": 2021,
+    "perfumistas": [
+      "Quentin Bisch"
+    ],
+    "slogan": "O contraste marcante de hibisco ácido e couro doce.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 1280,
+    "frasco_imagem": "maison_crivelli_hibiscus_mahajad_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Floral",
+        "intensidade": 100,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 90,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Fresco",
+        "intensidade": 80,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Hibisco",
+        "Cassis"
+      ],
+      "coracao": [
+        "Rosa de Damasco",
+        "Hortelã"
+      ],
+      "base": [
+        "Baunilha",
+        "Couro",
+        "Ambreta"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "maison_francis_kurkdjian_baccarat_rouge_540_edp",
+    "nome": "BACCARAT ROUGE 540 EDP",
+    "marca": "MAISON FRANCIS KURKDJIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Floral",
+    "ano_lancamento": 2015,
+    "perfumistas": [
+      "Francis Kurkdjian"
+    ],
+    "slogan": "A alquimia poética da madeira e do açafrão.",
+    "nota_avaliacao": 4.15,
+    "votos_avaliacao": 8200,
+    "frasco_imagem": "maison_francis_kurkdjian_baccarat_rouge_540_edp_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 95,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 85,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Açafrão",
+        "Jasmim"
+      ],
+      "coracao": [
+        "Madeira de Âmbar",
+        "Ambergris"
+      ],
+      "base": [
+        "Resina de Abeto",
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "maison_francis_kurkdjian_gentle_fluidity_silver",
+    "nome": "GENTLE FLUIDITY SILVER",
+    "marca": "MAISON FRANCIS KURKDJIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Aromático Amadeirado",
+    "ano_lancamento": 2019,
+    "perfumistas": [
+      "Francis Kurkdjian"
+    ],
+    "slogan": "O frescor metálico e vibrante das bagas de zimbro.",
+    "nota_avaliacao": 4.39,
+    "votos_avaliacao": 2450,
+    "frasco_imagem": "maison_francis_kurkdjian_gentle_fluidity_silver_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Aromático",
+        "intensidade": 100,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      },
+      {
+        "nome": "Especiado Fresco",
+        "intensidade": 90,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 80,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Bagas de Zimbro",
+        "Cilantro"
+      ],
+      "coracao": [
+        "Nez-de-Musc",
+        "Raiz de Íris"
+      ],
+      "base": [
+        "Notas Amadeiradas",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "maison_francis_kurkdjian_grand_soir",
+    "nome": "GRAND SOIR",
+    "marca": "MAISON FRANCIS KURKDJIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Ambarado",
+    "ano_lancamento": 2016,
+    "perfumistas": [
+      "Francis Kurkdjian"
+    ],
+    "slogan": "A luminosidade dourada de uma noite parisiense.",
+    "nota_avaliacao": 4.54,
+    "votos_avaliacao": 4900,
+    "frasco_imagem": "maison_francis_kurkdjian_grand_soir_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Âmbar",
+        "intensidade": 100,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 90,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Balsâmico",
+        "intensidade": 85,
+        "cor": "#FAF0E6",
+        "texto_cor": "#4B443A"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Labdanum Espanhol"
+      ],
+      "coracao": [
+        "Benzoin do Sião",
+        "Fava Tonka"
+      ],
+      "base": [
+        "Âmbar",
+        "Baunilha"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "maison_francis_kurkdjian_oud_satin_mood",
+    "nome": "OUD SATIN MOOD",
+    "marca": "MAISON FRANCIS KURKDJIAN",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2015,
+    "perfumistas": [
+      "Francis Kurkdjian"
+    ],
+    "slogan": "A rosa e o oud envolvidos em cetim suave.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 3100,
+    "frasco_imagem": "maison_francis_kurkdjian_oud_satin_mood_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Rosa",
+        "intensidade": 100,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 90,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Oud",
+        "intensidade": 85,
+        "cor": "#D2B48C",
+        "texto_cor": "#4E3629"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Rosa Búlgara",
+        "Violeta"
+      ],
+      "coracao": [
+        "Rosa de Damasco",
+        "Oud da Turquia"
+      ],
+      "base": [
+        "Baunilha",
+        "Benzoin",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "nishane_ani",
+    "nome": "ANI",
+    "marca": "NISHANE",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2019,
+    "perfumistas": [
+      "Cecile Zarokian"
+    ],
+    "slogan": "A baunilha mais complexa e aclamada da perfumaria.",
+    "nota_avaliacao": 4.31,
+    "votos_avaliacao": 3400,
+    "frasco_imagem": "nishane_ani_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Baunilha",
+        "intensidade": 100,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 90,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 85,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Gengibre",
+        "Bergamota",
+        "Pimenta Rosa"
+      ],
+      "coracao": [
+        "Groselha Preta",
+        "Cardamomo",
+        "Rosa"
+      ],
+      "base": [
+        "Baunilha",
+        "Sândalo",
+        "Âmbargris",
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "nishane_hacivat",
+    "nome": "HACIVAT",
+    "marca": "NISHANE",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Chipre Frutado",
+    "ano_lancamento": 2017,
+    "perfumistas": [
+      "Jorge Lee"
+    ],
+    "slogan": "A explosão de abacaxi maduro com musgo de carvalho marcante.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 3746,
+    "frasco_imagem": "nishane_hacivat_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 85,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 80,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Abacaxi",
+        "Toranja",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Cedro",
+        "Jasmin",
+        "Patchouli"
+      ],
+      "base": [
+        "Musgo de Carvalho",
+        "Notas Amadeiradas"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "parfums_de_marly_althair",
+    "nome": "ALTHAÏR",
+    "marca": "PARFUMS DE MARLY",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Baunilha",
+    "ano_lancamento": 2023,
+    "perfumistas": [
+      "Hamid Merati-Kashani"
+    ],
+    "slogan": "Uma ode nobre, fresca e cremosa à baunilha de Bourbon.",
+    "nota_avaliacao": 4.38,
+    "votos_avaliacao": 1150,
+    "frasco_imagem": "parfums_de_marly_althair_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Baunilha",
+        "intensidade": 100,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 90,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 80,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Canela",
+        "Cardamomo",
+        "Flor de Laranjeira"
+      ],
+      "coracao": [
+        "Baunilha de Bourbon",
+        "Elemi"
+      ],
+      "base": [
+        "Pralinê",
+        "Almíscar Branco",
+        "Guaiac"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "parfums_de_marly_delina",
+    "nome": "DELINA",
+    "marca": "PARFUMS DE MARLY",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Floral Frutado",
+    "ano_lancamento": 2017,
+    "perfumistas": [
+      "Quentin Bisch"
+    ],
+    "slogan": "A majestade da rosa turca com a doçura da lichia.",
+    "nota_avaliacao": 4.29,
+    "votos_avaliacao": 5890,
+    "frasco_imagem": "parfums_de_marly_delina_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Floral",
+        "intensidade": 100,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      },
+      {
+        "nome": "Rosa",
+        "intensidade": 95,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 85,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Lichia",
+        "Ruibarbo",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Rosa Turca",
+        "Peônia",
+        "Almíscar"
+      ],
+      "base": [
+        "Cashmeran",
+        "Cedro",
+        "Vetiver"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "parfums_de_marly_greenley",
+    "nome": "GREENLEY",
+    "marca": "PARFUMS DE MARLY",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Aromático Verde",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Membro da Marly"
+    ],
+    "slogan": "A energia refrescante e crocante da maçã verde.",
+    "nota_avaliacao": 4.25,
+    "votos_avaliacao": 1420,
+    "frasco_imagem": "parfums_de_marly_greenley_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Verde",
+        "intensidade": 100,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Cítrico",
+        "intensidade": 90,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 80,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Maçã Verde",
+        "Calábria",
+        "Tangerina"
+      ],
+      "coracao": [
+        "Petitgrain",
+        "Cedro",
+        "Violeta"
+      ],
+      "base": [
+        "Almíscar",
+        "Musgo de Carvalho",
+        "Amberwood"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "parfums_de_marly_haltane",
+    "nome": "HALTANE",
+    "marca": "PARFUMS DE MARLY",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2021,
+    "perfumistas": [
+      "Membro da Marly"
+    ],
+    "slogan": "A mistura nobre e doce de açafrão, pralinê e oud.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 1280,
+    "frasco_imagem": "parfums_de_marly_haltane_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Oud",
+        "intensidade": 100,
+        "cor": "#D2B48C",
+        "texto_cor": "#4E3629"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 90,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 85,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Sálvia Sclarea",
+        "Lavanda",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Pralinê",
+        "Açafrão"
+      ],
+      "base": [
+        "Oud",
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "parfums_de_marly_layton",
+    "nome": "LAYTON",
+    "marca": "PARFUMS DE MARLY",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Floral",
+    "ano_lancamento": 2016,
+    "perfumistas": [
+      "Hamid Merati-Kashani"
+    ],
+    "slogan": "A fusão perfeita de maçã, lavanda e baunilha.",
+    "nota_avaliacao": 4.45,
+    "votos_avaliacao": 8200,
+    "frasco_imagem": "parfums_de_marly_layton_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 100,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 95,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Citrico",
+        "intensidade": 85,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Maçã",
+        "Lavanda",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Gerânio",
+        "Violeta",
+        "Jasmim"
+      ],
+      "base": [
+        "Baunilha",
+        "Cardamomo",
+        "Sândalo",
+        "Guaiac"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "penhaligons_halfeti",
+    "nome": "HALFETI",
+    "marca": "PENHALIGON'S",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2015,
+    "perfumistas": [
+      "Christian Provenzano"
+    ],
+    "slogan": "A rosa negra misteriosa envolta em especiarias e couro.",
+    "nota_avaliacao": 4.39,
+    "votos_avaliacao": 2840,
+    "frasco_imagem": "penhaligons_halfeti_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 100,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 90,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Couro",
+        "intensidade": 80,
+        "cor": "#D2B48C",
+        "texto_cor": "#4E3629"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Folha de Cipreste",
+        "Açafrão",
+        "Cardamomo"
+      ],
+      "coracao": [
+        "Rosa",
+        "Nutmeg",
+        "Jasmin"
+      ],
+      "base": [
+        "Couro",
+        "Oud",
+        "Cedro",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "penhaligons_luna",
+    "nome": "LUNA",
+    "marca": "PENHALIGON'S",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Feminino",
+    "familia_olfativa": "Floral Cítrico",
+    "ano_lancamento": 2016,
+    "perfumistas": [
+      "Membro da Penhaligon"
+    ],
+    "slogan": "O frescor poético e etéreo da lua refletida nas rosas.",
+    "nota_avaliacao": 4.29,
+    "votos_avaliacao": 1150,
+    "frasco_imagem": "penhaligons_luna_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Fresco",
+        "intensidade": 90,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Rose",
+        "intensidade": 80,
+        "cor": "#FBE3E8",
+        "texto_cor": "#5B2C36"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 240,
+      "mais_feminino": 130,
+      "unissex": 50,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "feminino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Limão",
+        "Bergamota",
+        "Laranja Sanguínea"
+      ],
+      "coracao": [
+        "Rosa",
+        "Jasmim",
+        "Bagas de Zimbro"
+      ],
+      "base": [
+        "Almíscar",
+        "Abeto",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "penhaligons_the_tragedy_of_lord_george",
+    "nome": "THE TRAGEDY OF LORD GEORGE",
+    "marca": "PENHALIGON'S",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2016,
+    "perfumistas": [
+      "Alberto Morillas"
+    ],
+    "slogan": "A sofisticação britânica em notas aristocráticas de conhaque.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 1280,
+    "frasco_imagem": "penhaligons_the_tragedy_of_lord_george_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Rum",
+        "intensidade": 95,
+        "cor": "#F5EFE6",
+        "texto_cor": "#504E4A"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 80,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Conhaque"
+      ],
+      "coracao": [
+        "Notas de Barbear",
+        "Sabão"
+      ],
+      "base": [
+        "Madeira de Âmbar",
+        "Fava Tonka"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "replica_by_the_fireplace",
+    "nome": "BY THE FIREPLACE",
+    "marca": "REPLICA",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2015,
+    "perfumistas": [
+      "Marie Salamagne"
+    ],
+    "slogan": "O calor aconchegante de castanhas assadas na lareira.",
+    "nota_avaliacao": 4.31,
+    "votos_avaliacao": 6800,
+    "frasco_imagem": "replica_by_the_fireplace_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 90,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Balsâmico",
+        "intensidade": 80,
+        "cor": "#FAF0E6",
+        "texto_cor": "#4B443A"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Cravo-da-Índia",
+        "Pimenta Rosa",
+        "Flor de Laranjeira"
+      ],
+      "coracao": [
+        "Castanha",
+        "Madeira Guaiac",
+        "Zimbro"
+      ],
+      "base": [
+        "Baunilha",
+        "Peru Balsam",
+        "Cashmeran"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "replica_jazz_club",
+    "nome": "JAZZ CLUB",
+    "marca": "REPLICA",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Couro",
+    "ano_lancamento": 2013,
+    "perfumistas": [
+      "Alienor Massenet"
+    ],
+    "slogan": "O clima boêmio de copos de rum e charutos em um clube de jazz.",
+    "nota_avaliacao": 4.25,
+    "votos_avaliacao": 5890,
+    "frasco_imagem": "replica_jazz_club_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Tabaco",
+        "intensidade": 100,
+        "cor": "#8B5A2B",
+        "texto_cor": "#F7EBE8"
+      },
+      {
+        "nome": "Rum",
+        "intensidade": 95,
+        "cor": "#F5EFE6",
+        "texto_cor": "#504E4A"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 85,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Pimenta Rosa",
+        "Néroli",
+        "Limão"
+      ],
+      "coracao": [
+        "Rum",
+        "Óleo de Vetiver Java",
+        "Sálvia Clary"
+      ],
+      "base": [
+        "Folha de Tabaco",
+        "Vagem de Baunilha",
+        "Styrax"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "roja_parfums_burlington_1819",
+    "nome": "BURLINGTON 1819",
+    "marca": "ROJA PARFUMS",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Roja Dove"
+    ],
+    "slogan": "A explosão de cítricos e menta com a sofisticação do âmbar.",
+    "nota_avaliacao": 4.49,
+    "votos_avaliacao": 580,
+    "frasco_imagem": "roja_parfums_burlington_1819_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Fresco Especiado",
+        "intensidade": 75,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 65,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Âmbar",
+        "intensidade": 55,
+        "cor": "#FFA07A",
+        "texto_cor": "#4E2E20"
+      },
+      {
+        "nome": "Verde",
+        "intensidade": 50,
+        "cor": "#DFEBD5",
+        "texto_cor": "#41562B"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 45,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      },
+      {
+        "nome": "Almiscarado",
+        "intensidade": 30,
+        "cor": "#F2EFF4",
+        "texto_cor": "#4D4653"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 660,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 620,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 820,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Toranja",
+        "Hortelã",
+        "Lima",
+        "Laranja Amarga",
+        "Mandarina"
+      ],
+      "coracao": [
+        "Gengibre",
+        "Cominho",
+        "Açafrão",
+        "Canela",
+        "Benjoim",
+        "Ládano"
+      ],
+      "base": [
+        "Tabaco",
+        "Âmbar Cinzento",
+        "Musgo de Carvalho",
+        "Rum",
+        "Madeira de Cashmere",
+        "Almíscar",
+        "Cedro",
+        "Baunilha"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "roja_parfums_elysium_cologne",
+    "nome": "ELYSIUM (COLOGNE)",
+    "marca": "ROJA PARFUMS",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Cítrico Aromático",
+    "ano_lancamento": 2017,
+    "perfumistas": [
+      "Roja Dove"
+    ],
+    "slogan": "O ápice do frescor aristocrático frutado com vetiver.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 3400,
+    "frasco_imagem": "roja_parfums_elysium_cologne_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Cítrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 90,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 80,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Moderada",
+      "longevidade_horas": "3 - 6 h",
+      "rastro_texto": "Moderado"
+    },
+    "diurno_votos": {
+      "dia": 380,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 360,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 460,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Toranja",
+        "Limão",
+        "Gálbano",
+        "Lima"
+      ],
+      "coracao": [
+        "Vetiver",
+        "Bagas de Zimbro",
+        "Gengibre"
+      ],
+      "base": [
+        "Ambergris",
+        "Couro",
+        "Musgo de Carvalho",
+        "Baunilha"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "roja_parfums_enigma",
+    "nome": "ENIGMA",
+    "marca": "ROJA PARFUMS",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2013,
+    "perfumistas": [
+      "Roja Dove"
+    ],
+    "slogan": "O aroma sedutor de Coca-Cola gelada com rum e tabaco.",
+    "nota_avaliacao": 4.48,
+    "votos_avaliacao": 1280,
+    "frasco_imagem": "roja_parfums_enigma_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 100,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      },
+      {
+        "nome": "Tabaco",
+        "intensidade": 90,
+        "cor": "#8B5A2B",
+        "texto_cor": "#F7EBE8"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 85,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 50,
+      "mais_masculino": 130,
+      "masculino": 240,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Bergamota"
+      ],
+      "coracao": [
+        "Heliotrópio",
+        "Jasmim",
+        "Rosa de Maio"
+      ],
+      "base": [
+        "Tabaco",
+        "Conhaque",
+        "Baunilha",
+        "Benzoin"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "tom_ford_lost_cherry",
+    "nome": "LOST CHERRY",
+    "marca": "TOM FORD",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Floral",
+    "ano_lancamento": 2018,
+    "perfumistas": [
+      "Louise Turner"
+    ],
+    "slogan": "O aroma doce e licoroso de cereja preta e amêndoa amarga.",
+    "nota_avaliacao": 4.1,
+    "votos_avaliacao": 5980,
+    "frasco_imagem": "tom_ford_lost_cherry_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Doce",
+        "intensidade": 100,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 95,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      },
+      {
+        "nome": "Amêndoa",
+        "intensidade": 85,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Cereja Preta",
+        "Licor de Cereja",
+        "Amêndoa Amarga"
+      ],
+      "coracao": [
+        "Rosa Turca",
+        "Jasmim Sambac"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Sândalo",
+        "Vetiver"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "tom_ford_oud_wood",
+    "nome": "OUD WOOD",
+    "marca": "TOM FORD",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2007,
+    "perfumistas": [
+      "Richard Herpin"
+    ],
+    "slogan": "A sofisticação amadeirada clássica de oud e sândalo.",
+    "nota_avaliacao": 4.42,
+    "votos_avaliacao": 8100,
+    "frasco_imagem": "tom_ford_oud_wood_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Oud",
+        "intensidade": 90,
+        "cor": "#D2B48C",
+        "texto_cor": "#4E3629"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 80,
+        "cor": "#F5E6D3",
+        "texto_cor": "#614D35"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 580
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 640,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 490,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Pimenta Sichuan",
+        "Cardamomo"
+      ],
+      "coracao": [
+        "Agarwood (Oud)",
+        "Sândalo",
+        "Vetiver"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Baunilha",
+        "Âmbar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "xerjoff_alexandria_ii",
+    "nome": "ALEXANDRIA II",
+    "marca": "XERJOFF",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2012,
+    "perfumistas": [
+      "Chris Maurice"
+    ],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 3400,
+    "frasco_imagem": "xerjoff_alexandria_ii_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Amadeirado",
+        "intensidade": 100,
+        "cor": "#E7D8C9",
+        "texto_cor": "#554A3C"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 90,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      },
+      {
+        "nome": "Lavanda",
+        "intensidade": 85,
+        "cor": "#EADBF0",
+        "texto_cor": "#2D2630"
+      },
+      {
+        "nome": "Oud",
+        "intensidade": 80,
+        "cor": "#D2B48C",
+        "texto_cor": "#4E3629"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 100,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 100,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 100,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Jacarandá",
+        "Lavanda",
+        "Canela",
+        "Maçã"
+      ],
+      "coracao": [
+        "Rosa",
+        "Cedro",
+        "Lírio-do-Vale"
+      ],
+      "base": [
+        "Oud",
+        "Sândalo",
+        "Âmbar",
+        "Baunilha"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Elegante",
+      "Alta Fixação na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "xerjoff_erba_pura",
+    "nome": "ERBA PURA",
+    "marca": "XERJOFF",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Frutado",
+    "ano_lancamento": 2019,
+    "perfumistas": [
+      "Christian Carbonnel",
+      "Laura Santander"
+    ],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.22,
+    "votos_avaliacao": 5890,
+    "frasco_imagem": "xerjoff_erba_pura_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Frutado",
+        "intensidade": 100,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      },
+      {
+        "nome": "Citrico",
+        "intensidade": 90,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 85,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Almiscarado",
+        "intensidade": 80,
+        "cor": "#F2EFF4",
+        "texto_cor": "#4D4653"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Laranja Sanguínea",
+        "Bergamota",
+        "Limão Siciliano"
+      ],
+      "coracao": [
+        "Frutas Médias"
+      ],
+      "base": [
+        "Almíscar Branco",
+        "Âmbar Cinzento",
+        "Baunilha de Madagascar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Elegante",
+      "Alta Fixação na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "xerjoff_naxos",
+    "nome": "NAXOS",
+    "marca": "XERJOFF",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Oriental Especiado",
+    "ano_lancamento": 2015,
+    "perfumistas": [
+      "Chris Maurice"
+    ],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.51,
+    "votos_avaliacao": 8200,
+    "frasco_imagem": "xerjoff_naxos_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Doce",
+        "intensidade": 100,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Mel",
+        "intensidade": 95,
+        "cor": "#FFDF00",
+        "texto_cor": "#4E3E00"
+      },
+      {
+        "nome": "Tabaco",
+        "intensidade": 90,
+        "cor": "#8B5A2B",
+        "texto_cor": "#F7EBE8"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 85,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 75,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 740
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 820,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 620,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Lavanda",
+        "Bergamota",
+        "Limão"
+      ],
+      "coracao": [
+        "Mel",
+        "Canela",
+        "Cashmeran",
+        "Jasmim Sambac"
+      ],
+      "base": [
+        "Folha de Tabaco",
+        "Baunilha",
+        "Fava Tonka"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Elegante",
+      "Alta Fixação na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "xerjoff_renaissance",
+    "nome": "RENAISSANCE",
+    "marca": "XERJOFF",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Cítrico Aromático",
+    "ano_lancamento": 2011,
+    "perfumistas": [
+      "Chris Maurice"
+    ],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.35,
+    "votos_avaliacao": 1280,
+    "frasco_imagem": "xerjoff_renaissance_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Citrico",
+        "intensidade": 100,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Verde",
+        "intensidade": 90,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 85,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 520,
+      "noite": 100
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 100,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 490,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 640,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 100,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Limão de Amalfi",
+        "Tangerina",
+        "Bergamota",
+        "Petitgrain"
+      ],
+      "coracao": [
+        "Hortelã",
+        "Lírio-do-Vale",
+        "Rosa"
+      ],
+      "base": [
+        "Almíscar",
+        "Âmbar",
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Elegante",
+      "Alta Fixação na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "xerjoff_torino_21",
+    "nome": "TORINO 21",
+    "marca": "XERJOFF",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Aromático Verde",
+    "ano_lancamento": 2021,
+    "perfumistas": [
+      "Chris Maurice"
+    ],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.45,
+    "votos_avaliacao": 1250,
+    "frasco_imagem": "xerjoff_torino_21_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Verde",
+        "intensidade": 100,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      },
+      {
+        "nome": "Citrico",
+        "intensidade": 95,
+        "cor": "#FFF5AD",
+        "texto_cor": "#4B441B"
+      },
+      {
+        "nome": "Aromático",
+        "intensidade": 90,
+        "cor": "#E2ECE9",
+        "texto_cor": "#3B524C"
+      },
+      {
+        "nome": "Fresco Especiado",
+        "intensidade": 80,
+        "cor": "#EAF2D5",
+        "texto_cor": "#49562B"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 660,
+      "noite": 260
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 280,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 620,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 820,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 230,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Hortelã",
+        "Limão",
+        "Manjericão",
+        "Alecrim"
+      ],
+      "coracao": [
+        "Lavanda",
+        "Groselha Preta",
+        "Jasmim",
+        "Verbena"
+      ],
+      "base": [
+        "Almíscar",
+        "Cedro"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Elegante",
+      "Alta Fixação na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "xerjoff_torino_25",
+    "nome": "TORINO 25",
+    "marca": "XERJOFF",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "",
+    "ano_lancamento": 2022,
+    "perfumistas": [],
+    "perfumistas_detalhes": [],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.08,
+    "votos_avaliacao": 13,
+    "frasco_imagem": "xerjoff_torino_25_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Âmbar",
+        "intensidade": 100.0,
+        "cor": "#bc4d10",
+        "texto_cor": "#FFFFFF"
+      },
+      {
+        "nome": "Fresco Especiado",
+        "intensidade": 65.000084700029,
+        "cor": "#83C928",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 51.000016940006,
+        "cor": "#CC3300",
+        "texto_cor": "#FFFFFF"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 44.000067760023,
+        "cor": "#774414",
+        "texto_cor": "#FFFFFF"
+      },
+      {
+        "nome": "Balsâmico",
+        "intensidade": 41.900015246005,
+        "cor": "#ad8359",
+        "texto_cor": "#000000"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 23,
+      "noite": 77
+    },
+    "percepcao_genero": {
+      "feminino": 0,
+      "mais_feminino": 20,
+      "unissex": 60,
+      "mais_masculino": 20,
+      "masculino": 0,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 224,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 50,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 50,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 166,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Olíbano"
+      ],
+      "coracao": [
+        "Lavanda",
+        "Jasmim"
+      ],
+      "base": [
+        "Sândalo",
+        "Almíscar"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Elegante",
+      "Alta Fixação na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "amouage_interlude_53",
+    "nome": "INTERLUDE 53",
+    "marca": "AMOUAGE",
+    "concentracao": "Extrait de Parfum",
+    "genero_comercial": "Masculino",
+    "familia_olfativa": "Oriental Amadeirado",
+    "ano_lancamento": 2020,
+    "perfumistas": [
+      "Perfumista"
+    ],
+    "perfumistas_detalhes": [
+      {
+        "nome": "Pierre Negrin",
+        "foto": "fotos/perfumistas/pierre_negrin.jpg"
+      }
+    ],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.41,
+    "votos_avaliacao": 1557,
+    "frasco_imagem": "amouage_interlude_53_composicao.png",
+    "principais_acordes": [
+      {
+        "nome": "Âmbar",
+        "intensidade": 100.0,
+        "cor": "#bc4d10",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Defumado",
+        "intensidade": 82.2604,
+        "cor": "#827487",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Balsâmico",
+        "intensidade": 61.0443,
+        "cor": "#ad8359",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 60.6027,
+        "cor": "#774414",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 60.1987,
+        "cor": "#cc3300",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Fresco Especiado",
+        "intensidade": 50.8121,
+        "cor": "#83c928",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Oud",
+        "intensidade": 48.698,
+        "cor": "#544136",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Couro",
+        "intensidade": 48.0404,
+        "cor": "#78483a",
+        "texto_cor": "#000000"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Eterna",
+      "longevidade_horas": "10h+",
+      "rastro_texto": "Enorme"
+    },
+    "diurno_votos": {
+      "dia": 346,
+      "noite": 793
+    },
+    "percepcao_genero": {
+      "feminino": 10,
+      "mais_feminino": 4,
+      "unissex": 114,
+      "mais_masculino": 191,
+      "masculino": 780,
+      "classe_genero": "masculino"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 917,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 298,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 141,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 746,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Orégano",
+        "Pimenta da Jamaica",
+        "Bergamota"
+      ],
+      "coracao": [
+        "Incenso",
+        "Âmbar",
+        "Opoponax",
+        "Ládano"
+      ],
+      "base": [
+        "Fumaça",
+        "Agarwood (Oud)",
+        "Couro",
+        "Patchouli",
+        "Sândalo"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Marcante e Elegante",
+      "Fixação Extrema na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  },
+  {
+    "id": "nishane_hundred_silent_ways",
+    "nome": "HUNDRED SILENT WAYS",
+    "marca": "NISHANE",
+    "concentracao": "Eau de Parfum",
+    "genero_comercial": "Compartilhável (Unissex)",
+    "familia_olfativa": "Floral Frutado",
+    "ano_lancamento": 2016,
+    "perfumistas": [
+      "Jorge Lee"
+    ],
+    "slogan": "Sofisticado. Exclusivo. Marcante.",
+    "nota_avaliacao": 4.28,
+    "votos_avaliacao": 1540,
+    "frasco_imagem": "nishane_hundred_silent_ways_real.jpg",
+    "principais_acordes": [
+      {
+        "nome": "Doce",
+        "intensidade": 100,
+        "cor": "#FFECEF",
+        "texto_cor": "#5E3A40"
+      },
+      {
+        "nome": "Floral Branco",
+        "intensidade": 90,
+        "cor": "#EADBF0",
+        "texto_cor": "#2D2630"
+      },
+      {
+        "nome": "Baunilha",
+        "intensidade": 85,
+        "cor": "#FFFDF0",
+        "texto_cor": "#4E4B3E"
+      },
+      {
+        "nome": "Frutado",
+        "intensidade": 75,
+        "cor": "#FAD02C",
+        "texto_cor": "#4D3E08"
+      },
+      {
+        "nome": "Atalcado",
+        "intensidade": 65,
+        "cor": "#F7EBE8",
+        "texto_cor": "#5E4A46"
+      }
+    ],
+    "perfil_olfativo": {
+      "longevidade_texto": "Longa Duração",
+      "longevidade_horas": "6 - 10 h",
+      "rastro_texto": "Marcante"
+    },
+    "diurno_votos": {
+      "dia": 240,
+      "noite": 420
+    },
+    "percepcao_genero": {
+      "feminino": 20,
+      "mais_feminino": 10,
+      "unissex": 300,
+      "mais_masculino": 20,
+      "masculino": 20,
+      "classe_genero": "unissex"
+    },
+    "estacoes": {
+      "inverno": {
+        "votos": 460,
+        "cor": "#D4F0FC"
+      },
+      "primavera": {
+        "votos": 230,
+        "cor": "#A3D977"
+      },
+      "verao": {
+        "votos": 280,
+        "cor": "#FFA07A"
+      },
+      "outono": {
+        "votos": 360,
+        "cor": "#EAD2AC"
+      }
+    },
+    "notas": {
+      "topo": [
+        "Pêssego",
+        "Tuberosa",
+        "Tangerina"
+      ],
+      "coracao": [
+        "Gardenia",
+        "Jasmim",
+        "Íris"
+      ],
+      "base": [
+        "Baunilha",
+        "Sândalo",
+        "Vetiver"
+      ]
+    },
+    "adjetivos": [
+      "Qualidade Excepcional",
+      "Rastro Elegante",
+      "Alta Fixação na Pele",
+      "Toque de Luxo Inigualável"
+    ]
+  }
+]

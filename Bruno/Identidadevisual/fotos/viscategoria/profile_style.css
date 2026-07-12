@@ -1,0 +1,733 @@
+/* Estilo Premium para Perfil Olfativo - Montalk */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E6E2D8;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Dimensões compactas de alta resolução 1280x1380 */
+.profile-card {
+    width: 1280px;
+    height: 1380px;
+    background-color: #F6F4EE;
+    border: 1px solid #D6D2C4;
+    padding: 60px 60px 160px 60px; /* Margem simétrica de 60px no topo/lados, e 160px na base (100px rodapé + 60px margem) */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Lado Esquerdo - Painel do Produto */
+.left-panel {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    height: 100%;
+}
+
+.brand-header {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.perfume-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 600;
+    color: #1A3B32; /* Verde musgo de luxo */
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #C5A880; /* Dourado suave */
+    letter-spacing: 6px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.concentration {
+    font-size: 14px;
+    font-weight: 500;
+    color: #7E786B;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Showcase do Frasco */
+.bottle-showcase {
+    width: 460px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    background: radial-gradient(circle, rgba(238,234,223,0.85) 0%, rgba(246,244,238,0) 70%);
+}
+
+.bottle-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+/* Avaliação */
+.rating-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 4px;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.rating-value {
+    font-weight: 600;
+    color: #1A3B32;
+    font-size: 24px;
+}
+
+.stars {
+    color: #D4AF37; /* Estrela dourada */
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.rating-votes {
+    color: #8C8475;
+    font-size: 14px;
+}
+
+.source-credit {
+    font-size: 11px;
+    color: #C5A880; /* Dourado suave */
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Pirâmide de Notas Olfativas (Texto Elegante) */
+.notes-pyramid {
+    width: 100%;
+    background-color: #FAF9F6;
+    border: 1px solid #EAE6DB;
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.note-section {
+    width: 100%;
+    border-bottom: 1px dashed #EAE6DB;
+    padding-bottom: 8px;
+}
+
+.note-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.note-title {
+    font-size: 10px;
+    font-weight: 600;
+    color: #C5A880;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.note-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.note-tag {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1A3B32; /* Verde imperial */
+    background-color: #F1EDE4;
+    border: 1px solid #E3DDCF;
+    padding: 5px 12px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.2s;
+}
+
+.note-tag:hover {
+    background-color: #E6DFD3;
+    border-color: #C5A880;
+}
+
+
+/* Lado Direito - Painel de Dados */
+.right-panel {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.description-section {
+    margin-bottom: 25px;
+}
+
+.description-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: #4A4439;
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* Cards de Seção (Compactados para caber no card vertical) */
+.card-section {
+    background-color: #FAF9F6;
+    border: 1px solid #EAE6DB;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 0px; /* Controlado pelo gap do painel */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.section-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8C8475;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    border-left: 3px solid #C5A880;
+    padding-left: 10px;
+}
+
+/* Acordes */
+.accords-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.accord-item {
+    height: 27px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Performance */
+.performance-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.perf-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #F1EDE4;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #E3DDCF;
+}
+
+.perf-icon {
+    font-size: 28px;
+}
+
+.perf-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.perf-val {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A3B32;
+}
+
+.perf-lbl {
+    font-size: 11px;
+    color: #7E786B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+/* Turno */
+.time-toggle {
+    display: flex;
+    gap: 15px;
+}
+
+.time-btn {
+    flex: 1;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #EAE6DB;
+    background-color: #FAF9F6;
+    color: #8C8475;
+    position: relative;
+    overflow: hidden;
+}
+
+.time-btn.active-dia {
+    background-color: #FFF9D6;
+    color: #554316;
+    border-color: #E6D27A;
+}
+
+.time-btn.active-noite {
+    background-color: #122B24;
+    color: #FFFFFF;
+    border-color: #122B24;
+}
+
+.time-btn .btn-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+.time-pct {
+    font-size: 11px;
+    opacity: 0.8;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estações */
+.seasons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.season-btn {
+    height: 38px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid #EAE6DB;
+    background-color: #FAF9F6;
+    color: #4A4439;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+.season-pct {
+    font-size: 11px;
+    color: #5E5340;
+    position: relative;
+    z-index: 2;
+}
+
+/* Adjetivos */
+.characteristics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 0;
+}
+
+.char-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4A4439;
+}
+
+.char-icon {
+    font-size: 16px;
+    color: #C5A880;
+}
+
+/* Rodapé verde de luxo */
+.profile-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #122B24; /* Verde garrafa escuro imperial */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #C5A880;
+}
+
+.footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #F6F4EE;
+    letter-spacing: 8px;
+}
+
+.footer-sub {
+    font-size: 10px;
+    font-weight: 500;
+    color: #C5A880;
+    letter-spacing: 5px;
+    margin-top: 4px;
+}
+
+/* Escala de Gênero */
+.gender-scale-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+.gender-line {
+    position: absolute;
+    top: 15px; /* Alinhado com o centro dos círculos */
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background-color: #E3DDCF;
+    z-index: 1;
+}
+
+.gender-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.gender-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #C5A880;
+    border: 1px solid #FAF9F6;
+    box-shadow: 0 0 0 1px #E3DDCF;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.gender-label {
+    font-size: 10px;
+    font-weight: 500;
+    color: #8C8475;
+    text-align: center;
+    margin-bottom: 3px;
+    white-space: nowrap;
+}
+
+.gender-votes {
+    font-size: 9px;
+    color: #A39D93;
+}
+
+/* Categoria de gênero ativa (consenso) */
+.gender-point.active .gender-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #1A3B32; /* Verde imperial */
+    border: 2px solid #FAF9F6;
+    box-shadow: 0 0 6px rgba(26, 59, 50, 0.4);
+    transform: translateY(-3px);
+}
+
+.gender-point.active .gender-label {
+    font-weight: 700;
+    color: #1A3B32;
+    font-size: 11px;
+}
+
+.gender-point.active .gender-votes {
+    font-weight: 600;
+    color: #C5A880;
+}
+
+/* --- ESTILOS DO DECANTE E COMPOSIÇÃO DE PRODUTO --- */
+
+.original-bottle-container {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 90%;
+}
+
+.original-bottle-container .bottle-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.12));
+}
+
+.montalk-decant {
+    width: 170px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 25px; /* Alinhamento estético no tablado */
+}
+
+/* Tampa Dourada Luxuosa */
+.decant-cap {
+    width: 70px;
+    height: 85px;
+    background: linear-gradient(135deg, #FFE4A0 0%, #D4AF37 50%, #AA8010 100%);
+    border-radius: 4px 4px 0 0;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: inset 0 2px 5px rgba(255,255,255,0.4), 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.decant-neck {
+    width: 50px;
+    height: 10px;
+    background: #D4AF37;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Corpo de Vidro */
+.decant-body {
+    width: 160px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 3.5px solid rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08), inset 0 0 15px rgba(255,255,255,0.8);
+    backdrop-filter: blur(2px);
+}
+
+/* Rótulo Preto Fosco */
+.decant-label {
+    width: 132px;
+    height: 180px;
+    background-color: #151515;
+    border: 1px solid #C5A880;
+    border-radius: 4px;
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #EAE6DB;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.decant-brand {
+    font-size: 7.5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #C5A880;
+    text-transform: uppercase;
+}
+
+.decant-perfume-name {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 2px 0;
+}
+
+.decant-brand-name {
+    font-size: 7px;
+    letter-spacing: 1px;
+    color: #8C867A;
+    text-transform: uppercase;
+}
+
+.decant-suggestions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin: 6px 0;
+}
+
+.suggestion-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.decant-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.15; /* Apagado por padrão */
+    transition: all 0.3s;
+    position: relative;
+}
+
+.decant-icon-item.active {
+    opacity: 0.9; /* Aceso */
+    color: #C5A880;
+}
+
+.check-mark {
+    font-size: 7px;
+    position: absolute;
+    top: -6px;
+    font-weight: bold;
+    display: none;
+    color: #C5A880;
+}
+
+.decant-icon-item.active .check-mark {
+    display: block;
+}
+
+.decant-icon-sym {
+    font-size: 10px;
+    margin-bottom: 1px;
+}
+
+.decant-icon-lbl {
+    font-size: 5.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #8C867A;
+}
+
+.decant-icon-item.active .decant-icon-lbl {
+    color: #C5A880;
+}
+
+.decant-icon-lbl.font-small {
+    font-size: 5px;
+}
+
+.decant-vol {
+    font-size: 8px;
+    font-weight: 600;
+    color: #C5A880;
+    letter-spacing: 1px;
+}
+
+/* Perfumista Section */
+.perfumista-card {
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+.perfumista-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8C8475;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    border-left: 3px solid #C5A880;
+    padding-left: 10px;
+}
+
+.perfumista-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.perfumista-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #FAF9F6;
+    border: 1px solid #EAE6DB;
+    border-radius: 12px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    width: 100%;
+}
+
+.perfumista-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #EAE6DB;
+}
+
+.perfumista-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A3B32;
+    font-family: 'Montserrat', sans-serif;
+}
+
