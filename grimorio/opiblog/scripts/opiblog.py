@@ -393,10 +393,32 @@ def gerar_apresentacao_pdf(perfumes_list):
         coracao = ", ".join(notas.get("coracao", []))
         base = ", ".join(notas.get("base", []))
         
+        # Extração inteligente do perfumista criador (fallback de dados no e-commerce)
         perfumistas_list = p.get("perfumistas", [])
+        if len(perfumistas_list) == 1 and perfumistas_list[0].strip().lower() == "perfumista":
+            perfumistas_list = []
+            
+        perfumistas_str = ""
         if perfumistas_list:
-            perfumistas_str = ", ".join(perfumistas_list[:-1]) + " e " + perfumistas_list[-1] if len(perfumistas_list) > 1 else perfumistas_list[0]
-        else:
+            validos = [n.strip() for n in perfumistas_list if n.strip().lower() not in ["", "perfumista"]]
+            if validos:
+                perfumistas_str = ", ".join(validos[:-1]) + " e " + validos[-1] if len(validos) > 1 else validos[0]
+                
+        if not perfumistas_str:
+            detalhes = p.get("perfumistas_detalhes", [])
+            if detalhes:
+                nomes = [d.get("nome", "").strip() for d in detalhes if d.get("nome", "").strip().lower() not in ["", "perfumista"]]
+                if nomes:
+                    perfumistas_str = ", ".join(nomes[:-1]) + " e " + nomes[-1] if len(nomes) > 1 else nomes[0]
+                    
+        if not perfumistas_str:
+            resenha = p.get("resenha_editorial", "")
+            if resenha:
+                match = re.search(r'(?:assinado|criado|feito|desenvolvido)\s+por\s+([A-Z][a-zA-ZÀ-ÿ]+(?:\s+[A-Z][a-zA-ZÀ-ÿ]+)+)', resenha)
+                if match:
+                    perfumistas_str = match.group(1).strip()
+                    
+        if not perfumistas_str:
             perfumistas_str = "Perfumista Exclusivo"
             
         gen_fam = f"{p.get('familia_olfativa', 'Exclusivo')} {p.get('genero_comercial', 'Compartilhável')}"
