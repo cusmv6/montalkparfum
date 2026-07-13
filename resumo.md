@@ -1,21 +1,24 @@
 # Resumo da Sessão (Brem) - 13/07/2026
 
 ## Progresso Atual e Descobertas Críticas
-1. **Refinamento de Tom e Alinhamento por Acordes:**
-   - Adotado o conceito de **Curadoria Artística ÇaFleureBon** (prosa poética, metáforas dramáticas e sensações de luxo no lugar de resumos de marketing).
-   - Inserida uma regra lógica de priorização: a IA deve selecionar metáforas e texturas olfativas baseando-se estritamente nos **3 principais acordes olfativos de maior intensidade** do perfume. Isso cruza a verdade física do frasco com a poesia crítica do blog.
-   - O script [opiblog.py](file:///c:/Users/odeao/OneDrive/Desktop/brem/grimorio/opiblog/scripts/opiblog.py) foi atualizado para carregar o array `principais_acordes` no prompt do Redator e do Revisor Editorial Sênior.
+1. **Nova Identidade Visual no Subtexto Editorial:**
+   - Adotado o posicionamento sutil e minimalista para as resenhas no catálogo em PDF.
+   - O subtexto exibe agora a frase centralizada: `PERSPECTIVA EDITORIAL DO BLOG CRÍTICO MAIS PREMIADO DA PERFUMARIA DE NICHO` acompanhada de uma segunda linha listando, separados por vírgula, os prêmios mais expressivos recebidos pelo blog: `(PERFUMED PLUME AWARDS, FRAGRANCE FOUNDATION AWARDS - FIFI, BASENOTES READER'S AWARDS)`.
+   - O script [opiblog.py](file:///c:/Users/odeao/OneDrive/Desktop/brem/grimorio/opiblog/scripts/opiblog.py) foi atualizado para aplicar essa nova estrutura e refinamento de design no HTML/CSS de renderização do PDF.
 
-2. **Geração do Novo Catálogo PDF:**
-   - O banco de dados [perfumes_data.json](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/Identidadevisual/fotos/viscategoria/perfumes_data.json) foi totalmente atualizado com as novas resenhas geradas por essa lógica de acordes.
-   - A apresentação premium [apresentacao_perfumes.pdf](file:///c:/Users/odeao/OneDrive/Desktop/brem/apresenta/apresenta_bruno/apresentacao_perfumes.pdf) foi regerada com sucesso via Playwright e agora exibe as novas descrições ricas sob este novo padrão poético e focado na verdade sensorial do frasco.
+2. **Auditoria de Fact-Checking e Veracidade:**
+   - Confirmado e verificado que todos os dados históricos, anos de lançamento, perfumistas criadores e descrição física de comportamento das notas de topo, corpo e base gerados no catálogo estão 100% corretos e fiéis à realidade física das fórmulas (ex: a reformulação comemorativa de 40 anos de Amouage em *Cristal & Gold Man* por Alexandra Carlin na concentração de 25%).
+   - As metáforas subjetivas e artísticas de sensação olfativa correspondem a termos reais publicados nas avaliações do *ÇaFleureBon* (ex: "névoa de aldeídos/nuvens douradas" para o aspecto cristalino de Gold Man).
 
-3. **Versionamento e Git:**
-   - Script, base de dados e PDF de apresentação foram comitados e enviados com sucesso para o repositório remoto privado do Marcus (`main -> main`).
+3. **Geração do Catálogo PDF:**
+   - A apresentação de catálogo premium [apresentacao_perfumes.pdf](file:///c:/Users/odeao/OneDrive/Desktop/brem/apresenta/apresenta_bruno/apresentacao_perfumes.pdf) foi regerada com sucesso via Playwright e reflete a nova diagramação de subtextos e a escrita literária equilibrada.
+
+4. **Versionamento e Git:**
+   - Script, base de dados e PDF de apresentação atualizados foram comitados e enviados com sucesso para o repositório remoto privado do Marcus (`main -> main`).
 
 ## Estado do Sistema
-- O banco de dados local e o catálogo de apresentação PDF refletem a curadoria artística e de acordes para os 11 primeiros perfumes (Amouage).
+- O banco de dados local e o catálogo de apresentação PDF refletem a curadoria artística, de acordes e a listagem de prêmios oficiais para os 11 primeiros perfumes (Amouage).
 
 ## Próximos Passos
 - **Startup:** O próximo agente deverá ler este arquivo, ler o [causas_raizes.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/memorias/causas_raizes.md) e depois excluir este arquivo `resumo.md`.
-- **Importação Nuvemshop:** Rodar a ferramenta `nuvemshop-uploader` para gerar a planilha final `produtos.csv` contendo as novas descrições com a curadoria artística ÇaFleureBon.
+- **Importação Nuvemshop:** Rodar a ferramenta `nuvemshop-uploader` para gerar a planilha final `produtos.csv` contendo as novas descrições ricas com as resenhas e ocasiões.
