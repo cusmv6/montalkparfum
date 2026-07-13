@@ -17,11 +17,14 @@
    - O script de conversão e uploader [nuvemshop_converter.py](file:///c:/Users/odeao/OneDrive/Desktop/brem/grimorio/nuvemshop-uploader/scripts/nuvemshop_converter.py) foi atualizado. Ele agora monta o HTML da descrição de produto do CSV com os estilos CSS inline exatos da nova identidade visual refinada (borda de 4px na cor `#C5A880`, fundo creme e o novo subtexto de prêmios estruturado).
    - Isso garante que, ao fazer a importação massiva da planilha gerada na Nuvemshop, as descrições dos produtos no site fiquem idênticas ao design do PDF de apresentação por padrão.
 
-5. **Refatoração e Geração de Cards SKU:**
+5. **Selagem Oficial da Habilidade:**
+   - A habilidade `opiblog` foi **selada oficialmente** com a finalização do seu manual técnico em [SKILL.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/grimorio/opiblog/SKILL.md). A documentação detalha a nova regra do Quality Gate, o alinhamento físico por acordes e as instruções de execução no console para processamento individual, em lote ou geral de catálogo.
+
+6. **Refatoração e Geração de Cards SKU:**
    - O script [render_profiles.py](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/Identidadevisual/fotos/viscategoria/render_profiles.py) foi refatorado para calcular o SKU e salvar a imagem diretamente como `<sku>_2.jpeg` na pasta [nuvemshop](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/Identidadevisual/fotos/nuvemshop). A duplicata `_perfil.jpeg` foi eliminada. Adicionado suporte à flag `--limit <n>`.
    - Executada a renderização dos 10 primeiros cards com a nova curadoria poética equilibrada, salvando-os diretamente com nomenclatura de SKU 2ml.
 
-6. **Versionamento e Git:**
+7. **Versionamento e Git:**
    - Todas as modificações de scripts, dados locais e as novas 10 imagens de perfil foram comitadas e enviadas com sucesso para o repositório remoto privado do Marcus (`main -> main`).
 
 ## Estado do Sistema
