@@ -136,31 +136,34 @@ def enriquecer_perfume(perfume, client):
     perfumistas = ", ".join(perfume.get("perfumistas", []))
     ano = perfume.get("ano_lancamento", "N/A")
     
-    # Junta as notas
+    # Junta as notas e acordes
     notas = perfume.get("notas", {})
     piramide_text = f"Saída: {', '.join(notas.get('topo', []))}. Corpo: {', '.join(notas.get('coracao', []))}. Fundo: {', '.join(notas.get('base', []))}"
+    acordes_list = [f"{a['nome']} ({a['intensidade']:.1f}%)" for a in perfume.get("principais_acordes", [])]
+    acordes_text = ", ".join(acordes_list)
     
     # 1. Tenta buscar texto real do ÇaFleureBon
     raw_review_text = buscar_artigo_cafleurebon(brand, name)
     
     # 2. Constrói o Prompt de Redação (Etapa 1)
     prompt_redator = f"""
-Você é um redator de perfumaria de nicho especialista em traduzir resenhas críticas.
+Você é um redator de perfumaria de nicho especialista em traduzir resenhas críticas e criar poesia olfativa.
 Sua tarefa é analisar o review do ÇaFleureBon sobre o perfume "{name}" da marca "{brand}".
 
 Informações Técnicas do Perfume:
 - Perfumista: {perfumistas}
 - Ano de lançamento: {ano}
 - Pirâmide de Notas: {piramide_text}
+- Principais Acordes Olfativos (ordenados por intensidade física): {acordes_text}
 
 Review do ÇaFleureBon (se disponível):
 \"\"\"{raw_review_text if raw_review_text else "Não disponível. Use seu conhecimento enciclopédico sobre os artigos do blog ÇaFleureBon para este perfume."}\"\"\"
 
-Instruções:
+Instruções e Filtro de Acordes:
 1. Escreva um rascunho de resenha crítica editorial em português inspirado na perspectiva do ÇaFleureBon. O texto deve ter cerca de 300 a 360 caracteres.
-2. Identifique e escreva as ocasiões de uso recomendadas sugeridas pela crítica.
-
-Mantenha o tom literário, autoral e apaixonado do blog original, evitando jargões promocionais genéricos.
+2. PRIORIZAÇÃO SENSORIAL: Os acordes principais definem o que é fisicamente mais presente no perfume. Ao sintetizar as metáforas, sensações e texturas poéticas descritas no ÇaFleureBon, você deve PRIORIZAR estritamente as passagens que descrevem e correspondem aos 3 acordes mais intensos (ex: se o acorde dominante for Amadeirado, foque em imagens mentais de madeira nobre descritas pelo crítico). Evite gastar caracteres com notas irrelevantes.
+3. Tom Curatorial Artístico: Não faça marketing de vendas. Descreva o perfume como uma obra de arte, focando em cenários poéticos, analogias e texturas (seda, névoa, solene, etc.).
+4. Identifique e escreva as ocasiões de uso recomendadas sugeridas pela crítica.
 """
 
     print("   [*] Gerando rascunho do redator olfativo...")
@@ -173,7 +176,7 @@ Mantenha o tom literário, autoral e apaixonado do blog original, evitando jarg�
     # 3. Constrói o Prompt do Supervisor Editorial Sênior de Luxo (Etapa 2)
     prompt_supervisor = f"""
 Você é o Diretor Editorial e Revisor Sênior de Textos de Luxo da Montalk Perfumes.
-Seu critério de revisão é de altíssimo nível, pois a marca preza por extrema sofisticação estética e exatidão técnica.
+Seu critério de revisão é de altíssimo nível, pois a marca preza por extrema sofisticação estética, conformidade de fatos e verdade sensorial.
 
 Sua tarefa é analisar e refinar o rascunho da resenha e ocasiões gerados para o perfume "{name}" ({brand}).
 
@@ -183,15 +186,17 @@ Metadados Técnicos Oficiais (Use para conferir os fatos):
 - Perfumista Criador: {perfumistas}
 - Ano de Lançamento: {ano}
 - Notas Oficiais da Pirâmide: {piramide_text}
+- Principais Acordes Olfativos: {acordes_text}
 
 Rascunho a ser revisado:
 \"\"\"{draft_text}\"\"\"
 
-Diretrizes de Revisão de Luxo (Fact-Checking e Estilo):
+Diretrizes de Revisão de Luxo (Fact-Checking, Estilo e Consistência):
 1. FACT-CHECK TOTAL: Verifique se o texto menciona qualquer nota olfativa ou ingrediente que NÃO esteja na lista de notas oficiais acima. Se houver notas alucinadas ou incorretas, modifique o texto para omitir ou corrigir o ingrediente.
 2. CONFORMIDADE DE DADOS: Garanta que o ano de lançamento e o perfumista citados batam exatamente com os metadados técnicos fornecidos.
-3. ESTILO LUXO SEM CLICHÊS: Elimine termos vulgares, adjetivos de vendas vazios ("maravilhoso", "delicioso", "perfumaço", "cheiro de rico") e gírias de massa. Substitua por uma prosa lírica, fluida, artística e digna de prêmios editoriais.
-4. ALMA OPINATIVA: Não deixe o texto corporativo ou impessoal. Ele deve soar como a opinião assinada por um crítico autêntico do ÇaFleureBon (subjetivo, poético e autoral).
+3. CONSISTÊNCIA SENSORIAL: Certifique-se de que as metáforas literárias descrevam e destaquem as sensações físicas dos acordes mais presentes e intensos do perfume, mantendo a verdade do que o cliente sentirá ao usar.
+4. ESTILO LUXO SEM CLICHÊS: Elimine termos vulgares, adjetivos de vendas vazios ("maravilhoso", "delicioso", "perfumaço", "cheiro de rico") e gírias de massa. Substitua por uma prosa lírica, fluida, artística e digna de prêmios editoriais (Curadoria Artística ÇaFleureBon).
+5. ALMA OPINATIVA: Mantenha o caráter poético, subjetivo e independente do crítico original.
 
 Exemplos de Referência de Sucesso (Siga exatamente este padrão e tom):
 {FEW_SHOT_EXAMPLES}
