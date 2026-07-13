@@ -20,7 +20,7 @@ except ImportError:
 # Paths relative to workspace root
 WORKSPACE_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem"
 VISCATEGORIA_DIR = os.path.join(WORKSPACE_DIR, "Bruno", "Identidadevisual", "fotos", "viscategoria")
-JSON_PATH = os.path.join(VISCATEGORIA_DIR, "perfumes_data.json")
+JSON_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\produtos\catalogo.json"
 RENDER_SCRIPT = os.path.join(VISCATEGORIA_DIR, "render_profiles.py")
 
 URL_OVERRIDES = {

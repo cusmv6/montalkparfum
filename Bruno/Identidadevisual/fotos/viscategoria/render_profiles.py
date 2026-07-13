@@ -301,14 +301,36 @@ def obter_estilo_moldura(perfume):
     else:
         return f"border: 1.5px solid rgba({rgb_str}, 0.85); border-radius: 24px; box-shadow: 0 15px 40px rgba(0,0,0,0.08);"
 
+def organizar_pasta_nuvemshop(output_dir):
+    print("\n[INFO] Organizando a pasta Nuvemshop e limpando duplicatas legadas...")
+    if not os.path.exists(output_dir):
+        return
+    deleted_count = 0
+    for f in os.listdir(output_dir):
+        file_path = os.path.join(output_dir, f)
+        # Identifica se o arquivo contém indicações antigas de volumetria de ml ou perfil antigo
+        if any(term in f.upper() for term in ["-2ML", "-5ML", "-10ML", "PERFIL.JPEG"]):
+            try:
+                os.remove(file_path)
+                deleted_count += 1
+                print(f"   [-] Removida duplicata/legado: {f}")
+            except Exception as e:
+                print(f"   [AVISO] Erro ao remover duplicata {f}: {e}")
+    if deleted_count > 0:
+        print(f"[OK] Limpeza concluída. {deleted_count} duplicatas removidas da pasta.")
+    else:
+        print("[OK] A pasta Nuvemshop já está limpa e organizada.")
+
 def render_perfume_images():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(current_dir, "perfumes_data.json")
+    json_path = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\produtos\catalogo.json"
     template_path = os.path.join(current_dir, "profile_template.html")
     output_dir = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\Identidadevisual\fotos\nuvemshop"
     
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
+        
+    organizar_pasta_nuvemshop(output_dir)
         
     if not os.path.exists(json_path):
         print(f"[ERRO] O arquivo {json_path} não foi encontrado.")

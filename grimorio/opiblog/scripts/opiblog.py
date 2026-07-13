@@ -22,7 +22,7 @@ except ImportError:
     pass
 
 WORKSPACE_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem"
-JSON_PATH = os.path.join(WORKSPACE_DIR, "Bruno", "Identidadevisual", "fotos", "viscategoria", "perfumes_data.json")
+JSON_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\produtos\catalogo.json"
 OUTPUT_PDF_DIR = os.path.join(WORKSPACE_DIR, "apresenta", "apresenta_bruno")
 OUTPUT_PDF_PATH = os.path.join(OUTPUT_PDF_DIR, "apresentacao_perfumes.pdf")
 

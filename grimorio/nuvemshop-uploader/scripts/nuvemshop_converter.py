@@ -232,7 +232,7 @@ def generate_csv(perfumes, output_path, default_prices=None, default_costs=None,
     }
     
     # Carregar dados ricos do Fragrantica para descrições dinâmicas
-    rich_data_path = "C:\\Users\\odeao\\OneDrive\\Desktop\\brem\\Bruno\\Identidadevisual\\fotos\\viscategoria\\perfumes_data.json"
+    rich_data_path = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\produtos\catalogo.json"
     rich_perfumes = {}
     if os.path.exists(rich_data_path):
         try:
