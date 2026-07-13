@@ -312,9 +312,10 @@ def generate_csv(perfumes, output_path, default_prices=None, default_costs=None,
                     editorial_block = ""
                     if resenha and ocasioes:
                         editorial_block = (
-                            f"<div style=\"background: #FAF9F6; padding: 22px; border-radius: 8px; border-left: 3px solid #C5A880; margin-top: 15px; margin-bottom: 25px;\">"
+                            f"<div style=\"background: #FAF9F6; padding: 22px; border-radius: 0 8px 8px 0; border-left: 4px solid #C5A880; margin-top: 15px; margin-bottom: 25px;\">"
                             f"<div style=\"font-family: 'Playfair Display', Georgia, serif; font-size: 17.5px; font-style: italic; font-weight: 600; color: #1A3B32; margin-bottom: 3px;\">\"A perspectiva de ÇaFleureBon...</div>"
-                            f"<div style=\"font-family: 'Inter', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #7E786B; margin-bottom: 14px;\">(Blog crítico mundialmente reconhecido e vencedor dos Perfumed Plume Awards - o \"Oscar\" da perfumaria)</div>"
+                            f"<div style=\"font-family: 'Inter', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #7E786B; margin-bottom: 3px;\">PERSPECTIVA EDITORIAL DO BLOG CRÍTICO MAIS PREMIADO DA PERFUMARIA DE NICHO</div>"
+                            f"<div style=\"font-family: 'Inter', sans-serif; font-size: 7.5px; font-style: italic; text-transform: uppercase; letter-spacing: 0.8px; color: #7E786B; opacity: 0.85; margin-bottom: 14px;\">(PERFUMED PLUME AWARDS, FRAGRANCE FOUNDATION AWARDS - FIFI, BASENOTES READER'S AWARDS)</div>"
                             f"<div style=\"font-style: italic; color: #4A4439; font-size: 13.5px; line-height: 1.75; margin-bottom: 15px;\">{resenha}</div>"
                             f"<div style=\"border-top: 1px solid #EAE6DB; padding-top: 12px; font-size: 13px; line-height: 1.6; color: #333333;\">"
                             f"<strong style=\"font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 14.5px; color: #1A3B32; font-weight: 600;\">Ocasiões Recomendadas:</strong> <em>{ocasioes}<span style=\"font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 600; font-size: 17.5px; color: #1A3B32; margin-left: 3px;\">\"</span></em>"
