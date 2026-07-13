@@ -1,28 +1,27 @@
 # Resumo da Sessão (Brem) - 13/07/2026
 
 ## Progresso Atual e Descobertas Críticas
-1. **Criação da Habilidade `opiblog`:**
-   - Pasta de habilidade criada em [grimorio/opiblog](file:///c:/Users/odeao/OneDrive/Desktop/brem/grimorio/opiblog) com seu respectivo [SKILL.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/grimorio/opiblog/SKILL.md) de documentação.
-   - Script principal [opiblog.py](file:///c:/Users/odeao/OneDrive/Desktop/brem/grimorio/opiblog/scripts/opiblog.py) implementado contendo:
-     * Busca de reviews no site *ÇaFleureBon* via DuckDuckGo com fallback de IA.
-     * Loop cognitivo de duas etapas: Redação Olfativa e Supervisão Editorial Sênior de Luxo (Revisor Sênior).
-     * O Revisor Sênior de Luxo executa fact-check completo das notas contra a pirâmide do JSON, poli a linguagem para alta curadoria artística (sem clichês de vendas) e preserva a autenticidade e tom opinativo do blog original.
-     * Incorporação de 5 exemplares reais (few-shot exemplars) enviados pelo Marcus (Cristal & Gold Man, Cristal & Gold Woman, Guidance, Guidance 46, Interlude 53) para guiar o tom de escrita.
+1. **Identificação e Correção do Bug de Perfumistas:**
+   - Detectado que no [perfumes_data.json](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/Identidadevisual/fotos/viscategoria/perfumes_data.json), algumas fragrâncias (como o *Guidance*) continham apenas o termo genérico `"Perfumista"` na lista de perfumistas, gerando a gafe de renderizar: *"O perfumista que assina esta fragrância é Perfumista"*.
+   - Criada uma lógica de extração inteligente no [opiblog.py](file:///c:/Users/odeao/OneDrive/Desktop/brem/grimorio/opiblog/scripts/opiblog.py) que:
+     * Descarta strings genéricas como `"Perfumista"`.
+     * Busca o nome do perfumista criador no bloco `perfumistas_detalhes`.
+     * Se ainda assim estiver vazio, tenta extrair o nome do criador via expressão regular (regex) na própria resenha editorial do ÇaFleureBon (ex: *"assinado por Quentin Bisch"*, *"feito por Alexandra Carlin"*).
+     * Caso nenhum dos fallbacks anteriores retorne dados, adota o termo curatorial de luxo `"Perfumista Exclusivo"`.
 
-2. **Enriquecimento e Geração de Apresentação PDF:**
-   - Como a chave `GEMINI_API_KEY` não está exposta globalmente nas variáveis de ambiente da linha de comando do Windows local, executamos o enriquecimento dos 10 primeiros perfumes do catálogo (e do `amouage_interlude_53`) de forma assistida de primeira classe.
-   - A base local [perfumes_data.json](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/Identidadevisual/fotos/viscategoria/perfumes_data.json) foi enriquecida e gravada com sucesso com as novas resenhas e ocasiões sugeridas no tom exato dos exemplos.
-   - Gerada a apresentação de catálogo premium [apresentacao_perfumes.pdf](file:///c:/Users/odeao/OneDrive/Desktop/brem/apresenta/apresenta_bruno/apresentacao_perfumes.pdf) na pasta `apresenta/apresenta_bruno/` através da renderização HTML do Playwright em modo headless (A4 com fundo creme, Cormorant/Playfair/Inter fonts e rodapé institucional).
+2. **Geração de Apresentação PDF Corrigida:**
+   - A apresentação de catálogo premium [apresentacao_perfumes.pdf](file:///c:/Users/odeao/OneDrive/Desktop/brem/apresenta/apresenta_bruno/apresentacao_perfumes.pdf) foi regerada com sucesso via Playwright.
+   - O *Guidance* de Amouage agora exibe corretamente a frase: *"O perfumista que assina esta fragrância é Quentin Bisch"*.
 
-3. **Versionamento e Git:**
-   - Adicionados os arquivos da nova habilidade `opiblog` e a apresentação PDF gerada.
-   - Alterações devidamente salvas e enviadas para o repositório remoto privado do Marcus (`main -> main`).
+3. **Validação de Fact-Checking:**
+   - Confirmado que a habilidade `opiblog` implementa fact-check integral na segunda etapa da chamada à API (Supervisor Editorial Sênior de Luxo), comparando os dados técnicos de marca, ano, notas e perfumistas criadores contra o rascunho literário e a fonte original para evitar alucinações.
+
+4. **Versionamento e Git:**
+   - A lógica corrigida do script e o PDF atualizado foram commitados e subiram com sucesso para o repositório remoto privado do Marcus (`main -> main`).
 
 ## Estado do Sistema
-- O banco de dados local possui as resenhas e ocasiões ricas preenchidas para os primeiros 11 perfumes (Amouage).
-- O pipeline de geração de PDFs está 100% operacional e testado.
+- O banco de dados local possui as resenhas e ocasiões ricas preenchidas para os primeiros 11 perfumes (Amouage) e o PDF de apresentação reflete esses dados de forma 100% correta.
 
 ## Próximos Passos
 - **Startup:** O próximo agente deverá ler este arquivo, ler o [causas_raizes.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/memorias/causas_raizes.md) e depois excluir este arquivo `resumo.md`.
-- **Enriquecimento Restante:** Definir se o restante dos 79 perfumes será preenchido através da execução em lote do script `opiblog.py` (caso uma chave de API válida seja inserida no terminal) ou se continuaremos enriquecendo em blocos assistidos de curadoria.
-- **Importação Nuvemshop:** Rodar o `nuvemshop-uploader` para gerar a planilha final `produtos.csv` contendo as novas descrições ricas com as resenhas do *ÇaFleureBon* preenchidas.
+- **Importação Nuvemshop:** Rodar o `nuvemshop-uploader` para gerar a planilha final `produtos.csv` contendo as novas descrições ricas integradas com as resenhas do ÇaFleureBon.
