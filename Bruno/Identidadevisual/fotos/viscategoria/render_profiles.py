@@ -3,6 +3,35 @@ import json
 import shutil
 import subprocess
 import sys
+import re
+
+def slugify(text):
+    text = str(text).lower()
+    replacements = {
+        'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',
+        'à': 'a', 'è': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u',
+        'â': 'a', 'ê': 'e', 'î': 'i', 'ô': 'o', 'û': 'u',
+        'ã': 'a', 'õ': 'o', 'ç': 'c', 'ñ': 'n',
+        'ä': 'a', 'ë': 'e', 'ï': 'i', 'ö': 'o', 'ü': 'u'
+    }
+    for char, replacement in replacements.items():
+        text = text.replace(char, replacement)
+    text = re.sub(r'[^a-z0-9\s-]', '', text)
+    text = re.sub(r'[\s-]+', '-', text)
+    return text.strip('-')
+
+def get_sku_2ml(brand, name):
+    slug_brand = slugify(brand)
+    slug_name = slugify(name)
+    sku_clean_brand = slug_brand.upper()[:4]
+    # Remove hifens para o nome e trunca em 12 caracteres
+    sku_clean_name = slug_name.replace("-", "")[:12].upper()
+    
+    # Tratamento especial de hifens duplos para marcas curtas no protocolo
+    if len(sku_clean_brand) < 4:
+        return f"DEC-{sku_clean_brand}--{sku_clean_name}-2ML"
+    return f"DEC-{sku_clean_brand}-{sku_clean_name}-2ML"
+
 
 # Tenta importar playwright, se falhar explica ao usuário
 try:
@@ -298,6 +327,15 @@ def render_perfume_images():
         except IndexError:
             print("[AVISO] ID do perfume não especificado após --perfume.")
             
+    if "--limit" in sys.argv:
+        try:
+            limit_idx = sys.argv.index("--limit")
+            limit_val = int(sys.argv[limit_idx + 1])
+            perfumes = perfumes[:limit_val]
+            print(f"[LIMITADO] Renderizando apenas os primeiros {limit_val} perfumes.")
+        except (IndexError, ValueError):
+            pass
+            
     if not os.path.exists(template_path):
         print(f"[ERRO] O arquivo {template_path} não foi encontrado.")
         return
@@ -365,7 +403,8 @@ def render_perfume_images():
             page.wait_for_timeout(2500)
             
             # Tira o print e salva na pasta de output
-            output_image_path = os.path.join(output_dir, f"{p_id}_perfil.jpeg")
+            sku = get_sku_2ml(perfume["marca"], perfume["nome"])
+            output_image_path = os.path.join(output_dir, f"{sku}_2.jpeg")
             page.screenshot(path=output_image_path, type="jpeg", quality=92, full_page=False)
             
             # Injetar validacao de qualidade visual do card de perfil renderizado (Quality Gate)
@@ -426,9 +465,6 @@ Respond strictly in JSON format:
                 print("   [INFO Quality Gate] GEMINI_API_KEY nao encontrada no ambiente. Pulando a validacao de IA.")
             
             if os.path.exists(output_image_path):
-                # Duplica a imagem com o padrão _2.jpeg usado na Nuvemshop
-                output_image_path_2 = os.path.join(output_dir, f"{p_id}_2.jpeg")
-                shutil.copy(output_image_path, output_image_path_2)
                 print(f"   [OK] Imagem salva em: {output_image_path}")
             
             # Limpar arquivo temporário
