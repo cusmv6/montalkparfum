@@ -308,8 +308,10 @@ def organizar_pasta_nuvemshop(output_dir):
     deleted_count = 0
     for f in os.listdir(output_dir):
         file_path = os.path.join(output_dir, f)
-        # Identifica se o arquivo contém indicações antigas de volumetria de ml ou perfil antigo
-        if any(term in f.upper() for term in ["-2ML", "-5ML", "-10ML", "PERFIL.JPEG"]):
+        f_upper = f.upper()
+        # Identifica se o arquivo contém indicações antigas de volumetria de ml, perfil antigo, cenários de teste ou padrões legados
+        is_legacy = any(term in f_upper for term in ["-2ML", "-5ML", "-10ML", "PERFIL.JPEG", "SCENARIO_", "DEC-XERJOFF-TORINO-25-"])
+        if is_legacy or (f_upper.startswith("DEC-") and f_upper.endswith(".JPG")):
             try:
                 os.remove(file_path)
                 deleted_count += 1
