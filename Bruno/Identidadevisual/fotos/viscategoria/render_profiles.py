@@ -20,7 +20,7 @@ def slugify(text):
     text = re.sub(r'[\s-]+', '-', text)
     return text.strip('-')
 
-def get_sku_2ml(brand, name):
+def get_sku_base(brand, name):
     slug_brand = slugify(brand)
     slug_name = slugify(name)
     sku_clean_brand = slug_brand.upper()[:4]
@@ -29,8 +29,8 @@ def get_sku_2ml(brand, name):
     
     # Tratamento especial de hifens duplos para marcas curtas no protocolo
     if len(sku_clean_brand) < 4:
-        return f"DEC-{sku_clean_brand}--{sku_clean_name}-2ML"
-    return f"DEC-{sku_clean_brand}-{sku_clean_name}-2ML"
+        return f"DEC-{sku_clean_brand}--{sku_clean_name}"
+    return f"DEC-{sku_clean_brand}-{sku_clean_name}"
 
 
 # Tenta importar playwright, se falhar explica ao usuário
@@ -403,7 +403,7 @@ def render_perfume_images():
             page.wait_for_timeout(2500)
             
             # Tira o print e salva na pasta de output
-            sku = get_sku_2ml(perfume["marca"], perfume["nome"])
+            sku = get_sku_base(perfume["marca"], perfume["nome"])
             output_image_path = os.path.join(output_dir, f"{sku}_2.jpeg")
             page.screenshot(path=output_image_path, type="jpeg", quality=92, full_page=False)
             

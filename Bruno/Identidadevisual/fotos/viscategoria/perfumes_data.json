@@ -3,12 +3,14 @@
     "id": "amouage_cristal_gold_man",
     "nome": "CRISTAL & GOLD MAN",
     "marca": "AMOUAGE",
+    "resenha_editorial": "Cristal & Gold Man é uma joia rara feita para comemorar os 40 anos da grife. A perfumista Alexandra Carlin lapidou o clássico de 1983, criando um perfume de alta concentração que abre com o brilho ofuscante de aldeídos que parecem luz pura na pele. Sob essa névoa luminosa, revela-se a atração carnal da civeta e a maciez do sândalo, despertando um rastro de desejo íntimo, opulência e poder atemporal.",
+    "ocasioes_recomendadas": "Ideal para ocasiões de gala, eventos formais noturnos ou climas amenos onde se busca exalar opulência e sofisticação clássica.",
     "concentracao": "Eau de Parfum",
     "genero_comercial": "Masculino",
     "familia_olfativa": "Chipre Amadeirado",
     "ano_lancamento": 2023,
     "perfumistas": [
-      "Perfumista"
+      "Alexandra Carlin"
     ],
     "perfumistas_detalhes": [
       {
@@ -123,8 +125,8 @@
         "Mel",
         "Olíbano",
         "Néroli",
-        "Petitgrain",
-        "Bergamota"
+        "Bergamota",
+        "Petitgrain"
       ],
       "coracao": [
         "Heliotrópio",
@@ -137,8 +139,8 @@
         "Civeta",
         "Âmbar Cinzento",
         "Ládano",
-        "Sândalo",
         "Patchouli",
+        "Sândalo",
         "Vetiver",
         "Madeira Guaiac"
       ]
@@ -148,14 +150,14 @@
       "Rastro Marcante e Elegante",
       "Fixação Extrema na Pele",
       "Toque de Luxo Inigualável"
-    ],
-    "resenha_editorial": "Cristal & Gold Man é uma joia rara feita para comemorar os 40 anos da grife. A perfumista Alexandra Carlin lapidou o clássico de 1983, criando um perfume de alta concentração que abre com o brilho ofuscante de aldeídos que parecem luz pura na pele. Sob essa névoa luminosa, revela-se a atração carnal da civeta e a maciez do sândalo, despertando um rastro de desejo íntimo, opulência e poder atemporal.",
-    "ocasioes_recomendadas": "Ideal para ocasiões de gala, eventos formais noturnos ou climas amenos onde se busca exalar opulência e sofisticação clássica."
+    ]
   },
   {
     "id": "amouage_cristal_gold_woman",
     "nome": "CRISTAL & GOLD WOMAN",
     "marca": "AMOUAGE",
+    "resenha_editorial": "Cristal & Gold Woman celebra os 40 anos da grife em uma releitura magistral de Alexandra Carlin. O perfume envolve os sentidos em uma névoa dourada de aldeídos e néroli, flutuando sobre um coração suntuoso e atalcado de jasmim e rosa. Na pele, o calor carnal da civeta derrete-se na doçura da baunilha, despertando uma aura de realeza, luxo e desejo magnético.",
+    "ocasioes_recomendadas": "Excelente para jantares de gala, noites frias de outono e inverno, ou ocasiões especiais onde se deseja projetar uma aura aristocrática e elegante.",
     "concentracao": "Eau de Parfum",
     "genero_comercial": "Feminino",
     "familia_olfativa": "Floral Aldeídico",
@@ -299,20 +301,20 @@
       "Rastro Marcante e Elegante",
       "Fixação Extrema na Pele",
       "Toque de Luxo Inigualável"
-    ],
-    "resenha_editorial": "Cristal & Gold Woman celebra os 40 anos da grife em uma releitura magistral de Alexandra Carlin. O perfume envolve os sentidos em uma névoa dourada de aldeídos e néroli, flutuando sobre um coração suntuoso e atalcado de jasmim e rosa. Na pele, o calor carnal da civeta derrete-se na doçura da baunilha, despertando uma aura de realeza, luxo e desejo magnético.",
-    "ocasioes_recomendadas": "Excelente para jantares de gala, noites frias de outono e inverno, ou ocasiões especiais onde se deseja projetar uma aura aristocrática e elegante."
+    ]
   },
   {
     "id": "amouage_guidance",
     "nome": "GUIDANCE",
     "marca": "AMOUAGE",
+    "resenha_editorial": "Guidance é uma obra-prima de Quentin Bisch que evoca a imagem poética de um santuário de marfim e ouro. O perfume envolve a pele em um abraço aveludado e lactônico de avelã e sândalo, que sussurra contra a doçura da pera e o calor sagrado do olíbano. Uma fragrância de textura de seda e sensualidade hipnótica.",
+    "ocasioes_recomendadas": "Perfeito para climas amenos, encontros românticos ou jantares sofisticados onde se busca uma presença marcante, cremosa e altamente sedutora.",
     "concentracao": "Eau de Parfum",
     "genero_comercial": "Compartilhável (Unissex)",
     "familia_olfativa": "Floral Frutado",
     "ano_lancamento": 2023,
     "perfumistas": [
-      "Perfumista"
+      "Quentin Bisch"
     ],
     "perfumistas_detalhes": [
       {
@@ -322,7 +324,7 @@
     ],
     "slogan": "Elegância engarrafada para momentos especiais.",
     "nota_avaliacao": 3.81,
-    "votos_avaliacao": 7780,
+    "votos_avaliacao": 7811,
     "frasco_imagem": "amouage_guidance_composicao.png",
     "principais_acordes": [
       {
@@ -333,55 +335,55 @@
       },
       {
         "nome": "Âmbar",
-        "intensidade": 69.0667,
+        "intensidade": 68.9848,
         "cor": "#bc4d10",
         "texto_cor": "#000000"
       },
       {
         "nome": "Especiado Quente",
-        "intensidade": 66.2159,
+        "intensidade": 66.1816,
         "cor": "#cc3300",
         "texto_cor": "#000000"
       },
       {
         "nome": "Frutado",
-        "intensidade": 63.2881,
+        "intensidade": 63.2705,
         "cor": "#fc4b29",
         "texto_cor": "#000000"
       },
       {
         "nome": "Amendoado",
-        "intensidade": 57.3702,
+        "intensidade": 57.391,
         "cor": "#b4955f",
         "texto_cor": "#000000"
       },
       {
         "nome": "Doce",
-        "intensidade": 54.6807,
+        "intensidade": 54.6731,
         "cor": "#ee363b",
         "texto_cor": "#000000"
       },
       {
         "nome": "Atalcado",
-        "intensidade": 52.8668,
+        "intensidade": 52.8478,
         "cor": "#eeddcc",
         "texto_cor": "#000000"
       },
       {
         "nome": "Baunilha",
-        "intensidade": 52.2798,
+        "intensidade": 52.2431,
         "cor": "#fffec0",
         "texto_cor": "#000000"
       },
       {
         "nome": "Floral",
-        "intensidade": 49.6706,
+        "intensidade": 49.6459,
         "cor": "#ff5f8d",
         "texto_cor": "#000000"
       },
       {
         "nome": "Balsâmico",
-        "intensidade": 48.3362,
+        "intensidade": 48.3083,
         "cor": "#ad8359",
         "texto_cor": "#000000"
       }
@@ -393,13 +395,13 @@
     },
     "diurno_votos": {
       "dia": 2200,
-      "noite": 2200
+      "noite": 2300
     },
     "percepcao_genero": {
       "feminino": 2400,
       "mais_feminino": 1100,
-      "unissex": 656,
-      "mais_masculino": 26,
+      "unissex": 657,
+      "mais_masculino": 27,
       "masculino": 27,
       "classe_genero": "feminino"
     },
@@ -409,7 +411,7 @@
         "cor": "#D4F0FC"
       },
       "primavera": {
-        "votos": 2100,
+        "votos": 2200,
         "cor": "#A3D977"
       },
       "verao": {
@@ -446,20 +448,20 @@
       "Rastro Marcante e Elegante",
       "Fixação Extrema na Pele",
       "Toque de Luxo Inigualável"
-    ],
-    "resenha_editorial": "Guidance é uma obra-prima de Quentin Bisch que evoca a imagem poética de um santuário de marfim e ouro. O perfume envolve a pele em um abraço aveludado e lactônico de avelã e sândalo, que sussurra contra a doçura da pera e o calor sagrado do olíbano. Uma fragrância de textura de seda e sensualidade hipnótica.",
-    "ocasioes_recomendadas": "Perfeito para climas amenos, encontros românticos ou jantares sofisticados onde se busca uma presença marcante, cremosa e altamente sedutora."
+    ]
   },
   {
     "id": "amouage_guidance_46",
     "nome": "GUIDANCE 46",
     "marca": "AMOUAGE",
+    "resenha_editorial": "Guidance 46 é um Extrait de Parfum magnífico que eleva a assinatura de Quentin Bisch ao ápice da intensidade (46% de óleos). Uma evolução rica e misteriosa que aprofunda o frescor amendoado da avelã e da pera com o calor opulento do osmanthus, sândalo e fava tonka. Uma fragrância hipnótica, de fixação colossal.",
+    "ocasioes_recomendadas": "Excelente para grandes eventos, climas frios e ocasiões solenes onde se busca a máxima distinção olfativa com um rastro monumental.",
     "concentracao": "Extrait de Parfum",
     "genero_comercial": "Compartilhável (Unissex)",
     "familia_olfativa": "Oriental Floral",
     "ano_lancamento": 2024,
     "perfumistas": [
-      "Perfumista"
+      "Quentin B"
     ],
     "perfumistas_detalhes": [
       {
@@ -469,7 +471,7 @@
     ],
     "slogan": "A expressão máxima da perfumaria artística.",
     "nota_avaliacao": 4.17,
-    "votos_avaliacao": 2676,
+    "votos_avaliacao": 2700,
     "frasco_imagem": "amouage_guidance_46_composicao.png",
     "principais_acordes": [
       {
@@ -480,55 +482,55 @@
       },
       {
         "nome": "Frutado",
-        "intensidade": 69.041,
+        "intensidade": 69.2953,
         "cor": "#fc4b29",
         "texto_cor": "#000000"
       },
       {
         "nome": "Amendoado",
-        "intensidade": 64.5946,
+        "intensidade": 64.6567,
         "cor": "#b4955f",
         "texto_cor": "#000000"
       },
       {
         "nome": "Floral",
-        "intensidade": 62.9973,
+        "intensidade": 63.1415,
         "cor": "#ff5f8d",
         "texto_cor": "#000000"
       },
       {
-        "nome": "Especiado Quente",
-        "intensidade": 62.7137,
-        "cor": "#cc3300",
-        "texto_cor": "#000000"
-      },
-      {
         "nome": "Âmbar",
-        "intensidade": 62.659,
+        "intensidade": 62.6418,
         "cor": "#bc4d10",
         "texto_cor": "#000000"
       },
       {
+        "nome": "Especiado Quente",
+        "intensidade": 62.6106,
+        "cor": "#cc3300",
+        "texto_cor": "#000000"
+      },
+      {
         "nome": "Doce",
-        "intensidade": 61.4663,
+        "intensidade": 61.5994,
         "cor": "#ee363b",
         "texto_cor": "#000000"
       },
       {
         "nome": "Rosa",
-        "intensidade": 61.3994,
+        "intensidade": 61.5484,
         "cor": "#fe016b",
         "texto_cor": "#000000"
       },
       {
         "nome": "Atalcado",
-        "intensidade": 50.0359,
+        "intensidade": 50.0459,
         "cor": "#eeddcc",
         "texto_cor": "#000000"
       },
       {
         "nome": "Amêndoa",
-        "intensidade": 49.8079,
+        "intensidade": 49.835,
         "cor": "#f1e3c5",
         "texto_cor": "#000000"
       }
@@ -539,13 +541,13 @@
       "rastro_texto": "Marcante"
     },
     "diurno_votos": {
-      "dia": 779,
-      "noite": 952
+      "dia": 781,
+      "noite": 956
     },
     "percepcao_genero": {
-      "feminino": 636,
-      "mais_feminino": 385,
-      "unissex": 451,
+      "feminino": 639,
+      "mais_feminino": 388,
+      "unissex": 453,
       "mais_masculino": 17,
       "masculino": 23,
       "classe_genero": "feminino"
@@ -556,11 +558,11 @@
         "cor": "#D4F0FC"
       },
       "primavera": {
-        "votos": 821,
+        "votos": 825,
         "cor": "#A3D977"
       },
       "verao": {
-        "votos": 537,
+        "votos": 539,
         "cor": "#FFA07A"
       },
       "outono": {
@@ -599,43 +601,91 @@
       "Rastro Marcante e Elegante",
       "Fixação Extrema na Pele",
       "Toque de Luxo Inigualável"
-    ],
-    "resenha_editorial": "Guidance 46 é um Extrait de Parfum magnífico que eleva a assinatura de Quentin Bisch ao ápice da intensidade (46% de óleos). Uma evolução rica e misteriosa que aprofunda o frescor amendoado da avelã e da pera com o calor opulento do osmanthus, sândalo e fava tonka. Uma fragrância hipnótica, de fixação colossal.",
-    "ocasioes_recomendadas": "Excelente para grandes eventos, climas frios e ocasiões solenes onde se busca a máxima distinção olfativa com um rastro monumental."
+    ]
   },
   {
     "id": "amouage_jubilation_25",
     "nome": "JUBILATION 25",
     "marca": "AMOUAGE",
+    "resenha_editorial": "Jubilation 25 é um clássico moderno e aristocrático sob a assinatura de Lucas Sieuzac. A fragrância funde a acidez frutada e licorosa da amora com o misticismo resinoso do olíbano, repousando sobre uma base sagrada de opoponax, mirra e patchouli amadeirado. Um aroma teatral, denso e de realeza absoluta.",
+    "ocasioes_recomendadas": "Ideal para noites de gala, jantares formais sofisticados em climas amenos e frios, onde se busca projetar uma presença aristocrática, opulenta e de luxo absoluto.",
     "concentracao": "Eau de Parfum",
     "genero_comercial": "Feminino",
-    "familia_olfativa": "Chipre Floral",
+    "familia_olfativa": "Oriental Floral",
     "ano_lancamento": 2007,
     "perfumistas": [
       "Lucas Sieuzac"
     ],
+    "perfumistas_detalhes": [
+      {
+        "nome": "Lucas Sieuzac",
+        "foto": "fotos/perfumistas/lucas_sieuzac.jpg"
+      }
+    ],
     "slogan": "Uma homenagem à elegância festiva oriental.",
-    "nota_avaliacao": 4.18,
-    "votos_avaliacao": 920,
+    "nota_avaliacao": 4.06,
+    "votos_avaliacao": 2724,
     "frasco_imagem": "amouage_jubilation_25_real.jpg",
     "principais_acordes": [
       {
         "nome": "Âmbar",
-        "intensidade": 100,
-        "cor": "#FFA07A",
-        "texto_cor": "#4E2E20"
+        "intensidade": 100.0,
+        "cor": "#bc4d10",
+        "texto_cor": "#000000"
       },
       {
-        "nome": "Especiado Quente",
-        "intensidade": 90,
-        "cor": "#F5E6D3",
-        "texto_cor": "#614D35"
+        "nome": "Aromático",
+        "intensidade": 61.612,
+        "cor": "#37a089",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Amadeirado",
+        "intensidade": 58.5591,
+        "cor": "#774414",
+        "texto_cor": "#000000"
       },
       {
         "nome": "Balsâmico",
-        "intensidade": 80,
-        "cor": "#FAF0E6",
-        "texto_cor": "#4B443A"
+        "intensidade": 55.2347,
+        "cor": "#ad8359",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Especiado Quente",
+        "intensidade": 53.9694,
+        "cor": "#cc3300",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Floral Amarelo",
+        "intensidade": 52.5969,
+        "cor": "#ffdc10",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Doce",
+        "intensidade": 50.3973,
+        "cor": "#ee363b",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Defumado",
+        "intensidade": 47.783,
+        "cor": "#827487",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Rosa",
+        "intensidade": 46.0689,
+        "cor": "#fe016b",
+        "texto_cor": "#000000"
+      },
+      {
+        "nome": "Herbal",
+        "intensidade": 44.482,
+        "cor": "#6ca47f",
+        "texto_cor": "#000000"
       }
     ],
     "perfil_olfativo": {
@@ -644,50 +694,54 @@
       "rastro_texto": "Marcante"
     },
     "diurno_votos": {
-      "dia": 100,
-      "noite": 420
+      "dia": 480,
+      "noite": 583
     },
     "percepcao_genero": {
-      "feminino": 240,
-      "mais_feminino": 130,
-      "unissex": 50,
-      "mais_masculino": 20,
-      "masculino": 20,
+      "feminino": 192,
+      "mais_feminino": 120,
+      "unissex": 189,
+      "mais_masculino": 5,
+      "masculino": 3,
       "classe_genero": "feminino"
     },
     "estacoes": {
       "inverno": {
-        "votos": 460,
+        "votos": 595,
         "cor": "#D4F0FC"
       },
       "primavera": {
-        "votos": 100,
+        "votos": 335,
         "cor": "#A3D977"
       },
       "verao": {
-        "votos": 100,
+        "votos": 224,
         "cor": "#FFA07A"
       },
       "outono": {
-        "votos": 360,
+        "votos": 713,
         "cor": "#EAD2AC"
       }
     },
     "notas": {
       "topo": [
-        "Ylang-Ylang",
+        "Ylang Ylang",
         "Rosa",
+        "Estragão",
         "Limão"
       ],
       "coracao": [
         "Incenso",
-        "Labdanum",
-        "Patchouli"
+        "Rosa",
+        "Ládano",
+        "Artemísia"
       ],
       "base": [
         "Mirra",
-        "Almíscar",
-        "Vetiver"
+        "Âmbar",
+        "Patchouli",
+        "Vetiver",
+        "Almíscar"
       ]
     },
     "adjetivos": [
@@ -695,9 +749,7 @@
       "Rastro Marcante e Elegante",
       "Fixação Extrema na Pele",
       "Toque de Luxo Inigualável"
-    ],
-    "resenha_editorial": "Jubilation 25 é um clássico moderno e aristocrático sob a assinatura de Lucas Sieuzac. A fragrância funde a acidez frutada e licorosa da amora com o misticismo resinoso do olíbano, repousando sobre uma base sagrada de opoponax, mirra e patchouli amadeirado. Um aroma teatral, denso e de realeza absoluta.",
-    "ocasioes_recomendadas": "Ideal para noites de gala, jantares formais sofisticados em climas amenos e frios, onde se busca projetar uma presença aristocrática, opulenta e de luxo absoluto."
+    ]
   },
   {
     "id": "amouage_jubilation_40",

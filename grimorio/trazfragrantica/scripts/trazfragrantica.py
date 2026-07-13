@@ -1001,6 +1001,8 @@ def run_single(p_id, retries=3):
                 "id": p_id,
                 "nome": details["nome"],
                 "marca": details["marca"],
+                "resenha_editorial": p.get("resenha_editorial"),
+                "ocasioes_recomendadas": p.get("ocasioes_recomendadas"),
                 "concentracao": obter_concentracao(p_id, details["nome"]),
                 "genero_comercial": details["genero"],
                 "familia_olfativa": details["familia"],
