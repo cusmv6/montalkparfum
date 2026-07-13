@@ -9,8 +9,8 @@ Ela enriquece o arquivo `perfumes_data.json` com dois campos cruciais para a des
 
 ## Pipeline de IA e Supervisão de Luxo
 Para garantir que as descrições mantenham o nível altíssimo de curadoria exigido pelo e-commerce e evitem erros de alucinação de dados, a habilidade implementa um fluxo de duas etapas:
-1. **Etapa 1 (Redação):** Um agente olfativo extrai a essência opinativa e as ocasiões sugeridas no review do *ÇaFleureBon*.
-2. **Etapa 2 (Revisor Sênior de Luxo):** Um supervisor editorial revisa o texto gerado contra a pirâmide técnica de notas do perfume (evitando alucinar notas falsas), elimina clichês de marketing corporativo e garante que o tom continue autêntico, crítico e opinativo como o blog original.
+1. **Etapa 1 (Redação e Alinhamento de Acordes):** Um agente olfativo extrai a essência opinativa e as ocasiões sugeridas no review do *ÇaFleureBon*. A escrita é pautada estritamente para priorizar metáforas e sensações táteis que correspondam aos **3 principais acordes de maior intensidade** do perfume, unindo a verdade física do frasco à poesia crítica.
+2. **Etapa 2 (Revisor Sênior de Luxo & Fact-Checking):** Um supervisor editorial revisa o texto gerado contra a pirâmide técnica de notas (evitando citar notas que não pertencem à fórmula), garante a consistência sensorial com os acordes dominantes, elimina clichês de marketing corporativo e assegura que o tom continue poético, pessoal e opinativo como o blog original.
 
 ## Como Usar
 
