@@ -437,7 +437,8 @@ def gerar_apresentacao_pdf(perfumes_list):
             
             <div class="critique-box">
                 <div class="critique-title">"A perspectiva de ÇaFleureBon...</div>
-                <span class="critique-subtitle">(Blog Crítico Mundialmente Reconhecido e Vencedor dos Perfumed Plume Awards - O "Oscar" da Perfumaria)</span>
+                <span class="critique-subtitle">PERSPECTIVA EDITORIAL DO BLOG CRÍTICO MAIS PREMIADO DA PERFUMARIA DE NICHO</span>
+                <span class="critique-subtitle" style="margin-top: -12px; font-size: 7.5px; font-style: italic; opacity: 0.85;">(PERFUMED PLUME AWARDS, FRAGRANCE FOUNDATION AWARDS - FIFI, BASENOTES READER'S AWARDS)</span>
                 
                 <div class="critique-text">
                     {p.get('resenha_editorial', 'Crítica editorial em processamento.')}
