@@ -1,0 +1,5 @@
+=== LOG DE PERFUMES NÃO ENCONTRADOS / COM ERRO DE PROCESSAMENTO ===
+
+Perfume ID: nishane_hundred_silent_ways
+Erro: Não foi possível encontrar a URL do perfume 'NISHANE HUNDRED SILENT WAYS' no Fragrantica.
+--------------------------------------------------

@@ -22,8 +22,8 @@ except ImportError:
     pass
 
 WORKSPACE_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem"
-JSON_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\produtos\catalogo.json"
-OUTPUT_PDF_DIR = os.path.join(WORKSPACE_DIR, "apresenta", "apresenta_bruno")
+JSON_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\produtos\catalogo.json"
+OUTPUT_PDF_DIR = os.path.join(WORKSPACE_DIR, "apresentacoes", "apresenta_bruno")
 OUTPUT_PDF_PATH = os.path.join(OUTPUT_PDF_DIR, "apresentacao_perfumes.pdf")
 
 # 5 Exemplares de Referência Editorial (Few-Shot) para alinhar a IA
@@ -168,7 +168,7 @@ Instruções e Filtro de Acordes:
 
     print("   [*] Gerando rascunho do redator olfativo...")
     response_draft = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-3.5-flash',
         contents=[prompt_redator]
     )
     draft_text = response_draft.text.strip()
@@ -210,7 +210,7 @@ Responda ESTRITAMENTE em formato JSON com as chaves:
 
     print("   [*] Executando a revisão sênior de luxo e fact-checking...")
     response_final = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-3.5-flash',
         contents=[prompt_supervisor],
         config=types.GenerateContentConfig(
             response_mime_type="application/json",

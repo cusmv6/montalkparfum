@@ -6,12 +6,13 @@ import argparse
 import subprocess
 
 WORKSPACE_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem"
-CATALOGO_JSON = os.path.join(WORKSPACE_DIR, "Bruno", "produtos", "catalogo.json")
+CATALOGO_JSON = os.path.join(WORKSPACE_DIR, "PROJETOS", "Bruno", "produtos", "catalogo.json")
 TRAZFRAGRANTICA = os.path.join(WORKSPACE_DIR, "grimorio", "trazfragrantica", "scripts", "trazfragrantica.py")
 OPIBLOG = os.path.join(WORKSPACE_DIR, "grimorio", "opiblog", "scripts", "opiblog.py")
+ESTAGIARIOVISUAL = os.path.join(WORKSPACE_DIR, "SUMMONS", "estagiariovisual", "scripts", "estagiariovisual.py")
 UPLOADER = os.path.join(WORKSPACE_DIR, "grimorio", "nuvemshop-uploader", "scripts", "nuvemshop_converter.py")
-CATALOGO_MD = os.path.join(WORKSPACE_DIR, "Bruno", "Decante", "catalogo_perfumes.md")
-IMPORTAR_CSV = os.path.join(WORKSPACE_DIR, "Bruno", "produtos", "importar_nuvemshop.csv")
+CATALOGO_MD = os.path.join(WORKSPACE_DIR, "PROJETOS", "Bruno", "Decante", "catalogo_perfumes.md")
+IMPORTAR_CSV = os.path.join(WORKSPACE_DIR, "PROJETOS", "Bruno", "produtos", "importar_nuvemshop.csv")
 
 def load_perfumes():
     if not os.path.exists(CATALOGO_JSON):
@@ -73,14 +74,22 @@ def main():
             continue
             
         # Passo 2: opiblog.py (Enriquece com resenha e ocasiões do ÇaFleureBon)
-        print("\n--- PASSO 2/2: Enriquecendo com Crítica Editorial (ÇaFleureBon) ---")
+        print("\n--- PASSO 2/3: Enriquecendo com Crítica Editorial (ÇaFleureBon) ---")
         try:
             run_subprocess([sys.executable, OPIBLOG, "--perfume", p_id])
         except Exception as e:
             print(f"   [AVISO] Falha no passo opiblog para {p_id}: {e}. Continuando lote...")
             continue
             
-    # Passo 3: nuvemshop_converter.py (Exporta a planilha importar_nuvemshop.csv)
+        # Passo 3: estagiariovisual.py (Orquestra e gera a grade visual de luxo - Fotos 1, 2 e 3)
+        print("\n--- PASSO 3/3: Orquestrando grade de imagens (Fotos 1, 2 e 3) ---")
+        try:
+            run_subprocess([sys.executable, ESTAGIARIOVISUAL, "--perfume", p_id])
+        except Exception as e:
+            print(f"   [AVISO] Falha no passo estagiariovisual para {p_id}: {e}. Continuando lote...")
+            continue
+            
+    # Passo 4: nuvemshop_converter.py (Exporta a planilha importar_nuvemshop.csv)
     print("\n" + "=" * 80)
     print("--- PASSO FINAL: Atualizando a Planilha de Importação Nuvemshop ---")
     print("=" * 80)

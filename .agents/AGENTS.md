@@ -3,11 +3,11 @@
 ## 1. Gestão de Contexto e Inicialização
 - **Startup**: Toda vez que iniciar uma nova interação ou retomar o trabalho neste projeto:
   1. Verifique imediatamente se o arquivo `resumo.md` ou `reboot_state.md` existe na raiz do projeto. Se existir, use a ferramenta `view_file` para ler todo o seu conteúdo e depois o exclua para manter o ambiente limpo.
-  2. Verifique se o arquivo [causas_raizes.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/memorias/causas_raizes.md) existe. Se sim, use a ferramenta `view_file` para ler todo o seu conteúdo, garantindo a ancoragem de restrições técnicas no contexto.
+  2. Verifique se o arquivo [causas_raizes.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/MEMORIAS/causas_raizes.md) existe. Se sim, use a ferramenta `view_file` para ler todo o seu conteúdo, garantindo a ancoragem de restrições técnicas no contexto.
   3. Explique ao usuário que você leu as memórias de causas raízes e o resumo de sessão (se houver), e apresente os próximos passos propostos.
 - **Shutdown**: Toda vez que a sessão for interrompida, reiniciada ou finalizada:
   1. Crie um arquivo `resumo.md` contendo um resumo completo do progresso atual, descobertas críticas, estado do sistema e os próximos passos claros para a próxima sessão.
-  2. Avalie se algum bug ou conflito solucionado nesta sessão merece ser registrado como uma nova causa raiz para evitar loops de retrabalho futuros. Se sim, adicione-o como uma nova entrada no arquivo [causas_raizes.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/memorias/causas_raizes.md).
+  2. Avalie se algum bug ou conflito solucionado nesta sessão merece ser registrado como uma nova causa raiz para evitar loops de retrabalho futuros. Se sim, adicione-o como uma nova entrada no arquivo [causas_raizes.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/MEMORIAS/causas_raizes.md).
 
 ## 2. Refinamento de Prompts Centrado na Autonomia e EFT
 - Sempre que o usuário solicitar uma tarefa complexa, nova funcionalidade ou alteração estrutural de forma direta ou simplificada (ideias brutas):
@@ -36,9 +36,9 @@
 
 ## 7. Protocolos e Manuais Sob Demanda
 - **Regra**: Para economizar contexto e consumo de tokens em cada interação, manuais de formatação, processos longos ou especificações de nomenclatura não devem ser inseridos diretamente neste arquivo de regras (`AGENTS.md`).
-- **Gatilho 1 (Nomenclatura/SKUs)**: Sempre que for instruído a manipular ou gerar imagens de e-commerce, nomes de arquivos, ou SKUs de produtos da Nuvemshop, consulte primeiro o manual de padronização em [sku_protocol.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/protocolos/sku_protocol.md) usando a ferramenta `view_file` para guiar sua formatação de forma exata.
-- **Gatilho 2 (Design/Identidade Visual)**: Sempre que o usuário mencionar ou solicitar modificações relacionadas a elementos visuais, paletas de cores, tipografia, dimensões de cards ou layouts, o agente deve proativamente consultar o [manual_identidade_visual.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/Identidadevisual/manual_identidade_visual.md) e [diretrizes_identidade.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/Identidadevisual/diretrizes_identidade.md) usando a ferramenta `view_file` antes de sugerir ou executar alterações.
-- **Gatilho 3 (Banco de Dados do Catálogo - catalogo.json)**: O banco de dados centralizado que unifica os metadados do Fragrantica e resenhas do ÇaFleureBon está localizado em [catalogo.json](file:///c:/Users/odeao/OneDrive/Desktop/brem/Bruno/produtos/catalogo.json). Qualquer operação de leitura, gravação ou varredura de catálogo deve priorizar este arquivo como a Fonte Única de Verdade (Single Source of Truth).
+- **Gatilho 1 (Nomenclatura/SKUs)**: Sempre que for instruído a manipular ou gerar imagens de e-commerce, nomes de arquivos, ou SKUs de produtos da Nuvemshop, consulte primeiro o manual de padronização em [sku_protocol.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/PROJETOS/Bruno/protocolos/sku_protocol.md) usando a ferramenta `view_file` para guiar sua formatação de forma exata.
+- **Gatilho 2 (Design/Identidade Visual)**: Sempre que o usuário mencionar ou solicitar modificações relacionadas a elementos visuais, paletas de cores, tipografia, dimensões de cards ou layouts, o agente deve proativamente consultar o [manual_identidade_visual.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/PROJETOS/Bruno/Identidadevisual/manual_identidade_visual.md) e [diretrizes_identidade.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/PROJETOS/Bruno/Identidadevisual/diretrizes_identidade.md) usando a ferramenta `view_file` antes de sugerir ou executar alterações.
+- **Gatilho 3 (Banco de Dados do Catálogo - catalogo.json)**: O banco de dados centralizado que unifica os metadados do Fragrantica e resenhas do ÇaFleureBon está localizado em [catalogo.json](file:///c:/Users/odeao/OneDrive/Desktop/brem/PROJETOS/Bruno/produtos/catalogo.json). Qualquer operação de leitura, gravação ou varredura de catálogo deve priorizar este arquivo como a Fonte Única de Verdade (Single Source of Truth).
 
 ---
 
@@ -94,5 +94,14 @@ Somente após atingir o Ponto de Parada, você deve revelar a resposta final ao 
   2. O Agente deve pausar a execução imediatamente e questionar o Marcus indicando de forma pontual qual elemento do Jeff Su está ausente (ex: "Marcus, preciso que clarifique o *Format*..." ou "Marcus, falta-me o *Contexto* de luxo da marca...").
 
 ## 10. Repositório de Causas Raízes e Prevenção de Loops Circulares
-- **Regra**: Antes de sugerir caminhos técnicos, refatorações de ambiente ou correções de dependência, o agente deve obrigatoriamente fazer uma varredura das palavras-chaves da tarefa no arquivo [causas_raizes.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/memorias/causas_raizes.md).
+- **Regra**: Antes de sugerir caminhos técnicos, refatorações de ambiente ou correções de dependência, o agente deve obrigatoriamente fazer uma varredura das palavras-chaves da tarefa no arquivo [causas_raizes.md](file:///c:/Users/odeao/OneDrive/Desktop/brem/MEMORIAS/causas_raizes.md).
 - **Objetivo**: Se um problema estiver associado a uma causa raiz previamente catalogada, a solução proposta deve respeitar a decisão de engenharia documentada, evitando sugerir alternativas sabidamente falhas (ex: alternar o interpretador para caminhos temporários ou shims da Windows Store).
+
+## 11. Pasta SUMMONS (Diretório de Subagentes)
+- **Definição**: A pasta [SUMMONS/](file:///c:/Users/odeao/OneDrive/Desktop/brem/SUMMONS) é dedicada exclusivamente para armazenar subagentes, agentes de orquestração e maestros de fluxo de alto nível (como o `estagiariovisual`).
+- **Diferenciação**:
+  - `grimorio/` abriga habilidades técnicas específicas, utilitários e ferramentas de nível mais baixo (classificados como Habilidades Seladas).
+  - `SUMMONS/` abriga os subagentes e processos orquestradores que invocam essas habilidades do grimório.
+- **Regra**: Todos os novos subagentes e orquestradores criados no futuro devem ser armazenados obrigatoriamente dentro de `SUMMONS/` para manter a separação clara de responsabilidades no projeto.
+- **Habilidades Seladas de Orquestração**: O subagente `estagiariovisual` (suas pastas, scripts e lógica) é classificado como uma **Habilidade Selada de Orquestração**. O Agente está estritamente impedido de fazer qualquer alteração estrutural, refatoração profunda ou exclusão nos arquivos de `SUMMONS/estagiariovisual` sem autorização prévia por escrito concedida pelo Marcus no chat. O mesmo vale para sua documentação técnica em `.agents/skills/estagiariovisual/SKILL.md`.
+

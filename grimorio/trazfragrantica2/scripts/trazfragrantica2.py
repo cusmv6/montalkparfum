@@ -9,12 +9,12 @@ from playwright.sync_api import sync_playwright
 
 # Configuração de caminhos e diretórios
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
-VISCATEGORIA_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\Identidadevisual\fotos\viscategoria"
-JSON_PATH = os.path.join(VISCATEGORIA_DIR, "perfumes_data.json")
+VISCATEGORIA_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\Identidadevisual\fotos\viscategoria"
+JSON_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\produtos\catalogo.json"
 FOTOS_DIR = os.path.join(VISCATEGORIA_DIR, "fotos")
-OUTPUT_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\Identidadevisual\fotos\nuvemshop2"
+OUTPUT_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\Identidadevisual\fotos\nuvemshop2"
 TEMPLATE_PATH = os.path.join(SCRIPTS_DIR, "composition_template.html")
-CSV_PRODUTOS_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\produtos\importar_nuvemshop.csv"
+CSV_PRODUTOS_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\produtos\importar_nuvemshop.csv"
 
 def slugify(text):
     text = text.lower()
@@ -66,6 +66,15 @@ def gerar_sku_dinamico(brand, name):
     sku_clean_brand = slug_brand.upper()[:4]
     sku_clean_name = slug_name.replace("-", "")[:6].upper()
     return f"DEC-{sku_clean_brand}-{sku_clean_name}-2ML"
+
+def limpar_ml_do_sku(sku):
+    if not sku:
+        return sku
+    sku_upper = sku.upper()
+    for vol in ["-2ML", "-5ML", "-10ML", "-15ML", "-30ML", "-50ML", "-100ML"]:
+        if sku_upper.endswith(vol):
+            return sku[:-len(vol)]
+    return sku
 
 def obter_estilo_moldura(perfume):
     """
@@ -143,6 +152,7 @@ def process_perfumes(target_ids=None):
             else:
                 sku = gerar_sku_dinamico(brand, name)
                 print(f"   [SKU GERADO DINAMICAMENTE (FALLBACK)] SKU: {sku}")
+            sku = limpar_ml_do_sku(sku)
                 
             # Verificar colisão de SKU
             if sku in skus_processados:
@@ -230,7 +240,7 @@ Respond strictly in JSON format:
 }}
 """
                         response = client.models.generate_content(
-                            model='gemini-2.5-flash',
+                            model='gemini-3.5-flash',
                             contents=[img_comp, prompt_validador],
                             config=types.GenerateContentConfig(
                                 response_mime_type="application/json",

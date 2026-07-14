@@ -18,11 +18,11 @@ Este arquivo serve para gerenciar e documentar o progresso das tarefas de arquit
 
 ### [Concluído] UTO-001: Estruturação Inicial da Pasta Utopia
 *   **Status**: **Concluído**
-*   **Contexto**: Iniciar um ecossistema de código isolado das regras de negócio comerciais do Bruno, de modo que Marcus possa desenvolver ideias e códigos experimentais de forma livre na pasta Utopia.
-*   **Descrição**: Criar a pasta base `Utopia` na raiz do repositório para centralizar todos os códigos-fonte e scripts de teste desse ecossistema.
+*   **Contexto**: Iniciar um ecossistema de código isolado das regras de negócio comerciais do Bruno, de modo que Marcus possa desenvolver ideias e códigos experimentais de forma livre na pasta PROJETOS/Utopia.
+*   **Descrição**: Criar a pasta base `PROJETOS/Utopia` na raiz do repositório para centralizar todos os códigos-fonte e scripts de teste desse ecossistema.
 *   **Qualificação de Pronto (Definição de Pronto)**:
-    *   Diretório `Utopia/` criado.
-    *   Isolamento completo garantido em relação aos scripts da pasta `Bruno/`.
+    *   Diretório `PROJETOS/Utopia/` criado.
+    *   Isolamento completo garantido em relação aos scripts da pasta `PROJETOS/Bruno/`.
     *   *Qualificação da Entrega*: Pasta criada e confirmada no mapeamento de diretórios da raiz do projeto.
 
 ### [Em Progresso] UTO-002: Testes Iniciais de Estruturação Multiagente
@@ -38,7 +38,7 @@ Este arquivo serve para gerenciar e documentar o progresso das tarefas de arquit
 ### [A Fazer] UTO-003: Sandbox de Testes de Ferramentas Utopia
 *   **Status**: **A Fazer**
 *   **Contexto**: Criar um ambiente isolado de testes e simulações para novas ferramentas da Utopia que possam vir a ser solicitadas pelo Marcus.
-*   **Descrição**: Implementar uma subpasta ou script de sandbox dentro de `Utopia/` contendo infraestrutura mínima de testes (ex: unit tests simplificados).
+*   **Descrição**: Implementar uma subpasta ou script de sandbox dentro de `PROJETOS/Utopia/` contendo infraestrutura mínima de testes (ex: unit tests simplificados).
 *   **Qualificação de Pronto (Definição de Pronto)**:
     *   Diretório de sandbox configurado.
     *   Um script de teste inicial (ex: `test_sandbox.py` ou `.js`) executando e retornando código `0` (sucesso).

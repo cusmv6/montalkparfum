@@ -67,7 +67,7 @@ def normalizar_termo(texto):
 
 def gerar_prompt_para_perfume(target_id):
     workspace_dir = r"C:\Users\odeao\OneDrive\Desktop\brem"
-    json_path = os.path.join(workspace_dir, "Bruno", "Identidadevisual", "fotos", "viscategoria", "perfumes_data.json")
+    json_path = os.path.join(workspace_dir, "PROJETOS", "Bruno", "Identidadevisual", "fotos", "viscategoria", "perfumes_data.json")
     
     if not os.path.exists(json_path):
         print(f"Error: {json_path} not found.")

@@ -11,11 +11,11 @@ from PIL import Image, ImageDraw, ImageOps
 
 # Configuração de caminhos e diretórios
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
-VISCATEGORIA_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\Identidadevisual\fotos\viscategoria"
-JSON_PATH = os.path.join(VISCATEGORIA_DIR, "perfumes_data.json")
+VISCATEGORIA_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\Identidadevisual\fotos\viscategoria"
+JSON_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\produtos\catalogo.json"
 FOTOS_DIR = os.path.join(VISCATEGORIA_DIR, "fotos")
-OUTPUT_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\Identidadevisual\fotos\nuvemshop3"
-CSV_PRODUTOS_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\Bruno\produtos\importar_nuvemshop.csv"
+OUTPUT_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\Identidadevisual\fotos\nuvemshop3"
+CSV_PRODUTOS_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\produtos\importar_nuvemshop.csv"
 
 # Base de Conhecimento de Luxo e Campanhas do Grimório (Exibição em Boutiques Reais)
 BASE_CONHECIMENTO_LUXO = {
@@ -29,7 +29,7 @@ BASE_CONHECIMENTO_LUXO = {
         "campanhas": "The Cristal & Gold edition celebrates the 40th anniversary of Amouage, based on the vintage 1983 hand-blown crystal and gold design.",
         "lojas_fisicas": "Amouage Flagship Boutiques (Muscat, NYC SoHo, Milan), luxury perfume halls like Harrods (Salon de Parfums) and Jovoy Paris.",
         "justificativa_fundo": "The bottle is displayed on a polished black marble and gold display vanity that extends continuously across the entire bottom horizontal width of the frame, showing no floor underneath. The background is the opulent, gold-detailed interior of the Amouage flagship boutique, with a natural, subtle f/5.6 camera blur showing the luxurious store shelving and warm ambient lighting (no heavy or synthetic artificial blur).",
-        "detalhes_frasco": "A single, highly exclusive, hand-blown cylindrical crystal perfume bottle with a golden filigree-like texture and detailed carvings, based on the vintage 1983 Amouage design. The bottle has a slender, neoclassical pillar shape. Crucially, the entire bottle, including both the main body and the upper neck, is made of highly polished, transparent clear glass (no frosted glass, no sandblasting) and is completely filled with a rich golden liquid, glowing with a warm honey-amber gold color all the way up to the collar, leaving absolutely no empty space, no air bubbles, and no visible liquid level line at the neck. The glass is completely clean: there is absolutely NO writing, text, or brand names etched, printed, or embossed on any glass surface of the bottle. The brand name 'AMOUAGE' is only embossed in raised gold lettering on the polished metal collar ring wraps around the neck, and nowhere else. The cap is a stylized, flared golden dome, matching the original shape exactly."
+        "detalhes_frasco": "A single rectangular glass Amouage bottle with slightly rounded edges. The body of the bottle is completely clean, transparent, and showing a warm golden liquid inside. Crucially, the cap must be the official Amouage masculine gold cap (curved, flared, and flat-topped golden dome with a round blue gemstone sapphire inset in the center of the cap). The brand logo (circular Amouage emblem) is embossed in gold on the front center of the bottle glass. The branding text 'AMOUAGE' and 'JUBILATION 40' are printed cleanly in gold below the emblem. Absolutely NO volume markings such as '100ml / 3.4 fl oz' or inventory database years should be written on the glass. The glass body must remain elegant and clean, matching the reference image exactly."
     },
     "BYREDO": {
         "campanhas": "Part of the Night Veils extraits de parfum series, focusing on raw, rare, and smoky vanilla.",
@@ -83,6 +83,15 @@ def gerar_sku_dinamico(brand, name):
     sku_clean_brand = slug_brand.upper()[:4]
     sku_clean_name = slug_name.replace("-", "")[:6].upper()
     return f"DEC-{sku_clean_brand}-{sku_clean_name}-2ML"
+
+def limpar_ml_do_sku(sku):
+    if not sku:
+        return sku
+    sku_upper = sku.upper()
+    for vol in ["-2ML", "-5ML", "-10ML", "-15ML", "-30ML", "-50ML", "-100ML"]:
+        if sku_upper.endswith(vol):
+            return sku[:-len(vol)]
+    return sku
 
 def get_perfume(p_id):
     if not os.path.exists(JSON_PATH):
@@ -320,7 +329,7 @@ Specifically check for:
 1. Cap Proportions: Is the cap size, width, and height perfectly proportioned relative to the bottle body? (For Creed: it must be a wide cap, not thin/narrow. For Amouage: flared dome. For Byredo: glossy dome).
 2. Liquid Level: Is the bottle properly filled? (For Amouage: it must be filled 100% up to the collar, leaving no empty space).
 3. Text & Brand Names: Are there any hallucinated or gibberish texts on the glass that do not exist in the original reference bottle? (For Amouage: the glass must be completely clean, no text).
-4. Silhouette & Geometry: Is the bottle shape true to the original, without stretched necks or warped bases?
+4. Silhouette & Geometry: Is the bottle shape and aspect ratio (width-to-height proportion) 100% true to the original reference image? Pay close attention to prevent the generated bottle from looking too narrow, stretched, elongated, or compressed. Stretched/narrowed bodies relative to the original shape are strict failures.
 
 Respond strictly in JSON format matching this exact schema:
 {{
@@ -331,7 +340,7 @@ Respond strictly in JSON format matching this exact schema:
 }}
 """
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.5-flash',
             contents=[img_orig, img_gen, prompt_critico],
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
@@ -367,6 +376,7 @@ def cmd_complete(p_id, temp_image_path):
     sku = obter_sku_do_csv(p_id, perfume['marca'], perfume['nome'])
     if not sku:
         sku = gerar_sku_dinamico(perfume['marca'], perfume['nome'])
+    sku = limpar_ml_do_sku(sku)
         
     output_image_path = os.path.join(OUTPUT_DIR, f"{sku}.jpeg")
     output_comp_path = os.path.join(OUTPUT_DIR, f"{sku}_comparacao.jpeg")

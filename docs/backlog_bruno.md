@@ -12,6 +12,8 @@ Este arquivo serve para gerenciar e documentar o progresso das tarefas de automa
 | BRU-002 | Captura de Dados do Fragrantica (`trazfragrantica`) | **Concluído** | Subagente Bruno |
 | BRU-003 | Calculadora de Precificação Arbitragem 8/2 (`preco`) | **Concluído** | Subagente Bruno |
 | BRU-004 | Atualização de Lote com Validação Unitária | **A Fazer** | Subagente Bruno |
+| BRU-005 | Busca de Fotos em Campanhas Oficiais das Marcas | **A Fazer** | Subagente Bruno |
+| BRU-006 | Configuração de GEMINI_API_KEY no Sistema do Marcus | **Concluído** | Marcus |
 
 ---
 
@@ -33,7 +35,7 @@ Este arquivo serve para gerenciar e documentar o progresso das tarefas de automa
 *   **Qualificação de Pronto (Definição de Pronto)**:
     *   Bypass de proteções anti-scraping básicas (Cloudflare) via requisições HTTP seguras.
     *   Criação/Atualização do JSON local com estrutura consistente.
-    *   Renderização da imagem do card em modo *headless* (sem interface gráfica visível, conforme a Regra 3 do projeto).
+    *   Renderização da imagem do card in modo *headless* (sem interface gráfica visível, conforme a Regra 3 do projeto).
     *   *Qualificação da Entrega*: Habilidade `trazfragrantica` integrada e testada localmente, atualizando o `perfumes_data.json` com sucesso.
 
 ### [Concluído] BRU-003: Calculadora de Precificação Arbitragem 8/2 (`preco`)
@@ -53,3 +55,40 @@ Este arquivo serve para gerenciar e documentar o progresso das tarefas de automa
     *   O script deve aceitar um lote de entrada, mas pausar/testar no primeiro elemento.
     *   Mecanismo de log detalhado mostrando o sucesso do teste inicial.
     *   Bloqueio contra execução cega de lotes inteiros.
+
+### [A Fazer] BRU-005: Busca de Fotos em Campanhas Oficiais das Marcas
+*   **Status**: **A Fazer**
+*   **Contexto**: O Fragrantica possui fotos de qualidade variada e às vezes com fundos poluídos ou distorções de cores. Os sites e campanhas oficiais das marcas (ex: Amouage, Creed, Byredo) possuem fotos de estúdio de altíssima definição e fidelidade de cores perfeita.
+*   **Descrição**: Explorar a viabilidade de estender o scraper para, ao invés de buscar a foto de referência apenas no Fragrantica, pesquisar a imagem do frasco em sites oficiais da marca ou em repositórios de campanhas de alta definição, melhorando a precisão visual do fact check e da silhueta do frasco.
+*   **Qualificação de Pronto (Definição de Pronto)**:
+    *   Mapeamento de padrões de URLs de sites oficiais de marcas-chave (Amouage, Creed).
+    *   Estrutura de fallback para o Fragrantica caso o site oficial bloqueie requisições.
+    *   Qualidade visual e fidelidade geométrica melhoradas no insumo do Quality Gate.
+
+### [Concluído] BRU-006: Configuração de GEMINI_API_KEY no Sistema do Marcus
+*   **Status**: **Concluído**
+*   **Contexto**: O Quality Gate multimodal integrado no `estagiariovisual` precisa de acesso à API do Gemini para realizar a comparação visual e fact-check de frascos 1:1 de forma automatizada e impedir alucinações.
+*   **Descrição**: Configurar de forma persistente a variável de ambiente `GEMINI_API_KEY` no sistema operacional Windows do Marcus, ativando a competência autônoma de verificação física de frascos pelo estagiário.
+*   **Contexto Adicional para Resolução**:
+    ```text
+    Só que ele não tá funcionando direito por conta da api 
+
+    Por que o estagiário não barrou a imagem no seu computador? (Ativação da Competência)
+    Para que o estagiário visual consiga rodar essa validação e barrar frascos errados localmente na sua máquina, o script precisa da chave de acesso à API do Gemini. Como a variável GEMINI_API_KEY não está configurada no seu Windows, o script exibe a seguinte linha no terminal:
+
+    [INFO Quality Gate] GEMINI_API_KEY nao encontrada no ambiente. Pulando a validacao de IA.
+
+    Sem a chave, a validação automática é ignorada e o script aprova a foto gerada por padrão.
+
+    Como ativar essa competência de verificação autônoma no seu computador:
+    Você pode configurar a chave nas variáveis do seu sistema para que o estagiário passe a fiscalizar de verdade. No seu terminal do VS Code (PowerShell), você pode rodar:
+
+    [System.Environment]::SetEnvironmentVariable('GEMINI_API_KEY', 'SUA_CHAVE_AQUI', 'User')
+    (Após rodar isso, reinicie o VS Code para que ele carregue a nova variável).
+    ```
+    *Nota para a próxima sessão:* Investigar e analisar com o Brem se há viabilidade de realizar esse processo de validação local sem exigir uma API Key individual da máquina do Marcus.
+*   **Qualificação de Pronto (Definição de Pronto)**:
+    *   Variável de ambiente setada e acessível via terminal local.
+    *   Execução bem-sucedida do script `estagiariovisual.py` sem exibir o aviso `[INFO Quality Gate] GEMINI_API_KEY nao encontrada no ambiente`.
+
+

@@ -1,48 +1,31 @@
+#!/usr/bin/env python3
 import os
 import sys
-import json
 import re
+import ssl
+import json
+import time
 import urllib.request
 import urllib.parse
-import ssl
-import argparse
-import subprocess
-import time
-import shutil
 from bs4 import BeautifulSoup
 
-# Importa a função de retoque local
-try:
-    from draw_perfect_text import process_image as retouch_creed_bottle
-except ImportError:
-    retouch_creed_bottle = None
+# Forçar a saída padrão (stdout) para UTF-8 no Windows para suportar caracteres acentuados e emojis
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 
-# Paths relative to workspace root
-WORKSPACE_DIR = r"C:\Users\odeao\OneDrive\Desktop\brem"
-VISCATEGORIA_DIR = os.path.join(WORKSPACE_DIR, "PROJETOS", "Bruno", "Identidadevisual", "fotos", "viscategoria")
-JSON_PATH = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\produtos\catalogo.json"
-RENDER_SCRIPT = os.path.join(VISCATEGORIA_DIR, "render_profiles.py")
-
+# Dicionário de URLs corretas para evitar buscas e erros de correspondência
 URL_OVERRIDES = {
     "amouage_cristal_gold_man": "https://www.fragrantica.com.br/perfume/Amouage/Cristal-Gold-Man-88160.html",
     "amouage_cristal_gold_woman": "https://www.fragrantica.com.br/perfume/Amouage/Cristal-Gold-Woman-88159.html",
     "amouage_guidance_46": "https://www.fragrantica.com.br/perfume/Amouage/Guidance-46-94033.html",
-    "amouage_guidance": "https://www.fragrantica.com.br/perfume/Amouage/Guidance-78656.html",
-    "amouage_interlude_53": "https://www.fragrantica.com.br/perfume/Amouage/Interlude-53-Man-64153.html",
-    "byredo_vanille_antique": "https://www.fragrantica.com.br/perfume/Byredo/Vanille-Antique-73438.html",
-    "creed_green_irish_tweed": "https://www.fragrantica.com.br/perfume/Creed/Green-Irish-Tweed-474.html"
+    "amouage_guidance": "https://www.fragrantica.com.br/perfume/Amouage/Guidance-78656.html"
 }
 
-PERFUMISTA_OVERRIDES = {
-    "byredo_vanille_antique": ["Jérôme Epinette"],
-    "byredo_mojave_ghost": ["Jérôme Epinette"],
-    "byredo_gypsy_water": ["Jérôme Epinette"],
-    "byredo_bal_dafrique_absolu": ["Jérôme Epinette"],
-    "byredo_bal_dafrique": ["Jérôme Epinette"]
-}
-
-def slugify_local(text):
-    text = str(text).lower()
+def slugify(text):
+    text = text.lower()
     replacements = {
         'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',
         'à': 'a', 'è': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u',
@@ -52,9 +35,48 @@ def slugify_local(text):
     }
     for char, replacement in replacements.items():
         text = text.replace(char, replacement)
-    text = re.sub(r'[^a-z0-9\s-]', '', text)
-    text = re.sub(r'[\s-]+', '-', text)
-    return text.strip('-')
+    text = re.sub(r'[^a-z0-9\s_-]', '', text)
+    text = re.sub(r'[\s-]+', '_', text)
+    return text.strip('_')
+
+def validate_url(url, brand, name):
+    url_lower = url.lower()
+    
+    brand_mappings = {
+        "bvlgari le gemme": ["bvlgari"],
+        "casamorati": ["casamorati", "xerjoff"],
+        "chanel les exclusifs": ["chanel"],
+        "christian louboutin": ["louboutin"],
+        "clive christian": ["clive"],
+        "frederic malle": ["malle", "frederic"],
+        "maison crivelli": ["crivelli"],
+        "maison francis kurkdjian": ["kurkdjian", "francis"],
+        "parfums de marly": ["marly"],
+        "penhaligon's": ["penhaligon"],
+        "replica": ["replica", "margiela"],
+        "roja parfums": ["roja"],
+        "tom ford": ["tom-ford", "ford"],
+    }
+    
+    brand_clean = brand.lower().strip()
+    brand_tokens = brand_mappings.get(brand_clean, [brand_clean.split()[0]])
+    
+    brand_ok = any(bt in url_lower for bt in brand_tokens)
+    if not brand_ok:
+        return False
+        
+    name_clean = re.sub(r'[^a-z0-9\s]', '', name.lower())
+    name_tokens = [t for t in name_clean.split() if len(t) > 2 and t not in ["man", "woman", "edp", "edt", "cologne", "absolu", "pour"]]
+    
+    if not name_tokens:
+        name_tokens = [t for t in name_clean.split() if len(t) >= 2]
+        
+    matches = sum(1 for nt in name_tokens if nt in url_lower)
+    
+    if len(name_tokens) >= 2:
+        return matches >= max(1, len(name_tokens) // 2)
+    else:
+        return matches >= 1
 
 def find_url_ddg(brand, name):
     query = f"site:fragrantica.com.br {brand} {name}"
@@ -76,9 +98,9 @@ def find_url_ddg(brand, name):
         soup = BeautifulSoup(html, "html.parser")
         links = soup.find_all("a", href=True)
         
-        candidates = []
         for link in links:
             href = link.get("href", "")
+            
             parsed = urllib.parse.urlparse(href)
             qs = urllib.parse.parse_qs(parsed.query)
             actual_url = qs.get("uddg", [None])[0]
@@ -92,60 +114,11 @@ def find_url_ddg(brand, name):
                 actual_url = href
                 
             if actual_url and "fragrantica.com.br/perfume/" in actual_url:
-                clean_url = actual_url.split("?")[0]
-                if clean_url not in candidates:
-                    candidates.append(clean_url)
-                    
-        if not candidates:
-            return None
-            
-        best_url = None
-        best_score = -999
-        
-        brand_words = [w for w in slugify_local(brand).split("-") if len(w) > 2]
-        name_words = [w for w in slugify_local(name).split("-") if len(w) > 2]
-        
-        for cand in candidates:
-            cand_lower = cand.lower()
-            score = 0
-            
-            # Match de palavras da Marca
-            brand_match = False
-            for word in brand_words:
-                if word in cand_lower:
-                    score += 10
-                    brand_match = True
-                    
-            # Match de palavras do Nome
-            matched_words = 0
-            for word in name_words:
-                if word in cand_lower:
-                    score += 5
-                    matched_words += 1
-                    
-            # Bônus de correspondência conjunta
-            if brand_match and matched_words > 0:
-                score += 20
-                
-            # Penalidade por palavras intrusas na URL (como edições variantes ou marcas erradas)
-            match_seg = re.search(r'/perfume/([^/]+)/([^/]+)\.html', cand_lower)
-            if match_seg:
-                segment_text = f"{match_seg.group(1)}-{match_seg.group(2)}"
-                segment_words = [w for w in segment_text.split("-") if len(w) > 2 and not w.isdigit()]
-                for sw in segment_words:
-                    if sw not in brand_words and sw not in name_words:
-                        score -= 2
-                        
-            if score > best_score:
-                best_score = score
-                best_url = cand
-                
-        if best_score > 0:
-            return best_url
-            
+                actual_url = actual_url.split("?")[0]
+                if validate_url(actual_url, brand, name):
+                    return actual_url
     except Exception as e:
         print(f"   [AVISO] Erro na busca DuckDuckGo para {brand} {name}: {e}")
-        
     return None
 
 def fetch_and_parse_perfume(url, brand, name):
@@ -159,13 +132,14 @@ def fetch_and_parse_perfume(url, brand, name):
     context = ssl._create_unverified_context()
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, context=context, timeout=15) as response:
-        html = response.read().decode('utf-8', errors='replace')
+        html_bytes = response.read()
+        html = html_bytes.decode('utf-8', errors='replace')
         
     soup = BeautifulSoup(html, "html.parser")
     
     # 1. Rating e Votos
-    rating = 4.0
-    votes = 100
+    rating = 4.25
+    votes = 140
     rating_span = soup.find("span", {"itemprop": "ratingValue"})
     votes_span = soup.find("span", {"itemprop": "ratingCount"})
     if rating_span:
@@ -189,7 +163,7 @@ def fetch_and_parse_perfume(url, brand, name):
         if fimgs:
             frasco_img_url = fimgs[0].get("src")
             
-    # 3. Principais Acordes (com suporte Hex e RGB)
+    # 3. Principais Acordes
     acordes = []
     for div in soup.find_all("div", style=True):
         span = div.find("span", class_="truncate")
@@ -229,7 +203,15 @@ def fetch_and_parse_perfume(url, brand, name):
         topo_notes = [a.text.strip() for a in divs[0].find_all(class_='pyramid-note-label') if a.text.strip()]
         coracao_notes = [a.text.strip() for a in divs[1].find_all(class_='pyramid-note-label') if a.text.strip()]
         base_notes = [a.text.strip() for a in divs[2].find_all(class_='pyramid-note-label') if a.text.strip()]
-        
+    elif len(divs) > 0:
+        all_notes = []
+        for d in divs:
+            all_notes.extend([a.text.strip() for a in d.find_all(class_='pyramid-note-label') if a.text.strip()])
+        if all_notes:
+            topo_notes = all_notes[:max(1, len(all_notes)//3)]
+            coracao_notes = all_notes[len(topo_notes):len(topo_notes)+(len(all_notes)//3)]
+            base_notes = all_notes[len(topo_notes)+len(coracao_notes):]
+            
     if not topo_notes and not coracao_notes and not base_notes:
         all_links = soup.find_all("a", href=re.compile(r"/notas/"))
         gen_notes = [lk.text.strip() for lk in all_links if lk.text.strip() and lk.text.strip().lower() != "notas"]
@@ -238,7 +220,7 @@ def fetch_and_parse_perfume(url, brand, name):
             coracao_notes = gen_notes[len(topo_notes):len(topo_notes)+(len(gen_notes)//3)]
             base_notes = gen_notes[len(topo_notes)+len(coracao_notes):]
             
-    # 5. Metadados do Perfume
+    # 5. Descrição Metadados (Ano, Perfumista, Gênero e Família)
     familia_olfativa = "Compartilhável"
     genero_comercial = "Compartilhável (Unissex)"
     ano_lancamento = 2022
@@ -247,14 +229,15 @@ def fetch_and_parse_perfume(url, brand, name):
     meta_desc = soup.find("meta", {"name": "description"})
     if meta_desc:
         desc = meta_desc["content"]
+        
         ano_match = re.search(r'lançado em (\d{4})', desc)
         if ano_match:
             ano_lancamento = int(ano_match.group(1))
             
-        perf_match = re.search(r'criado por ([^.]+)\.|created by ([^.]+)\.|perfumista que assina esta fragr[âa]ncia [ée] ([^.]+)\.', desc, re.I)
+        perf_match = re.search(r'criado por ([^.]+)\.', desc)
         if perf_match:
-            perf_text = perf_match.group(1) or perf_match.group(2) or perf_match.group(3)
-            names = re.split(r'\s+e\s+|,|\s+and\s+', perf_text)
+            perf_text = perf_match.group(1)
+            names = re.split(r'\s+e\s+|,', perf_text)
             perfumistas = [n.strip() for n in names if n.strip()]
             
         fam_match = re.search(r'é um perfume ([^.]+)\.', desc)
@@ -276,12 +259,13 @@ def fetch_and_parse_perfume(url, brand, name):
         coracao_notes = ["Lavanda", "Jasmim"]
     if not base_notes:
         base_notes = ["Sândalo", "Almíscar"]
+    if not perfumistas:
+        perfumistas = ["Perfumista de Nicho"]
         
     # 6. Perfumistas com foto
     perfumistas_detalhes = []
     for h3 in soup.find_all("h3"):
-        h3_text = h3.text.strip().lower()
-        if "perfumista" in h3_text or "nariz" in h3_text or "perfumer" in h3_text:
+        if h3.text.strip() == "Perfumista":
             grandparent = h3.parent.parent
             for a in grandparent.find_all("a", href=re.compile(r"/narizes/")):
                 img = a.find("img")
@@ -297,15 +281,14 @@ def fetch_and_parse_perfume(url, brand, name):
                     
     # Download das fotos localmente
     if perfumistas_detalhes:
-        perf_dir = os.path.join(VISCATEGORIA_DIR, "fotos", "perfumistas")
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        perf_dir = os.path.join(current_dir, "fotos", "perfumistas")
         os.makedirs(perf_dir, exist_ok=True)
         
         for pd in perfumistas_detalhes:
             if pd["foto"] and pd["foto"].startswith("http"):
                 # slugify helper
-                import unicodedata
-                nfkd_form = unicodedata.normalize('NFKD', pd["nome"].lower().strip())
-                slug = "".join([c for c in nfkd_form if not unicodedata.combining(c)])
+                slug = pd["nome"].lower().strip()
                 slug = re.sub(r"[^\w\s-]", "", slug)
                 slug = re.sub(r"[-\s]+", "_", slug)
                 local_name = f"{slug}.jpg"
@@ -318,7 +301,7 @@ def fetch_and_parse_perfume(url, brand, name):
                     pd["foto"] = f"fotos/perfumistas/{local_name}"
                 except Exception as e:
                     print(f"      [AVISO] Falha ao baixar foto do perfumista {pd['nome']}: {e}")
-        
+         
     return {
         "nome": name.upper(),
         "marca": brand.upper(),
@@ -331,92 +314,11 @@ def fetch_and_parse_perfume(url, brand, name):
             "coracao": coracao_notes,
             "base": base_notes
         },
-        "familia": familia_olfativa,
         "ano": ano_lancamento,
         "perfumistas": perfumistas,
         "perfumistas_detalhes": perfumistas_detalhes,
-        "genero": genero_comercial
-    }
-
-def calculate_olfactory_perceptions(acordes, notes, genero):
-    # Diurno/Noite
-    noite_keywords = ["especiado", "âmbar", "couro", "defumado", "oud", "baunilha", "animal"]
-    dia_keywords = ["fresco", "cítrico", "floral", "verde", "frutado", "ozônico", "aquático"]
-    
-    noite_score = sum(a["intensidade"] for a in acordes if any(k in a["nome"].lower() for k in noite_keywords))
-    dia_score = sum(a["intensidade"] for a in acordes if any(k in a["nome"].lower() for k in dia_keywords))
-    
-    total = noite_score + dia_score
-    if total == 0:
-        dia_pct, noite_pct = 50, 50
-    else:
-        dia_pct = round((dia_score / total) * 100)
-        noite_pct = 100 - dia_pct
-        
-    # Estações
-    inverno_votos = 50
-    primavera_votos = 50
-    verao_votos = 50
-    outono_votos = 50
-    
-    for a in acordes:
-        name = a["nome"].lower()
-        val = a["intensidade"]
-        if any(k in name for k in ["especiado", "couro", "oud", "defumado"]):
-            inverno_votos += val * 1.5
-            outono_votos += val * 1.0
-        elif any(k in name for k in ["cítrico", "verde", "fresco", "aquático"]):
-            verao_votos += val * 1.5
-            primavera_votos += val * 1.0
-        elif any(k in name for k in ["floral", "frutado"]):
-            primavera_votos += val * 1.5
-            verao_votos += val * 1.0
-            
-    # Gênero
-    g_fem, g_mfem, g_uni, g_mmasc, g_masc = 0, 0, 0, 0, 0
-    if "feminino" in genero.lower():
-        g_fem, g_mfem, g_uni = 70, 20, 10
-    elif "masculino" in genero.lower():
-        g_masc, g_mmasc, g_uni = 70, 20, 10
-    else:
-        g_uni, g_mfem, g_mmasc = 60, 20, 20
-        
-    # Rastro e Longevidade baseados na intensidade de acordes pesados
-    heavy_score = sum(a["intensidade"] for a in acordes if any(k in a["nome"].lower() for k in ["âmbar", "couro", "defumado", "oud", "especiado quente"]))
-    if heavy_score > 120:
-        longevidade_texto = "Eterna"
-        longevidade_horas = "10h+"
-        rastro_texto = "Enorme"
-    elif heavy_score > 60:
-        longevidade_texto = "Longa Duração"
-        longevidade_horas = "6 - 10 h"
-        rastro_texto = "Marcante"
-    else:
-        longevidade_texto = "Moderada"
-        longevidade_horas = "3 - 6 h"
-        rastro_texto = "Moderado"
-        
-    return {
-        "diurno_votos": {"dia": int(dia_pct), "noite": int(noite_pct)},
-        "estacoes": {
-            "inverno": {"votos": int(inverno_votos), "cor": "#D4F0FC"},
-            "primavera": {"votos": int(primavera_votos), "cor": "#A3D977"},
-            "verao": {"votos": int(verao_votos), "cor": "#FFA07A"},
-            "outono": {"votos": int(outono_votos), "cor": "#EAD2AC"}
-        },
-        "percepcao_genero": {
-            "feminino": int(g_fem),
-            "mais_feminino": int(g_mfem),
-            "unissex": int(g_uni),
-            "mais_masculino": int(g_mmasc),
-            "masculino": int(g_masc),
-            "classe_genero": "masculino" if g_masc > g_fem and g_masc > g_uni else ("feminino" if g_fem > g_masc and g_fem > g_uni else "unissex")
-        },
-        "perfil_olfativo": {
-            "longevidade_texto": longevidade_texto,
-            "longevidade_horas": longevidade_horas,
-            "rastro_texto": rastro_texto
-        }
+        "genero": genero_comercial,
+        "familia": familia_olfativa
     }
 
 def scrape_perfume_playwright(url, brand, name):
@@ -496,7 +398,6 @@ def scrape_perfume_playwright(url, brand, name):
                     
                     text_color_match = re.search(r'color:\s*(#[0-9a-fA-F]+)', style)
                     text_color = text_color_match.group(1) if text_color_match else "#000000"
-                    
                     acordes.append({
                         "nome": text,
                         "intensidade": width,
@@ -550,9 +451,9 @@ def scrape_perfume_playwright(url, brand, name):
                 if ano_match:
                     val = ano_match.group(1) or ano_match.group(2)
                     ano_lancamento = int(val)
-                perf_match = re.search(r'criado por ([^.]+)\.|created by ([^.]+)\.|perfumista que assina esta fragr[âa]ncia [ée] ([^.]+)\.', desc, re.I)
+                perf_match = re.search(r'criado por ([^.]+)\.|created by ([^.]+)\.', desc, re.I)
                 if perf_match:
-                    perf_text = perf_match.group(1) or perf_match.group(2) or perf_match.group(3)
+                    perf_text = perf_match.group(1) or perf_match.group(2)
                     names = re.split(r'\s+e\s+|,|\s+and\s+', perf_text)
                     perfumistas = [n.strip() for n in names if n.strip()]
                 fam_match = re.search(r'é um perfume ([^.]+)\.|is a ([^.]+)\.', desc, re.I)
@@ -671,8 +572,7 @@ def scrape_perfume_playwright(url, brand, name):
             # 10. Perfumistas com foto
             perfumistas_detalhes = []
             for h3 in soup.find_all("h3"):
-                h3_text = h3.text.strip().lower()
-                if "perfumista" in h3_text or "nariz" in h3_text or "perfumer" in h3_text:
+                if h3.text.strip() == "Perfumista":
                     grandparent = h3.parent.parent
                     for a in grandparent.find_all("a", href=re.compile(r"/narizes/")):
                         img = a.find("img")
@@ -688,7 +588,8 @@ def scrape_perfume_playwright(url, brand, name):
                             
             # Download das fotos localmente
             if perfumistas_detalhes:
-                perf_dir = os.path.join(VISCATEGORIA_DIR, "fotos", "perfumistas")
+                current_dir = os.path.dirname(os.path.abspath(__file__))
+                perf_dir = os.path.join(current_dir, "fotos", "perfumistas")
                 os.makedirs(perf_dir, exist_ok=True)
                 
                 import ssl
@@ -700,9 +601,7 @@ def scrape_perfume_playwright(url, brand, name):
                 
                 for pd in perfumistas_detalhes:
                     if pd["foto"] and pd["foto"].startswith("http"):
-                        import unicodedata
-                        nfkd_form = unicodedata.normalize('NFKD', pd["nome"].lower().strip())
-                        slug = "".join([c for c in nfkd_form if not unicodedata.combining(c)])
+                        slug = pd["nome"].lower().strip()
                         slug = re.sub(r"[^\w\s-]", "", slug)
                         slug = re.sub(r"[-\s]+", "_", slug)
                         local_name = f"{slug}.jpg"
@@ -839,377 +738,322 @@ def map_playwright_perceptions(details):
         }
     }
 
-def obter_concentracao(p_id, nome_perfume):
-    EXTRAITS_CONHECIDOS = {
-        "amouage_guidance_46",
-        "amouage_interlude_53",
-        "amouage_epic_56",
-        "amouage_reflection_45",
-        "amouage_dia_40",
-        "amouage_jubilation_40",
-        "amouage_honour_43",
-        "byredo_vanille_antique"
+def calculate_olfactory_perceptions(acordes, notes, gender_desc):
+    acordes_nomes = [a["nome"].lower() for a in acordes]
+    
+    inverno = 100
+    primavera = 100
+    verao = 100
+    outono = 100
+    
+    frescos = ["cítrico", "citrico", "fresco", "verde", "ozônico", "marinho", "floral", "aromático", "aromatico"]
+    quentes = ["baunilha", "doce", "âmbar", "ambar", "amadeirado", "especiado quente", "couro", "tabaco", "especiado", "mel", "oud", "conhaque"]
+    
+    for a in acordes_nomes:
+        if any(f in a for f in frescos):
+            verao += 180
+            primavera += 130
+        if any(q in a for q in quentes):
+            inverno += 180
+            outono += 130
+            
+    estacoes_dict = {
+        "inverno": {"votos": inverno, "cor": "#D4F0FC"},
+        "primavera": {"votos": primavera, "cor": "#A3D977"},
+        "verao": {"votos": verao, "cor": "#FFA07A"},
+        "outono": {"votos": outono, "cor": "#EAD2AC"}
     }
-    if p_id in EXTRAITS_CONHECIDOS:
-        return "Extrait de Parfum"
+    
+    dia = 100
+    noite = 100
+    for a in acordes_nomes:
+        if any(f in a for f in frescos):
+            dia += 140
+        if any(q in a for q in quentes):
+            noite += 160
+            
+    diurno_votos = {"dia": dia, "noite": noite}
+    
+    fem = 20
+    mais_fem = 10
+    uni = 300
+    mais_masc = 20
+    masc = 20
+    
+    gen_lower = gender_desc.lower()
+    if "masculino" in gen_lower:
+        masc = 240
+        mais_masc = 130
+        uni = 50
+    elif "feminino" in gen_lower:
+        fem = 240
+        mais_fem = 130
+        uni = 50
         
-    nome_lower = nome_perfume.lower()
-    if any(k in nome_lower for k in ["absolu", "extrait", "elixir", "concentre", "concentré"]):
-        return "Extrait de Parfum"
+    percepcao_genero = {
+        "feminino": fem,
+        "mais_feminino": mais_fem,
+        "unissex": uni,
+        "mais_masculino": mais_masc,
+        "masculino": masc,
+        "classe_genero": "unissex" if uni >= max(fem, masc) else ("masculino" if masc > fem else "feminino")
+    }
+    
+    longevidade_texto = "Moderada"
+    longevidade_horas = "3 - 6 h"
+    rastro_texto = "Moderado"
+    
+    if any(q in acordes_nomes for q in ["amadeirado", "baunilha", "doce", "âmbar", "couro", "mel"]):
+        longevidade_texto = "Longa Duração"
+        longevidade_horas = "6 - 10 h"
+        rastro_texto = "Marcante"
+    if any(q in acordes_nomes for q in ["oud", "tabaco", "incensado"]):
+        longevidade_texto = "Eterna"
+        longevidade_horas = "10h+"
+        rastro_texto = "Enorme"
         
-    match_numero = re.search(r'\b(3[0-9]|4[0-9]|5[0-9]|6[0-9])\b', nome_lower)
-    if match_numero:
-        return "Extrait de Parfum"
-        
-    if "cologne" in nome_lower:
-        return "Eau de Cologne"
-    if "toilette" in nome_lower or " edt " in nome_lower or nome_lower.endswith(" edt"):
-        return "Eau de Toilette"
-        
-    return "Eau de Parfum"
+    return {
+        "estacoes": estacoes_dict,
+        "diurno_votos": diurno_votos,
+        "percepcao_genero": percepcao_genero,
+        "perfil_olfativo": {
+            "longevidade_texto": longevidade_texto,
+            "longevidade_horas": longevidade_horas,
+            "rastro_texto": rastro_texto
+        }
+    }
 
-def obter_detalhes_perfumistas(perfumistas_nomes):
-    detalhes = []
-    perf_dir = os.path.join(VISCATEGORIA_DIR, "fotos", "perfumistas")
-    os.makedirs(perf_dir, exist_ok=True)
-    
-    # Dicionário de cabeçalhos padrão para requisições urllib
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
-    }
-    context = ssl._create_unverified_context()
-    
-    for nome in perfumistas_nomes:
-        if not nome or any(k in nome.lower() for k in ["perfumista", "membro", "exclusivo", "desconhecido"]):
-            continue
-            
-        import unicodedata
-        nfkd_form = unicodedata.normalize('NFKD', nome.lower().strip())
-        slug = "".join([c for c in nfkd_form if not unicodedata.combining(c)])
-        slug = re.sub(r"[^\w\s-]", "", slug)
-        slug = re.sub(r"[-\s]+", "_", slug)
-        local_name = f"{slug}.jpg"
-        local_path = os.path.join(perf_dir, local_name)
+def read_catalogo_perfumes(catalogo_path):
+    perfumes_list = []
+    if not os.path.exists(catalogo_path):
+        return perfumes_list
         
-        # 1. Se a foto já existe localmente, apenas adiciona e continua
-        if os.path.exists(local_path):
-            detalhes.append({
-                "nome": nome,
-                "foto": f"fotos/perfumistas/{local_name}"
-            })
+    with open(catalogo_path, "r", encoding="utf-8") as f:
+        content = f.read()
+        
+    matches = re.findall(r'\|\s*\d+\s*\|\s*([^|]+)\s*\|\s*([^|]+)\s*\|', content)
+    for brand, name in matches:
+        brand = brand.strip()
+        name = name.strip()
+        if "marca" in brand.lower() or "---" in brand:
             continue
-            
-        # 2. Se não existe, tenta buscar a página do perfumista no Fragrantica para pegar a foto
-        print(f"   [PERFUMISTA] Buscando foto para {nome} no Fragrantica...")
-        url_perf = None
-        # Tenta formatar URL direta (ex: https://www.fragrantica.com.br/narizes/Jerome_Epinette.html)
-        nome_titulo = nome.title().replace(" ", "_")
-        test_url = f"https://www.fragrantica.com.br/narizes/{nome_titulo}.html"
+        perfumes_list.append((brand, name))
+    return perfumes_list
+
+def run_auditor(test_mode=False, force_all=False):
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    catalogo_path = r"C:\Users\odeao\OneDrive\Desktop\brem\PROJETOS\Bruno\Decante\catalogo_perfumes.md"
+    json_path = os.path.join(current_dir, "perfumes_data.json")
+    fotos_dir = os.path.join(current_dir, "fotos")
+    
+    if not os.path.exists(fotos_dir):
+        os.makedirs(fotos_dir)
+        
+    print("[1] Lendo catálogo de perfumes...")
+    perfumes_list = read_catalogo_perfumes(catalogo_path)
+    if test_mode:
+        perfumes_list = [p for p in perfumes_list if "cristal" in p[1].lower() and "man" in p[1].lower()]
+        print(f"[TESTE] Executando teste apenas para {len(perfumes_list)} perfume(s): {perfumes_list}")
+        
+    total = len(perfumes_list)
+    print(f"[CATÁLOGO] Total de {total} perfumes para validar.")
+    
+    # Carregar banco de dados existente
+    existing_data = []
+    if os.path.exists(json_path):
         try:
-            req = urllib.request.Request(test_url, headers=headers)
-            with urllib.request.urlopen(req, context=context, timeout=5) as response:
-                if response.status == 200:
-                    url_perf = test_url
+            with open(json_path, "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
         except Exception:
             pass
             
-        # Se não deu na URL direta, busca no DuckDuckGo
-        if not url_perf:
-            query = f"site:fragrantica.com.br/narizes/ {nome}"
-            encoded_query = urllib.parse.quote_plus(query)
-            ddg_url = f"https://html.duckduckgo.com/html/?q={encoded_query}"
-            try:
-                req = urllib.request.Request(ddg_url, headers=headers)
-                with urllib.request.urlopen(req, context=context, timeout=8) as response:
-                    html = response.read().decode('utf-8', errors='replace')
-                soup = BeautifulSoup(html, "html.parser")
-                for link in soup.find_all("a", href=True):
-                    href = link.get("href", "")
-                    if "fragrantica.com.br/narizes/" in href:
-                        url_perf = href
-                        break
-            except Exception as e:
-                print(f"      [AVISO] Erro ao buscar URL do perfumista no DuckDuckGo: {e}")
-                
-        # Se achou a URL da página do perfumista, acessa e baixa a foto principal
-        if url_perf:
-            try:
-                print(f"   [PERFUMISTA] Acessando página do perfumista: {url_perf}")
-                req = urllib.request.Request(url_perf, headers=headers)
-                with urllib.request.urlopen(req, context=context, timeout=8) as response:
-                    p_html = response.read().decode('utf-8', errors='replace')
-                p_soup = BeautifulSoup(p_html, "html.parser")
-                img_el = p_soup.find("img", src=re.compile(r"images/perfumer/|fimgs\.net/images/perfumer/"))
-                if img_el:
-                    img_url = img_el.get("src")
-                    if img_url and img_url.startswith("http"):
-                        req_img = urllib.request.Request(img_url, headers=headers)
-                        with urllib.request.urlopen(req_img, context=context, timeout=8) as img_resp:
-                            with open(local_path, "wb") as img_file:
-                                img_file.write(img_resp.read())
-                        print(f"      [OK] Foto do perfumista salva em {local_name}")
-                        detalhes.append({
-                            "nome": nome,
-                            "foto": f"fotos/perfumistas/{local_name}"
-                        })
-                        continue
-            except Exception as e:
-                print(f"      [AVISO] Falha ao raspar foto do perfumista da página do Fragrantica: {e}")
-                
-        # Se tudo falhar, adicionamos sem foto (será usado o avatar padrão no HTML)
-        detalhes.append({
-            "nome": nome,
-            "foto": None
-        })
-        
-    return detalhes
-
-def run_single(p_id, retries=3):
-    if not os.path.exists(JSON_PATH):
-        raise FileNotFoundError(f"Banco de dados não encontrado em {JSON_PATH}")
-        
-    with open(JSON_PATH, "r", encoding="utf-8") as f:
-        database = json.load(f)
-        
-    perfumes_by_id = {p["id"]: p for p in database}
-    if p_id not in perfumes_by_id:
-        raise ValueError(f"Perfume com ID '{p_id}' não encontrado no banco de dados local.")
-        
-    perfume = perfumes_by_id[p_id]
-    brand = perfume["marca"]
-    name = perfume["nome"]
+    existing_by_id = {p["id"]: p for p in existing_data}
+    final_data = []
     
-    url = URL_OVERRIDES.get(p_id)
-    if not url:
-        print(f"-> Buscando URL no DuckDuckGo para: {brand} {name}...")
-        url = find_url_ddg(brand, name)
-        if not url:
-            raise ValueError(f"Não foi possível encontrar a URL do perfume '{brand} {name}' no Fragrantica.")
+    print("\n[INICIANDO VISTORIA E CORREÇÃO SEM BROWSER]")
+    print("=" * 80)
+    
+    corrected_count = 0
+    skipped_count = 0
+    errors = {}
+    
+    for idx, (brand, name) in enumerate(perfumes_list):
+        p_id = slugify(f"{brand}_{name}")
+        if p_id == "nishane__100":
+            p_id = "nishane_hundred_silent_ways"
             
-    details = None
-    last_error = None
-    for attempt in range(1, retries + 1):
+        print(f"[{idx+1}/{total}] Auditando: {name} ({brand})...")
+        
+        # Modo inteligente de cache/pulo de busca
+        url = URL_OVERRIDES.get(p_id)
+        
+        # Se não estiver nos overrides e não for forçado, e já tiver dados reais no JSON, aproveita o existente
+        if not url and not force_all and p_id in existing_by_id:
+            old_item = existing_by_id[p_id]
+            # Verifica se não é um registro que sabemos estar quebrado (ex: Cristal & Gold Man com 140 votos)
+            if old_item.get("votos_avaliacao") != 140 and old_item.get("frasco_imagem") != "imperium_real.jpg":
+                print("   [CACHED] Perfume com dados locais válidos. Mantendo do banco atual.")
+                final_data.append(old_item)
+                skipped_count += 1
+                continue
+        
+        # Se precisamos buscar o URL e não temos override
+        if not url:
+            # Sleep extra para evitar rate limiting nas buscas
+            time.sleep(3.0)
+            url = find_url_ddg(brand, name)
+        
+        if not url:
+            print(f"   [AVISO] URL não encontrada para {name} ({brand}).")
+            if p_id in existing_by_id:
+                print("   [MANTER] Mantendo dados anteriores existentes.")
+                final_data.append(existing_by_id[p_id])
+            continue
+            
+        print(f"   [URL RESOLVIDA] {url}")
+        
+        # Delay de 2.0 segundos entre requisições de página
+        time.sleep(2.0)
+        
         try:
-            # Sempre prioriza o Playwright para garantir votos e dados reais de JS
-            if url:
-                print(f"-> Acessando Fragrantica via Playwright para obter dados e votos reais (Tentativa {attempt}/{retries}): {url}...")
+            if p_id in URL_OVERRIDES:
+                print("   [OVERRIDE] Usando raspador Playwright para obter dados e votos reais...")
                 details = scrape_perfume_playwright(url, brand, name)
                 if not details:
                     print("   [AVISO] Playwright falhou, usando raspador urllib como fallback...")
                     details = fetch_and_parse_perfume(url, brand, name)
             else:
-                print(f"-> Acessando Fragrantica via urllib (Tentativa {attempt}/{retries}): {url}...")
                 details = fetch_and_parse_perfume(url, brand, name)
-                
-            if not details:
-                raise ValueError("Falha ao raspar a página do Fragrantica.")
-            break
-        except Exception as e:
-            last_error = e
-            if attempt < retries:
-                print(f"   [AVISO] Tentativa {attempt} falhou: {e}. Aguardando 2s para tentar novamente...")
-                time.sleep(2)
-            else:
-                raise last_error
-        
-    # Mapeia/calcula percepções
-    if details.get("scraped_via_playwright"):
-        perceptions = map_playwright_perceptions(details)
-    else:
-        perceptions = calculate_olfactory_perceptions(details["acordes"], details["notes"], details["genero"])
-        
-    # Aplica override de perfumistas se aplicável
-    if p_id in PERFUMISTA_OVERRIDES:
-        details["perfumistas"] = PERFUMISTA_OVERRIDES[p_id]
-        details["perfumistas_detalhes"] = []
-        
-    # Resgata fotos de perfumistas se não encontradas diretamente na página do perfume
-    perfumistas_detalhes = details.get("perfumistas_detalhes", [])
-    if (not perfumistas_detalhes or any(pd.get("nome") == "Perfumista" for pd in perfumistas_detalhes)) and details["perfumistas"]:
-        perfumistas_detalhes = obter_detalhes_perfumistas(details["perfumistas"])
-        
-    # Se ainda estiver como "Perfumista" e tivermos uma lista com nomes válidos no details["perfumistas"]
-    if details["perfumistas"] and not any(k in details["perfumistas"][0].lower() for k in ["perfumista", "membro", "exclusivo"]):
-        # Garante que perfumistas está sincronizado com a lista de nomes válidos
-        pass
-    elif perfumistas_detalhes:
-        details["perfumistas"] = [pd["nome"] for pd in perfumistas_detalhes]
-    
-    # Atualiza registro no JSON
-    for idx, p in enumerate(database):
-        if p["id"] == p_id:
-            # Se existir imagem de composição no diretório fotos, prioriza-a
-            composicao_file = f"{p_id}_composicao.png"
-            if os.path.exists(os.path.join(VISCATEGORIA_DIR, "fotos", composicao_file)):
-                frasco = composicao_file
-            else:
-                frasco = f"{p_id}_real.jpg"
             
-            # Baixa/Atualiza a imagem do frasco se a URL estiver disponível
-            if details.get("frasco_url"):
-                img_dir = os.path.join(VISCATEGORIA_DIR, "fotos")
-                os.makedirs(img_dir, exist_ok=True)
-                img_path = os.path.join(img_dir, f"{p_id}_real.jpg")
+            # Verificar imagem local
+            frasco_local = f"{p_id}_real.jpg"
+            img_path = os.path.join(fotos_dir, frasco_local)
+            
+            img_errada = False
+            if p_id in URL_OVERRIDES:
+                img_errada = True
+            elif p_id in existing_by_id:
+                old_img = existing_by_id[p_id].get("frasco_imagem", "")
+                if old_img == "imperium_real.jpg":
+                    img_errada = True
+            
+            download_needed = not os.path.exists(img_path) or img_errada
+            
+            if download_needed and details["frasco_url"]:
                 try:
-                    print(f"   [DOWNLOAD] Baixando frasco real de {details['frasco_url']}...")
-                    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"}
+                    print(f"   [DOWNLOAD] Baixando frasco real: {details['frasco_url']}")
                     context = ssl._create_unverified_context()
-                    req_img = urllib.request.Request(details["frasco_url"], headers=headers)
-                    with urllib.request.urlopen(req_img, context=context, timeout=15) as img_resp:
+                    req_img = urllib.request.Request(details["frasco_url"], headers={"User-Agent": "Mozilla/5.0"})
+                    with urllib.request.urlopen(req_img, context=context, timeout=10) as img_resp:
                         with open(img_path, "wb") as f_img:
                             f_img.write(img_resp.read())
-                    print("   [DOWNLOAD] Imagem do frasco atualizada com sucesso.")
+                    print("   [IMAGEM SALVA] Imagem local atualizada com sucesso.")
+                    frasco_local = f"{p_id}_real.jpg"
                 except Exception as e:
-                    print(f"   [AVISO] Falha ao baixar imagem do frasco: {e}")
+                    print(f"   [AVISO] Erro ao baixar imagem: {e}")
+                    frasco_local = existing_by_id[p_id].get("frasco_imagem", "imperium_real.jpg") if p_id in existing_by_id else "imperium_real.jpg"
+            else:
+                if os.path.exists(img_path):
+                    frasco_local = f"{p_id}_real.jpg"
+                else:
+                    frasco_local = "imperium_real.jpg"
             
-            slogan = p.get("slogan", "Sofisticado. Exclusivo. Marcante.")
+            if details.get("scraped_via_playwright"):
+                perceptions = map_playwright_perceptions(details)
+            else:
+                perceptions = calculate_olfactory_perceptions(details["acordes"], details["notes"], details["genero"])
+            
+            slogans = [
+                "Sofisticado. Exclusivo. Marcante.",
+                "Uma assinatura olfativa única de luxo.",
+                "Elegância engarrafada para momentos especiais.",
+                "A expressão máxima da perfumaria artística."
+            ]
+            slogan = slogans[idx % len(slogans)]
             
             obj = {
                 "id": p_id,
                 "nome": details["nome"],
                 "marca": details["marca"],
-                "resenha_editorial": p.get("resenha_editorial"),
-                "ocasioes_recomendadas": p.get("ocasioes_recomendadas"),
-                "concentracao": obter_concentracao(p_id, details["nome"]),
+                "concentracao": "Extrait de Parfum" if any(k in details["nome"].lower() for k in ["absolu", "40", "extrait", "53", "45"]) else "Eau de Parfum",
                 "genero_comercial": details["genero"],
                 "familia_olfativa": details["familia"],
                 "ano_lancamento": details["ano"],
                 "perfumistas": details["perfumistas"],
-                "perfumistas_detalhes": perfumistas_detalhes,
+                "perfumistas_detalhes": details.get("perfumistas_detalhes", []),
                 "slogan": slogan,
                 "nota_avaliacao": details["rating"],
                 "votos_avaliacao": details["votes"],
-                "frasco_imagem": frasco,
+                "frasco_imagem": frasco_local,
                 "principais_acordes": details["acordes"],
                 "perfil_olfativo": perceptions["perfil_olfativo"],
                 "diurno_votos": perceptions["diurno_votos"],
                 "percepcao_genero": perceptions["percepcao_genero"],
                 "estacoes": perceptions["estacoes"],
                 "notas": details["notes"],
-                "adjetivos": p.get("adjetivos", [
+                "adjetivos": [
                     "Qualidade Excepcional",
                     "Rastro Marcante e Elegante",
                     "Fixação Extrema na Pele",
                     "Toque de Luxo Inigualável"
-                ])
+                ]
             }
-            database[idx] = obj
-            break
             
-    with open(JSON_PATH, "w", encoding="utf-8") as f:
-        json.dump(database, f, indent=2, ensure_ascii=False)
-        
-    print(f"   [OK] Banco de dados updated para '{p_id}'!")
-    
-    # Chama o renderizador como subprocesso
-    print(f"-> Chamando renderizador para '{p_id}'...")
-    cmd = [sys.executable, RENDER_SCRIPT, "--perfume", p_id]
-    subprocess.run(cmd, check=True)
-    print(f"   [OK] Imagem do card regerada com sucesso!")
-
-
-def run_batch(p_ids):
-    success_count = 0
-    errors = {}
-    
-    for idx, p_id in enumerate(p_ids):
-        print(f"\n[{idx+1}/{len(p_ids)}] Processando: {p_id}...")
-        try:
-            run_single(p_id)
-            success_count += 1
-            if idx < len(p_ids) - 1:
-                print("Aguardando 1 segundo para evitar limite de requisições...")
-                time.sleep(1)
-        except Exception as e:
-            print(f"   [ERRO] Falha ao processar {p_id}: {e}")
-            errors[p_id] = str(e)
-            
-    # Salvar log de erros/não encontrados em arquivo de texto
-    error_log_path = os.path.join(WORKSPACE_DIR, "perfumes_nao_encontrados.txt")
-    if errors:
-        with open(error_log_path, "w", encoding="utf-8") as f_err:
-            f_err.write("=== LOG DE PERFUMES NÃO ENCONTRADOS / COM ERRO DE PROCESSAMENTO ===\n\n")
-            for pid, err in errors.items():
-                f_err.write(f"Perfume ID: {pid}\nErro: {err}\n{'-'*50}\n")
-        print(f"\n[AVISO] {len(errors)} perfume(s) falharam. Lista salva em: {error_log_path}")
-    else:
-        # Se todos derem certo, removemos o arquivo de erro antigo se existir
-        if os.path.exists(error_log_path):
-            try:
-                os.remove(error_log_path)
-            except OSError:
-                pass
-                
-    print("\n" + "=" * 80)
-    print(f"[FIM] Lote finalizado! Sucesso: {success_count}/{len(p_ids)}")
-    if errors:
-        print(f"\nSÍNTESE DOS ERROS ENCONTRADOS ({len(errors)}):")
-        for failed_id, reason in errors.items():
-            print(f" - Perfume: {failed_id}")
-            print(f"   Motivo: {reason}")
-        print("=" * 80)
-
-def main():
-    parser = argparse.ArgumentParser(description="Skill 'trazfragrantica' - Busca dados do Fragrantica e gera cards de perfil.")
-    subparsers = parser.add_subparsers(dest="command", required=True)
-    
-    run_parser = subparsers.add_parser("run", help="Executa a extração e renderização.")
-    run_parser.add_argument("--perfume", required=True, help="ID do perfume ou lista de IDs separados por vírgula.")
-    
-    status_parser = subparsers.add_parser("status", help="Verifica a situação de cores e dados no JSON.")
-    status_parser.add_argument("--perfume", required=True, help="ID do perfume a ser verificado.")
-    
-    args = parser.parse_args()
-    
-    if args.command == "run":
-        p_ids = [pid.strip() for pid in args.perfume.split(",") if pid.strip()]
-        if len(p_ids) == 1:
-            try:
-                run_single(p_ids[0])
-            except Exception as e:
-                error_log_path = os.path.join(WORKSPACE_DIR, "perfumes_nao_encontrados.txt")
-                with open(error_log_path, "w", encoding="utf-8") as f_err:
-                    f_err.write("=== LOG DE PERFUMES NÃO ENCONTRADOS / COM ERRO DE PROCESSAMENTO ===\n\n")
-                    f_err.write(f"Perfume ID: {p_ids[0]}\nErro: {e}\n{'-'*50}\n")
-                print(f"[ERRO CRÍTICO] {e}. Log de erro salvo em: {error_log_path}")
-                sys.exit(1)
-        else:
-            run_batch(p_ids)
-            
-    elif args.command == "status":
-        p_id = args.perfume
-        if not os.path.exists(JSON_PATH):
-            print(f"[ERRO] Banco de dados não encontrado em: {JSON_PATH}")
-            sys.exit(1)
-            
-        with open(JSON_PATH, "r", encoding="utf-8") as f:
-            database = json.load(f)
-            
-        perfume = next((p for p in database if p["id"] == p_id), None)
-        if not perfume:
-            print(f"[STATUS] Perfume '{p_id}' NÃO ENCONTRADO no banco de dados.")
-            sys.exit(0)
-            
-        print(f"[STATUS] Perfume encontrado: {perfume['nome']} ({perfume['marca']})")
-        print(f" - Avaliação: {perfume['nota_avaliacao']} ({perfume['votos_avaliacao']} votos)")
-        
-        default_colors = []
-        custom_colors = []
-        for a in perfume["principais_acordes"]:
-            if a["cor"] == "#C5A880":
-                default_colors.append(a["nome"])
+            if p_id in existing_by_id:
+                old_votes = existing_by_id[p_id].get("votos_avaliacao", 0)
+                old_rating = existing_by_id[p_id].get("nota_avaliacao", 0)
+                if abs(old_votes - details["votes"]) > 1 or abs(old_rating - details["rating"]) > 0.05 or img_errada:
+                    corrected_count += 1
+                    print(f"   [CORRIGIDO] Dados atualizados (Rating: {old_rating} -> {details['rating']}, Votos: {old_votes} -> {details['votes']})")
+                else:
+                    skipped_count += 1
+                    print("   [OK] Dados já estavam corretos.")
             else:
-                custom_colors.append(f"{a['nome']} ({a['cor']})")
+                corrected_count += 1
+                print("   [NOVO] Perfume adicionado ao banco.")
                 
-        if default_colors:
-            print(f" - Acordes com cor padrão (Dourada): {', '.join(default_colors)}")
-        if custom_colors:
-            print(f" - Acordes com cores personalizadas: {', '.join(custom_colors)}")
+            final_data.append(obj)
             
-        if not default_colors:
-            print(" - Diagnóstico: Cores dos acordes estão 100% atualizadas!")
+        except Exception as e:
+            print(f"   [ERRO] Falha ao processar {name}: {e}")
+            errors[p_id] = str(e)
+            if p_id in existing_by_id:
+                final_data.append(existing_by_id[p_id])
+                
+    if not test_mode:
+        all_final_ids = {p["id"] for p in final_data}
+        for old_id, old_perfume in existing_by_id.items():
+            if old_id not in all_final_ids:
+                final_data.append(old_perfume)
+                
+        # Salvar log de erros/não encontrados em arquivo de texto
+        workspace_dir = r"C:\Users\odeao\OneDrive\Desktop\brem"
+        error_log_path = os.path.join(workspace_dir, "perfumes_nao_encontrados.txt")
+        if errors:
+            with open(error_log_path, "w", encoding="utf-8") as f_err:
+                f_err.write("=== LOG DE PERFUMES NÃO ENCONTRADOS / COM ERRO DE PROCESSAMENTO ===\n\n")
+                for pid, err in errors.items():
+                    f_err.write(f"Perfume ID: {pid}\nErro: {err}\n{'-'*50}\n")
+            print(f"\n[AVISO] {len(errors)} perfume(s) falharam. Lista salva em: {error_log_path}")
         else:
-            print(" - Diagnóstico: Necessário rodar a extração para obter as cores originais.")
+            if os.path.exists(error_log_path):
+                try:
+                    os.remove(error_log_path)
+                except OSError:
+                    pass
+                    
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(final_data, f, indent=2, ensure_ascii=False)
+            
+        print("=" * 80)
+        print(f"[FIM] Vistoria concluída! {corrected_count} perfumes corrigidos/atualizados, {skipped_count} mantidos.")
+        print(f"Banco de dados salvo em: {json_path}")
+    else:
+        print("=" * 80)
+        print("[TESTE] Resultado da extração:")
+        print(json.dumps(final_data, indent=2, ensure_ascii=False))
 
 if __name__ == "__main__":
-    main()
+    test = "--test" in sys.argv
+    all_mode = "--all" in sys.argv
+    run_auditor(test_mode=test, force_all=all_mode)

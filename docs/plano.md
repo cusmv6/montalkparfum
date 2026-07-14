@@ -38,23 +38,16 @@ Durante nossa fase de testes de estrutura, a organização dos arquivos de plane
 brem/
 ├── .agents/
 │   └── AGENTS.md                  # Regras gerais de comportamento, EFT e Autonomia
-├── .brem/                         # Pasta de configurações do agente Brem
-│   ├── rules/                     # Regras técnicas por contexto
-│   │   ├── code-style.md          # Estilo de codificação
-│   │   ├── pricing-rules.md       # Regras de precificação da loja
-│   │   └── testing.md             # Padrões de validação e testes
-│   ├── skills/                    # Habilidades empacotadas
-│   │   ├── nuvemshop-uploader/    # Conversor de lista de perfumes
-│   │   └── preco-calculator/      # Calculadora de precificação
-│   └── agents/                    # Definições de subagentes especializados
-│       ├── bruno.md               # Instruções de persona e foco do subagente Bruno
-│       └── utopia.md              # Instruções de persona e foco do subagente Utopia
-├── Bruno/                         # Código-fonte e scripts relativos ao cliente Bruno
-├── Utopia/                        # Código-fonte e scripts relativos ao projeto Utopia
-└── docs/                          # Documentação e Gestão de Fluxo
-    ├── plano.md                   # Este plano organizacional
-    ├── backlog_bruno.md           # Backlog estruturado para o subagente Bruno
-    └── backlog_utopia.md          # Backlog estruturado para o subagente Utopia
+├── .agents/                       # Customizações e habilidades do workspace
+├── .vscode/                       # Configurações do VS Code
+├── apresentacoes/                 # Apresentações de slides e análises do time
+├── PROJETOS/                      # Projetos em desenvolvimento ativo
+│   ├── Bruno/                     # Scripts de automação do cliente Bruno
+│   └── Utopia/                    # Código-fonte e scripts do projeto Utopia
+├── docs/                          # Documentações e backlogs
+├── SUMMONS/                       # Subagentes e maestros de fluxo (ex: estagiariovisual)
+├── GRIMORIO/                      # Habilidades técnicas e scripts de utilidades
+└── MEMORIAS/                      # Registros históricos e causas raízes (causas_raizes.md)
 ```
 
 ---
@@ -84,6 +77,6 @@ Cada subagente conta com seu próprio arquivo de controle em `docs/` (`backlog_b
 ## 6. Plano de Implementação Incremental
 
 Para testar esta estrutura de forma segura, seguiremos as etapas:
-1.  **Fase 1 (Atual)**: Criação dos arquivos de planejamento e backlogs na pasta `docs/` sem interferir nos arquivos de código das pastas `Bruno/` ou `Utopia/`.
+1.  **Fase 1 (Atual)**: Criação dos arquivos de planejamento e backlogs na pasta `docs/` sem interferir nos arquivos de código das pastas `PROJETOS/Bruno/` ou `PROJETOS/Utopia/`.
 2.  **Fase 2**: Validação unitária (1 de 1) de qualquer script de migração ou criação das pastas `.brem/` caso Marcus decida avançar para a estruturação de pastas ocultas de agente.
 3.  **Fase 3**: Modularização gradual das regras do `AGENTS.md` para arquivos de regras menores sob demanda.
