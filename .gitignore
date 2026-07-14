@@ -19,3 +19,12 @@ ENV/
 
 # Local temporary or log files
 *.log
+
+# Personal Projects & Resume Compilation (Private)
+PROJETOS/Utopia/
+PROJETOS/gestaodedados/
+apresentacoes/apresenta_dota/
+apresentacoes/apresenta_gestaodados/
+resumo.md
+perfumes_nao_encontrados.txt
+
