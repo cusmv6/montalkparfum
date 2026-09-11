@@ -120,4 +120,4 @@ Em desenvolvimento ativo. O núcleo do pipeline (coleta → enriquecimento → g
 ## 👤 Autor
 
 **Marcus Vinícius dos Santos**
-[LinkedIn](https://linkedin.com/in/marcusv-santos-tech/) · [GitHub](https://github.com/cusmv6) · [Kaggle](https://kaggle.com/dancusparas)
+[LinkedIn](https://linkedin.com/in/marcusv-santos-tech/) · [GitHub](https://github.com/cusmv6)
